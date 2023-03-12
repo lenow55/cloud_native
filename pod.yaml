@@ -1,0 +1,277 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    cnpg.io/nodeSerial: "1"
+    cnpg.io/operatorVersion: 1.19.0
+    cnpg.io/podEnvHash: 56b46679d
+  creationTimestamp: "2023-03-06T19:46:37Z"
+  labels:
+    cnpg.io/cluster: cluster-example
+    cnpg.io/instanceName: cluster-example-1
+    cnpg.io/podRole: instance
+    postgresql: cluster-example
+    role: replica
+  name: cluster-example-1
+  namespace: default
+  ownerReferences:
+  - apiVersion: postgresql.cnpg.io/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: Cluster
+    name: cluster-example
+    uid: 175665ac-d2c1-493b-b420-3d200b8b3eac
+  resourceVersion: "364608"
+  uid: 90705045-ffe3-4c94-b228-e18d633ef97a
+spec:
+  affinity:
+    podAntiAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - podAffinityTerm:
+          labelSelector:
+            matchExpressions:
+            - key: cnpg.io/cluster
+              operator: In
+              values:
+              - cluster-example
+          topologyKey: kubernetes.io/hostname
+        weight: 100
+  containers:
+  - command:
+    - /controller/manager
+    - instance
+    - run
+    - --log-level=info
+    env:
+    - name: PGDATA
+      value: /var/lib/postgresql/data/pgdata
+    - name: POD_NAME
+      value: cluster-example-1
+    - name: NAMESPACE
+      value: default
+    - name: CLUSTER_NAME
+      value: cluster-example
+    - name: PGPORT
+      value: "5432"
+    - name: PGHOST
+      value: /controller/run
+    image: ghcr.io/cloudnative-pg/postgresql:15.2
+    imagePullPolicy: IfNotPresent
+    livenessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /healthz
+        port: 8000
+        scheme: HTTP
+      initialDelaySeconds: 30
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 5
+    name: postgres
+    ports:
+    - containerPort: 5432
+      name: postgresql
+      protocol: TCP
+    - containerPort: 9187
+      name: metrics
+      protocol: TCP
+    - containerPort: 8000
+      name: status
+      protocol: TCP
+    readinessProbe:
+      failureThreshold: 3
+      httpGet:
+        path: /readyz
+        port: 8000
+        scheme: HTTP
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 5
+    resources: {}
+    securityContext:
+      allowPrivilegeEscalation: false
+      capabilities:
+        drop:
+        - ALL
+      privileged: false
+      readOnlyRootFilesystem: true
+      runAsNonRoot: true
+      seccompProfile:
+        type: RuntimeDefault
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/lib/postgresql/data
+      name: pgdata
+    - mountPath: /run
+      name: scratch-data
+    - mountPath: /controller
+      name: scratch-data
+    - mountPath: /dev/shm
+      name: shm
+    - mountPath: /etc/superuser-secret
+      name: superuser-secret
+    - mountPath: /etc/app-secret
+      name: app-secret
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-qp767
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  hostname: cluster-example-1
+  initContainers:
+  - command:
+    - /manager
+    - bootstrap
+    - /controller/manager
+    - --log-level=info
+    image: ghcr.io/cloudnative-pg/cloudnative-pg-testing:release-1.19
+    imagePullPolicy: IfNotPresent
+    name: bootstrap-controller
+    resources: {}
+    securityContext:
+      allowPrivilegeEscalation: false
+      capabilities:
+        drop:
+        - ALL
+      privileged: false
+      readOnlyRootFilesystem: true
+      runAsNonRoot: true
+      seccompProfile:
+        type: RuntimeDefault
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/lib/postgresql/data
+      name: pgdata
+    - mountPath: /run
+      name: scratch-data
+    - mountPath: /controller
+      name: scratch-data
+    - mountPath: /dev/shm
+      name: shm
+    - mountPath: /etc/superuser-secret
+      name: superuser-secret
+    - mountPath: /etc/app-secret
+      name: app-secret
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-qp767
+      readOnly: true
+  nodeName: kube-node1
+  preemptionPolicy: PreemptLowerPriority
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext:
+    fsGroup: 26
+    runAsGroup: 26
+    runAsNonRoot: true
+    runAsUser: 26
+    seccompProfile:
+      type: RuntimeDefault
+  serviceAccount: cluster-example
+  serviceAccountName: cluster-example
+  subdomain: cluster-example-any
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: pgdata
+    persistentVolumeClaim:
+      claimName: cluster-example-1
+  - emptyDir: {}
+    name: scratch-data
+  - emptyDir:
+      medium: Memory
+    name: shm
+  - name: superuser-secret
+    secret:
+      defaultMode: 420
+      secretName: cluster-example-superuser
+  - name: app-secret
+    secret:
+      defaultMode: 420
+      secretName: cluster-example-app
+  - name: kube-api-access-qp767
+    projected:
+      defaultMode: 420
+      sources:
+      - serviceAccountToken:
+          expirationSeconds: 3607
+          path: token
+      - configMap:
+          items:
+          - key: ca.crt
+            path: ca.crt
+          name: kube-root-ca.crt
+      - downwardAPI:
+          items:
+          - fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.namespace
+            path: namespace
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-10T18:09:37Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-10T18:10:14Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-10T18:10:14Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2023-03-06T19:46:37Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: containerd://a550d25675696c4b01446a25ba3c1f8d4cf8652828a7fe2682e4d7246e5fb81f
+    image: ghcr.io/cloudnative-pg/postgresql:15.2
+    imageID: ghcr.io/cloudnative-pg/postgresql@sha256:8538bf6cc2da3057ebe38b5a628619cb6e87eac6317118dcc1b1053efcdb23fa
+    lastState:
+      terminated:
+        containerID: containerd://f8d3a4ef3ff063e2c35af845767b5edadf3b6007a3d9889ef780e2bf6460bc3d
+        exitCode: 255
+        finishedAt: "2023-03-10T18:07:53Z"
+        reason: Unknown
+        startedAt: "2023-03-06T19:46:42Z"
+    name: postgres
+    ready: true
+    restartCount: 1
+    started: true
+    state:
+      running:
+        startedAt: "2023-03-10T18:09:38Z"
+  hostIP: 10.128.0.17
+  initContainerStatuses:
+  - containerID: containerd://17b7bcbcf4c915ee70e9aa9b34f2e8ab429bb0cac3314968e661bf8572f41f97
+    image: ghcr.io/cloudnative-pg/cloudnative-pg-testing:release-1.19
+    imageID: ghcr.io/cloudnative-pg/cloudnative-pg-testing@sha256:c39be02a8e55a1993895420ad001113b70312949a7e74a2e4a5fabb4ded58b53
+    lastState: {}
+    name: bootstrap-controller
+    ready: true
+    restartCount: 0
+    state:
+      terminated:
+        containerID: containerd://17b7bcbcf4c915ee70e9aa9b34f2e8ab429bb0cac3314968e661bf8572f41f97
+        exitCode: 0
+        finishedAt: "2023-03-10T18:09:37Z"
+        reason: Completed
+        startedAt: "2023-03-10T18:09:23Z"
+  phase: Running
+  podIP: 10.40.3.31
+  podIPs:
+  - ip: 10.40.3.31
+  qosClass: BestEffort
+  startTime: "2023-03-06T19:46:37Z"

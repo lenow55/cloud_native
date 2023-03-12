@@ -1,0 +1,328 @@
+{
+  "kind": "Cluster",
+  "apiVersion": "postgresql.cnpg.io/v1",
+  "metadata": {
+    "name": "cluster-example",
+    "namespace": "default",
+    "uid": "175665ac-d2c1-493b-b420-3d200b8b3eac",
+    "resourceVersion": "387048",
+    "generation": 1,
+    "creationTimestamp": "2023-03-06T19:46:22Z",
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"postgresql.cnpg.io/v1\",\"kind\":\"Cluster\",\"metadata\":{\"annotations\":{},\"name\":\"cluster-example\",\"namespace\":\"default\"},\"spec\":{\"imageName\":\"ghcr.io/cloudnative-pg/postgresql:15.2\",\"instances\":2,\"storage\":{\"pvcTemplate\":{\"accessModes\":[\"ReadWriteOnce\"],\"resources\":{\"requests\":{\"storage\":\"1Gi\"}},\"storageClassName\":\"cloud-native-store\",\"volumeMode\":\"Filesystem\"},\"size\":\"1Gi\"}}}\n"
+    },
+    "managedFields": [
+      {
+        "manager": "kubectl-client-side-apply",
+        "operation": "Update",
+        "apiVersion": "postgresql.cnpg.io/v1",
+        "time": "2023-03-06T19:46:22Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:metadata": {
+            "f:annotations": {
+              ".": {},
+              "f:kubectl.kubernetes.io/last-applied-configuration": {}
+            }
+          },
+          "f:spec": {
+            ".": {},
+            "f:enableSuperuserAccess": {},
+            "f:failoverDelay": {},
+            "f:imageName": {},
+            "f:instances": {},
+            "f:logLevel": {},
+            "f:maxSyncReplicas": {},
+            "f:minSyncReplicas": {},
+            "f:postgresGID": {},
+            "f:postgresUID": {},
+            "f:primaryUpdateMethod": {},
+            "f:primaryUpdateStrategy": {},
+            "f:startDelay": {},
+            "f:stopDelay": {},
+            "f:storage": {
+              ".": {},
+              "f:pvcTemplate": {
+                ".": {},
+                "f:accessModes": {},
+                "f:resources": {
+                  ".": {},
+                  "f:requests": {
+                    ".": {},
+                    "f:storage": {}
+                  }
+                },
+                "f:storageClassName": {},
+                "f:volumeMode": {}
+              },
+              "f:resizeInUseVolumes": {},
+              "f:size": {}
+            },
+            "f:switchoverDelay": {}
+          }
+        }
+      },
+      {
+        "manager": "manager",
+        "operation": "Update",
+        "apiVersion": "postgresql.cnpg.io/v1",
+        "time": "2023-03-12T08:44:56Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:status": {
+            ".": {},
+            "f:certificates": {
+              ".": {},
+              "f:clientCASecret": {},
+              "f:expirations": {
+                ".": {},
+                "f:cluster-example-ca": {},
+                "f:cluster-example-replication": {},
+                "f:cluster-example-server": {}
+              },
+              "f:replicationTLSSecret": {},
+              "f:serverAltDNSNames": {},
+              "f:serverCASecret": {},
+              "f:serverTLSSecret": {}
+            },
+            "f:cloudNativePGCommitHash": {},
+            "f:cloudNativePGOperatorHash": {},
+            "f:conditions": {},
+            "f:configMapResourceVersion": {
+              ".": {},
+              "f:metrics": {
+                ".": {},
+                "f:cnpg-default-monitoring": {}
+              }
+            },
+            "f:currentPrimary": {},
+            "f:currentPrimaryTimestamp": {},
+            "f:healthyPVC": {},
+            "f:instanceNames": {},
+            "f:instances": {},
+            "f:instancesReportedState": {
+              ".": {},
+              "f:cluster-example-1": {
+                ".": {},
+                "f:isPrimary": {},
+                "f:timeLineID": {}
+              },
+              "f:cluster-example-2": {
+                ".": {},
+                "f:isPrimary": {},
+                "f:timeLineID": {}
+              }
+            },
+            "f:instancesStatus": {
+              ".": {},
+              "f:healthy": {}
+            },
+            "f:latestGeneratedNode": {},
+            "f:phase": {},
+            "f:poolerIntegrations": {
+              ".": {},
+              "f:pgBouncerIntegration": {}
+            },
+            "f:pvcCount": {},
+            "f:readService": {},
+            "f:readyInstances": {},
+            "f:secretsResourceVersion": {
+              ".": {},
+              "f:applicationSecretVersion": {},
+              "f:clientCaSecretVersion": {},
+              "f:replicationSecretVersion": {},
+              "f:serverCaSecretVersion": {},
+              "f:serverSecretVersion": {},
+              "f:superuserSecretVersion": {}
+            },
+            "f:targetPrimary": {},
+            "f:targetPrimaryTimestamp": {},
+            "f:timelineID": {},
+            "f:topology": {
+              ".": {},
+              "f:instances": {
+                ".": {},
+                "f:cluster-example-1": {},
+                "f:cluster-example-2": {}
+              },
+              "f:successfullyExtracted": {}
+            },
+            "f:writeService": {}
+          }
+        },
+        "subresource": "status"
+      }
+    ]
+  },
+  "spec": {
+    "imageName": "ghcr.io/cloudnative-pg/postgresql:15.2",
+    "postgresUID": 26,
+    "postgresGID": 26,
+    "instances": 2,
+    "postgresql": {
+      "parameters": {
+        "archive_mode": "on",
+        "archive_timeout": "5min",
+        "dynamic_shared_memory_type": "posix",
+        "log_destination": "csvlog",
+        "log_directory": "/controller/log",
+        "log_filename": "postgres",
+        "log_rotation_age": "0",
+        "log_rotation_size": "0",
+        "log_truncate_on_rotation": "false",
+        "logging_collector": "on",
+        "max_parallel_workers": "32",
+        "max_replication_slots": "32",
+        "max_worker_processes": "32",
+        "shared_memory_type": "mmap",
+        "shared_preload_libraries": "",
+        "wal_keep_size": "512MB",
+        "wal_receiver_timeout": "5s",
+        "wal_sender_timeout": "5s"
+      },
+      "syncReplicaElectionConstraint": {
+        "enabled": false
+      }
+    },
+    "bootstrap": {
+      "initdb": {
+        "database": "app",
+        "owner": "app",
+        "encoding": "UTF8",
+        "localeCollate": "C",
+        "localeCType": "C"
+      }
+    },
+    "enableSuperuserAccess": true,
+    "storage": {
+      "size": "1Gi",
+      "resizeInUseVolumes": true,
+      "pvcTemplate": {
+        "accessModes": [
+          "ReadWriteOnce"
+        ],
+        "resources": {
+          "requests": {
+            "storage": "1Gi"
+          }
+        },
+        "storageClassName": "cloud-native-store",
+        "volumeMode": "Filesystem"
+      }
+    },
+    "startDelay": 30,
+    "stopDelay": 30,
+    "switchoverDelay": 40000000,
+    "affinity": {
+      "topologyKey": "",
+      "podAntiAffinityType": "preferred"
+    },
+    "resources": {},
+    "primaryUpdateStrategy": "unsupervised",
+    "primaryUpdateMethod": "switchover",
+    "monitoring": {
+      "disableDefaultQueries": false,
+      "customQueriesConfigMap": [
+        {
+          "name": "cnpg-default-monitoring",
+          "key": "queries"
+        }
+      ]
+    },
+    "logLevel": "info"
+  },
+  "status": {
+    "instances": 2,
+    "readyInstances": 2,
+    "instancesStatus": {
+      "healthy": [
+        "cluster-example-1",
+        "cluster-example-2"
+      ]
+    },
+    "instancesReportedState": {
+      "cluster-example-1": {
+        "isPrimary": false,
+        "timeLineID": 2
+      },
+      "cluster-example-2": {
+        "isPrimary": true,
+        "timeLineID": 2
+      }
+    },
+    "timelineID": 2,
+    "topology": {
+      "successfullyExtracted": true,
+      "instances": {
+        "cluster-example-1": {},
+        "cluster-example-2": {}
+      }
+    },
+    "latestGeneratedNode": 2,
+    "currentPrimary": "cluster-example-2",
+    "targetPrimary": "cluster-example-2",
+    "pvcCount": 2,
+    "healthyPVC": [
+      "cluster-example-1",
+      "cluster-example-2"
+    ],
+    "writeService": "cluster-example-rw",
+    "readService": "cluster-example-r",
+    "phase": "Cluster in healthy state",
+    "secretsResourceVersion": {
+      "superuserSecretVersion": "362941",
+      "replicationSecretVersion": "362940",
+      "applicationSecretVersion": "362942",
+      "clientCaSecretVersion": "362938",
+      "serverCaSecretVersion": "362938",
+      "serverSecretVersion": "362939"
+    },
+    "configMapResourceVersion": {
+      "metrics": {
+        "cnpg-default-monitoring": "362970"
+      }
+    },
+    "certificates": {
+      "serverCASecret": "cluster-example-ca",
+      "serverTLSSecret": "cluster-example-server",
+      "replicationTLSSecret": "cluster-example-replication",
+      "clientCASecret": "cluster-example-ca",
+      "serverAltDNSNames": [
+        "cluster-example-rw",
+        "cluster-example-rw.default",
+        "cluster-example-rw.default.svc",
+        "cluster-example-r",
+        "cluster-example-r.default",
+        "cluster-example-r.default.svc",
+        "cluster-example-ro",
+        "cluster-example-ro.default",
+        "cluster-example-ro.default.svc"
+      ],
+      "expirations": {
+        "cluster-example-ca": "2023-06-04 19:41:22 +0000 UTC",
+        "cluster-example-replication": "2023-06-04 19:41:22 +0000 UTC",
+        "cluster-example-server": "2023-06-04 19:41:22 +0000 UTC"
+      }
+    },
+    "cloudNativePGCommitHash": "7d527e90",
+    "currentPrimaryTimestamp": "2023-03-10T18:09:39.277788Z",
+    "targetPrimaryTimestamp": "2023-03-10T18:09:37.320706Z",
+    "poolerIntegrations": {
+      "pgBouncerIntegration": {}
+    },
+    "cloudNativePGOperatorHash": "b77876ed69b757bde335864455beca6af822733817bd2a4fae56ff5f994b4269",
+    "conditions": [
+      {
+        "type": "Ready",
+        "status": "True",
+        "lastTransitionTime": "2023-03-10T18:10:14Z",
+        "reason": "ClusterIsReady",
+        "message": "Cluster is Ready"
+      }
+    ],
+    "instanceNames": [
+      "cluster-example-1",
+      "cluster-example-2"
+    ]
+  }
+}

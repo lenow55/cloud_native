@@ -1,0 +1,20 @@
+github.com/cloudnative-pg/cloudnative-pg/pkg/management/log.(*logger).Error
+\tpkg/management/log/log.go:128
+github.com/cloudnative-pg/cloudnative-pg/pkg/management/log.Error
+\tpkg/management/log/log.go:166
+github.com/cloudnative-pg/cloudnative-pg/pkg/management/postgres.(*Instance).Rewind
+\tpkg/management/postgres/instance.go:783
+github.com/cloudnative-pg/cloudnative-pg/internal/management/controller.(*InstanceReconciler).verifyPgDataCoherenceForPrimary
+\tinternal/management/controller/instance_startup.go:235
+github.com/cloudnative-pg/cloudnative-pg/internal/management/controller.(*InstanceReconciler).initialize
+\tinternal/management/controller/instance_controller.go:327
+github.com/cloudnative-pg/cloudnative-pg/internal/management/controller.(*InstanceReconciler).Reconcile
+\tinternal/management/controller/instance_controller.go:141
+sigs.k8s.io/controller-runtime/pkg/internal/controller.(*Controller).Reconcile
+\tpkg/mod/sigs.k8s.io/controller-runtime@v0.14.5/pkg/internal/controller/controller.go:122
+sigs.k8s.io/controller-runtime/pkg/internal/controller.(*Controller).reconcileHandler
+\tpkg/mod/sigs.k8s.io/controller-runtime@v0.14.5/pkg/internal/controller/controller.go:323
+sigs.k8s.io/controller-runtime/pkg/internal/controller.(*Controller).processNextWorkItem
+\tpkg/mod/sigs.k8s.io/controller-runtime@v0.14.5/pkg/internal/controller/controller.go:274
+sigs.k8s.io/controller-runtime/pkg/internal/controller.(*Controller).Start.func2.2
+pg_rewind -P --source-server 'host=cluster-example-rw user=streaming_replica port=5432 sslkey=/controller/certificates/streaming_replica.key sslcert=/controller/certificates/streaming_replica.crt sslrootcert=/controller/certificates/server-ca.crt application_name=cluster-example-2 sslmode=verify-ca dbname=postgres' --target-pgdata /var/lib/postgresql/data/pgdata --restore-target-wal

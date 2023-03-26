@@ -3,7 +3,7 @@ kind: Cluster
 metadata:
   name: cluster-example
 spec:
-  instances: 1
+  instances: 2
   imageName: ghcr.io/cloudnative-pg/postgresql:15.2
   logLevel: debug
 

@@ -12398,7 +12398,8 @@ spec:
         - /manager
         env:
         - name: OPERATOR_IMAGE_NAME
-          value: ghcr.io/cloudnative-pg/cloudnative-pg:1.19.1
+          # value: ghcr.io/cloudnative-pg/cloudnative-pg:1.19.1
+          value: lenow/cloudnative-pg:main
         - name: OPERATOR_NAMESPACE
           valueFrom:
             fieldRef:
@@ -12406,6 +12407,7 @@ spec:
         - name: MONITORING_QUERIES_CONFIGMAP
           value: cnpg-default-monitoring
         image: ghcr.io/cloudnative-pg/cloudnative-pg:1.19.1
+        # image: lenow/cloudnative-pg:main
         livenessProbe:
           httpGet:
             path: /readyz

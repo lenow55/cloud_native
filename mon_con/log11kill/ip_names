@@ -1,0 +1,8 @@
+10.40.3.238 cluster-example-1
+10.40.3.237 cnpg-controller-manager-7fdd564755-fkxxk
+10.40.1.74 cluster-example-7 OLD
+10.40.1.75 cluster-example-7
+cluster-example-r     ClusterIP   10.106.104.104   <none>        5432/TCP   29h
+cluster-example-ro    ClusterIP   10.101.237.199   <none>        5432/TCP   29h
+cluster-example-rw    ClusterIP   10.103.179.133   <none>        5432/TCP   29h
+cluster-example-any   ClusterIP   10.104.225.59    <none>        5432/TCP   29h

@@ -1,0 +1,62 @@
+apiVersion: v1
+kind: Endpoints
+metadata:
+  annotations:
+    endpoints.kubernetes.io/last-change-trigger-time: "2023-03-29T06:48:51Z"
+  creationTimestamp: "2023-03-29T06:30:05Z"
+  labels:
+    cnpg.io/cluster: cluster-example
+  name: cluster-example-rw
+  namespace: default
+  resourceVersion: "1036228"
+  uid: 4cd531cf-aea8-4bc6-aac1-3ffaa7c1fc3f
+subsets:
+- addresses:
+  - ip: 10.40.1.92
+    nodeName: kube-node2
+    targetRef:
+      kind: Pod
+      name: cluster-example-2
+      namespace: default
+      uid: 3061b648-0333-4395-8ead-fc6ea6b3786a
+  ports:
+  - name: postgres
+    port: 5432
+    protocol: TCP
+---
+apiVersion: v1
+kind: Endpoints
+metadata:
+  creationTimestamp: "2023-03-29T06:30:05Z"
+  labels:
+    cnpg.io/cluster: cluster-example
+  name: cluster-example-rw
+  namespace: default
+  resourceVersion: "1040031"
+  uid: 4cd531cf-aea8-4bc6-aac1-3ffaa7c1fc3f
+---
+apiVersion: v1
+kind: Endpoints
+metadata:
+  annotations:
+    endpoints.kubernetes.io/last-change-trigger-time: "2023-03-29T06:48:57Z"
+  creationTimestamp: "2023-03-29T06:30:05Z"
+  labels:
+    cnpg.io/cluster: cluster-example
+  name: cluster-example-rw
+  namespace: default
+  resourceVersion: "1040602"
+  uid: 4cd531cf-aea8-4bc6-aac1-3ffaa7c1fc3f
+subsets:
+- addresses:
+  - ip: 10.40.3.251
+    nodeName: kube-node1
+    targetRef:
+      kind: Pod
+      name: cluster-example-1
+      namespace: default
+      uid: 2b43cc05-680c-4162-854c-b831cb7e25cb
+  ports:
+  - name: postgres
+    port: 5432
+    protocol: TCP

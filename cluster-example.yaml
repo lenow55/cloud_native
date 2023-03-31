@@ -6,6 +6,10 @@ spec:
   instances: 2
   imageName: ghcr.io/cloudnative-pg/postgresql:15.2
   logLevel: debug
+  postgresql:
+    parameters:
+      wal_sender_timeout: "10s"
+      wal_receiver_timeout: "10s"
 
   storage:
     size: 1Gi

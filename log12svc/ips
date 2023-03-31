@@ -1,0 +1,5 @@
+NAME                                      IP            NODE
+cnpg-controller-manager-7fdd564755-fkxxk  10.40.3.243   kube-node1
+cluster-example-1                         10.40.3.251   kube-node1
+cluster-example-2                         10.40.1.93    kube-node2
+hippo-ha-pgbouncer-58cc5fc947-khn4k       10.40.1.83    kube-node2

@@ -1,0 +1,11 @@
+
+cnpg-system         cnpg-controller-manager-6947549bc8-985sh   1/1     Running   0                25m     10.40.3.9     kube-node1      <none>           <none>
+default             cluster-example-1                          1/1     Running   0                22m     10.40.3.13    kube-node1      <none>           <none>
+default             cluster-example-2                          1/1     Running   0                12m     10.40.1.107   kube-node2      <none>           <none>
+NAME                  TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE
+cluster-example-any   ClusterIP   10.107.70.141    <none>        5432/TCP   25m
+cluster-example-r     ClusterIP   10.106.144.153   <none>        5432/TCP   25m
+cluster-example-ro    ClusterIP   10.106.34.219    <none>        5432/TCP   25m
+cluster-example-rw    ClusterIP   10.100.75.7      <none>        5432/TCP   25m
+kubernetes            ClusterIP   10.96.0.1        <none>        443/TCP    46d
+

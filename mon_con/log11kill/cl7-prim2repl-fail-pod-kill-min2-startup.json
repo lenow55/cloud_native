@@ -1,0 +1,1040 @@
+{"level":"info","ts":"2023-03-27T19:02:57Z","logger":"setup","msg":"Starting CloudNativePG Instance Manager","logging_pod":"cluster-example-7","version":"1.19.1","build":{"Version":"1.19.0+dev100","Commit":"ae4c6fda","Date":"2023-03-23"}}
+{"level":"info","ts":"2023-03-27T19:02:57Z","logger":"setup","msg":"starting controller-runtime manager","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","msg":"Starting EventSource","controller":"cluster","controllerGroup":"postgresql.cnpg.io","controllerKind":"Cluster","source":"kind source: *v1.Cluster"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","msg":"Starting Controller","controller":"cluster","controllerGroup":"postgresql.cnpg.io","controllerKind":"Cluster"}
+{"level":"debug","ts":"2023-03-27T19:02:57Z","msg":"starting the postgres loop","caller":"pkg/management/log/log.go:181","logging_pod":"cluster-example-7"}
+{"level":"debug","ts":"2023-03-27T19:02:57Z","msg":"starting signal loop","caller":"pkg/management/log/log.go:181","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","logger":"roles_reconciler","msg":"starting up the runnable","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","logger":"roles_reconciler","msg":"setting up RoleSynchronizer loop","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","msg":"Starting webserver","logging_pod":"cluster-example-7","address":":8000"}
+{"level":"debug","ts":"2023-03-27T19:02:57Z","msg":"Checking PGDATA coherence","caller":"internal/cmd/manager/instance/run/lifecycle/run.go:255","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","msg":"Starting webserver","logging_pod":"cluster-example-7","address":":9187"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","msg":"Starting webserver","logging_pod":"cluster-example-7","address":"localhost:8010"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","msg":"Starting workers","controller":"cluster","controllerGroup":"postgresql.cnpg.io","controllerKind":"Cluster","worker count":1}
+{"level":"debug","ts":"2023-03-27T19:02:57Z","msg":"Reconciling Cluster","controller":"cluster","controllerGroup":"postgresql.cnpg.io","controllerKind":"Cluster","Cluster":{"name":"cluster-example","namespace":"default"},"namespace":"default","name":"cluster-example","reconcileID":"c996d7a3-2146-46c7-8edf-0b13fd795742","uuid":"fcab82b3-ccd1-11ed-b634-3a95ce2bd0c0","caller":"internal/management/controller/instance_controller.go:110","logging_pod":"cluster-example-7","cluster":{"apiVersion":"postgresql.cnpg.io/v1","kind":"Cluster","namespace":"default","name":"cluster-example"}}
+{"level":"debug","ts":"2023-03-27T19:02:57Z","msg":"Reconciling custom monitoring queries","controller":"cluster","controllerGroup":"postgresql.cnpg.io","controllerKind":"Cluster","Cluster":{"name":"cluster-example","namespace":"default"},"namespace":"default","name":"cluster-example","reconcileID":"c996d7a3-2146-46c7-8edf-0b13fd795742","uuid":"fcab82b3-ccd1-11ed-b634-3a95ce2bd0c0","caller":"internal/management/controller/instance_controller.go:735","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","msg":"Refreshed configuration file","controller":"cluster","controllerGroup":"postgresql.cnpg.io","controllerKind":"Cluster","Cluster":{"name":"cluster-example","namespace":"default"},"namespace":"default","name":"cluster-example","reconcileID":"c996d7a3-2146-46c7-8edf-0b13fd795742","uuid":"fcab82b3-ccd1-11ed-b634-3a95ce2bd0c0","logging_pod":"cluster-example-7","filename":"/controller/certificates/server.crt","secret":"cluster-example-server"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","msg":"Refreshed configuration file","controller":"cluster","controllerGroup":"postgresql.cnpg.io","controllerKind":"Cluster","Cluster":{"name":"cluster-example","namespace":"default"},"namespace":"default","name":"cluster-example","reconcileID":"c996d7a3-2146-46c7-8edf-0b13fd795742","uuid":"fcab82b3-ccd1-11ed-b634-3a95ce2bd0c0","logging_pod":"cluster-example-7","filename":"/controller/certificates/server.key","secret":"cluster-example-server"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","msg":"Refreshed configuration file","controller":"cluster","controllerGroup":"postgresql.cnpg.io","controllerKind":"Cluster","Cluster":{"name":"cluster-example","namespace":"default"},"namespace":"default","name":"cluster-example","reconcileID":"c996d7a3-2146-46c7-8edf-0b13fd795742","uuid":"fcab82b3-ccd1-11ed-b634-3a95ce2bd0c0","logging_pod":"cluster-example-7","filename":"/controller/certificates/streaming_replica.crt","secret":"cluster-example-replication"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","msg":"Refreshed configuration file","controller":"cluster","controllerGroup":"postgresql.cnpg.io","controllerKind":"Cluster","Cluster":{"name":"cluster-example","namespace":"default"},"namespace":"default","name":"cluster-example","reconcileID":"c996d7a3-2146-46c7-8edf-0b13fd795742","uuid":"fcab82b3-ccd1-11ed-b634-3a95ce2bd0c0","logging_pod":"cluster-example-7","filename":"/controller/certificates/streaming_replica.key","secret":"cluster-example-replication"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","msg":"Refreshed configuration file","controller":"cluster","controllerGroup":"postgresql.cnpg.io","controllerKind":"Cluster","Cluster":{"name":"cluster-example","namespace":"default"},"namespace":"default","name":"cluster-example","reconcileID":"c996d7a3-2146-46c7-8edf-0b13fd795742","uuid":"fcab82b3-ccd1-11ed-b634-3a95ce2bd0c0","logging_pod":"cluster-example-7","filename":"/controller/certificates/client-ca.crt","secret":"cluster-example-ca"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","msg":"Refreshed configuration file","controller":"cluster","controllerGroup":"postgresql.cnpg.io","controllerKind":"Cluster","Cluster":{"name":"cluster-example","namespace":"default"},"namespace":"default","name":"cluster-example","reconcileID":"c996d7a3-2146-46c7-8edf-0b13fd795742","uuid":"fcab82b3-ccd1-11ed-b634-3a95ce2bd0c0","logging_pod":"cluster-example-7","filename":"/controller/certificates/server-ca.crt","secret":"cluster-example-ca"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","msg":"Cluster status","controller":"cluster","controllerGroup":"postgresql.cnpg.io","controllerKind":"Cluster","Cluster":{"name":"cluster-example","namespace":"default"},"namespace":"default","name":"cluster-example","reconcileID":"c996d7a3-2146-46c7-8edf-0b13fd795742","uuid":"fcab82b3-ccd1-11ed-b634-3a95ce2bd0c0","logging_pod":"cluster-example-7","currentPrimary":"cluster-example-1","targetPrimary":"cluster-example-1"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","msg":"This is an old primary instance, waiting for the switchover to finish","controller":"cluster","controllerGroup":"postgresql.cnpg.io","controllerKind":"Cluster","Cluster":{"name":"cluster-example","namespace":"default"},"namespace":"default","name":"cluster-example","reconcileID":"c996d7a3-2146-46c7-8edf-0b13fd795742","uuid":"fcab82b3-ccd1-11ed-b634-3a95ce2bd0c0","logging_pod":"cluster-example-7","currentPrimary":"cluster-example-1","targetPrimary":"cluster-example-1"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","msg":"Switchover completed","controller":"cluster","controllerGroup":"postgresql.cnpg.io","controllerKind":"Cluster","Cluster":{"name":"cluster-example","namespace":"default"},"namespace":"default","name":"cluster-example","reconcileID":"c996d7a3-2146-46c7-8edf-0b13fd795742","uuid":"fcab82b3-ccd1-11ed-b634-3a95ce2bd0c0","logging_pod":"cluster-example-7","targetPrimary":"cluster-example-1","currentPrimary":"cluster-example-1"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","msg":"Waiting for the new primary to be available","logging_pod":"cluster-example-7","primaryConnInfo":"host=cluster-example-rw user=streaming_replica port=5432 sslkey=/controller/certificates/streaming_replica.key sslcert=/controller/certificates/streaming_replica.crt sslrootcert=/controller/certificates/server-ca.crt application_name=cluster-example-7 sslmode=verify-ca dbname=postgres connect_timeout=5"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","msg":"Extracting pg_controldata information","logging_pod":"cluster-example-7","reason":"before pg_rewind"}
+{"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_controldata","msg":"pg_control version number:            1300\nCatalog version number:               202209061\nDatabase system identifier:           7214847947255496726\nDatabase cluster state:               shut down\npg_control last modified:             Mon 27 Mar 2023 07:02:24 PM UTC\nLatest checkpoint location:           0/41000028\nLatest checkpoint's REDO location:    0/41000028\nLatest checkpoint's REDO WAL file:    000000120000000000000041\nLatest checkpoint's TimeLineID:       18\nLatest checkpoint's PrevTimeLineID:   18\nLatest checkpoint's full_page_writes: on\nLatest checkpoint's NextXID:          0:785\nLatest checkpoint's NextOID:          16419\nLatest checkpoint's NextMultiXactId:  1\nLatest checkpoint's NextMultiOffset:  0\nLatest checkpoint's oldestXID:        716\nLatest checkpoint's oldestXID's DB:   1\nLatest checkpoint's oldestActiveXID:  0\nLatest checkpoint's oldestMultiXid:   1\nLatest checkpoint's oldestMulti's DB: 1\nLatest checkpoint's oldestCommitTsXid:0\nLatest checkpoint's newestCommitTsXid:0\nTime of latest checkpoint:            Mon 27 Mar 2023 07:02:23 PM UTC\nFake LSN counter for unlogged rels:   0/3E8\nMinimum recovery ending location:     0/0\nMin recovery ending loc's timeline:   0\nBackup start location:                0/0\nBackup end location:                  0/0\nEnd-of-backup record required:        no\nwal_level setting:                    logical\nwal_log_hints setting:                on\nmax_connections setting:              100\nmax_worker_processes setting:         32\nmax_wal_senders setting:              10\nmax_prepared_xacts setting:           0\nmax_locks_per_xact setting:           64\ntrack_commit_timestamp setting:       off\nMaximum data alignment:               8\nDatabase block size:                  8192\nBlocks per segment of large relation: 131072\nWAL block size:                       8192\nBytes per WAL segment:                16777216\nMaximum length of identifiers:        64\nMaximum columns in an index:          32\nMaximum size of a TOAST chunk:        1996\nSize of a large-object chunk:         2048\nDate/time type storage:               64-bit integers\nFloat8 argument passing:              by value\nData page checksum version:           0\nMock authentication nonce:            c953465ac918c0a055d07bf03b41423f2d229db5472e9ce8be3b0d79d8a0498a\n","pipe":"stdout","logging_pod":"cluster-example-7"}
+`"level":"info","ts":"2023-03-27T19:02:57Z","msg":"Starting up pg_rewind","logging_pod":"cluster-example-7","pgdata":"/var/lib/postgresql/data/pgdata","options":["-P","--source-server","host=cluster-example-rw user=streaming_replica port=5432 sslkey=/controller/certificates/streaming_replica.key sslcert=/controller/certificates/streaming_replica.crt sslrootcert=/controller/certificates/server-ca.crt application_name=cluster-example-7 sslmode=verify-ca dbname=postgres","--target-pgdata","/var/lib/postgresql/data/pgdata","--debug","--restore-target-wal"]`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: using for rewind restore_command = '/controller/manager wal-restore --log-destination /controller/log/postgres.json %f %p'","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: connected to server","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: fetched file \"global/pg_control\", length 8192","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: fetched file \"pg_wal/00000013.history\", length 780","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: Source timeline history:","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: Target timeline history:","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 1: 0/0 - 0/90000A0","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 2: 0/90000A0 - 0/B000C00","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 3: 0/B000C00 - 0/100000A0","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 4: 0/100000A0 - 0/12000000","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 5: 0/12000000 - 0/190000A0","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 6: 0/190000A0 - 0/1A0000A0","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 7: 0/1A0000A0 - 0/1E0000A0","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 8: 0/1E0000A0 - 0/200000A0","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 9: 0/200000A0 - 0/230000A0","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 10: 0/230000A0 - 0/230079F8","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 11: 0/230079F8 - 0/2B000060","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 12: 0/2B000060 - 0/2D0000A0","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 13: 0/2D0000A0 - 0/2E0000A0","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 14: 0/2E0000A0 - 0/2F0000A0","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 15: 0/2F0000A0 - 0/330000A0","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 16: 0/330000A0 - 0/34000110","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 17: 0/34000110 - 0/3E0000A0","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: 18: 0/3E0000A0 - 0/0","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: servers diverged at WAL location 0/40000000 on timeline 18","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: rewinding from last common checkpoint at 0/3F000060 on timeline 18","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:57Z","logger":"pg_rewind","msg":"pg_rewind: reading source file list","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:02:58Z","msg":"Readiness probe failing","logging_pod":"cluster-example-7","err":"instance is not ready yet"`
+`"level":"info","ts":"2023-03-27T19:02:59Z","msg":"Readiness probe failing","logging_pod":"cluster-example-7","err":"instance is not ready yet"`
+`"level":"info","ts":"2023-03-27T19:03:00Z","msg":"Readiness probe failing","logging_pod":"cluster-example-7","err":"instance is not ready yet"`
+`"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: reading target file list","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: reading WAL in target","pipe":"stderr","logging_pod":"cluster-example-7"`
+`"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: entry \"base/1/pg_internal.init\" excluded from source file list","pipe":"stderr","logging_pod":"cluster-example-7"
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: entry \"base/5/pg_internal.init\" excluded from source file list","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: entry \"base/16396/pg_internal.init\" excluded from source file list","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: entry \"postmaster.opts\" excluded from source file list","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: entry \"pg_subtrans/0000\" excluded from source file list","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: entry \"base/16385/pg_internal.init\" excluded from source file list","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: entry \"backup_manifest\" excluded from source file list","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: entry \"postmaster.pid\" excluded from source file list","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: entry \"global/pg_internal.init\" excluded from source file list","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: .check-empty-wal-archive (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: backup_label.old (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/1247_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/1247_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/1249_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/1249_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/1255_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/1255_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/1259_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/1259_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/13370_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/13370_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/13375_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/13375_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/13380_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/13380_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/13385_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/13385_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2600_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2600_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2601_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2601_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2602_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2602_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2603_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2603_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2605_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2605_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2606_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2606_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2607_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2607_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2608_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2608_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2609_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2609_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2610_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2610_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2612_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2612_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2615_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2615_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2616_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2616_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2617_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2617_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2618_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2618_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2619_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2619_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2753_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2753_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2836_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2836_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2838_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2838_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2840_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/2840_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3079_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3079_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3394_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3394_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3456_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3456_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3541_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3541_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3600_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3600_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3601_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3601_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3602_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3602_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3603_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3603_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3764_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/3764_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/1/pg_filenode.map (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/1247_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/1247_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/1249_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/1249_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/1255_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/1255_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/1259_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/1259_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/13370_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/13370_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/13375_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/13375_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/13380_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/13380_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/13385_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/13385_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2600_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2600_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2601_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2601_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2602_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2602_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2603_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2603_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2605_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2605_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2606_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2606_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2607_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2607_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2608_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2608_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2609_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2609_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2610_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2610_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2612_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2612_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2615_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2615_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2616_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2616_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2617_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2617_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2618_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2618_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2619_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2619_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2753_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2753_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2836_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2836_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2838_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2838_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2840_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/2840_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3079_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3079_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3394_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3394_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3456_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3456_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3541_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3541_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3600_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3600_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3601_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3601_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3602_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3602_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3603_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3603_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3764_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/3764_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16385/pg_filenode.map (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/1247_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/1247_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/1249_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/1249_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/1255_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/1255_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/1259_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/1259_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/13370_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/13370_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/13375_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/13375_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/13380_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/13380_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/13385_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/13385_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/16409_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/16409_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/16410_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/16410_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/16412_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/16412_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2600_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2600_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2601_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2601_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2602_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2602_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2603_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2603_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2605_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2605_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2606_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2606_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2607_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2607_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2608_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2608_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2609_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2609_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2610_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2610_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2612_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2612_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2615_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2615_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2616_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2616_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2617_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2617_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2618_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2618_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2619_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2619_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2753_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2753_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2836_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2836_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2838_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2838_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2840_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/2840_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3079_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3079_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3394_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3394_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3456_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3456_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3541_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3541_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3600_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3600_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3601_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3601_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3602_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3602_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3603_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3603_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3764_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/3764_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/16396/pg_filenode.map (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/1247_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/1247_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/1249_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/1249_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/1255_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/1255_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/1259_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/1259_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/13370_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/13370_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/13375_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/13375_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/13380_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/13380_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/13385_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/13385_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2600_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2600_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2601_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2601_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2602_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2602_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2603_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2603_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2605_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2605_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2606_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2606_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2607_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2607_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2608_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2608_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2609_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2609_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2610_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2610_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2612_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2612_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2615_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2615_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2616_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2616_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2617_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2617_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2618_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2618_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2619_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2619_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2753_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2753_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2836_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2836_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2838_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2838_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2840_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/2840_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3079_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3079_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3394_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3394_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3456_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3456_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3541_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3541_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3600_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3600_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3601_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3601_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3602_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3602_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3603_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3603_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3764_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/3764_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/4/pg_filenode.map (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/1247_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/1247_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/1249_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/1249_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/1255_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/1255_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/1259_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/1259_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/13370_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/13370_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/13375_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/13375_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/13380_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/13380_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/13385_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/13385_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2600_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2600_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2601_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2601_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2602_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2602_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2603_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2603_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2605_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2605_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2606_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2606_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2607_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2607_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2608_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2608_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2609_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2609_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2610_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2610_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2612_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2612_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2615_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2615_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2616_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2616_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2617_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2617_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2618_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2618_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2619_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2619_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2753_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2753_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2836_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2836_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2838_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2838_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2840_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/2840_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3079_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3079_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3394_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3394_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3456_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3456_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3541_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3541_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3600_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3600_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3601_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3601_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3602_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3602_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3603_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3603_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3764_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/3764_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: base/5/pg_filenode.map (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: cnpg_initialized-cluster-example-5 (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: current_logfiles (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: custom.conf (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: global/1213_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: global/1213_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: global/1260_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: global/1260_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: global/1261_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: global/1261_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: global/1262_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: global/1262_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: global/2396_fsm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: global/2396_vm (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: global/pg_filenode.map (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_hba.conf (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_ident.conf (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_logical/replorigin_checkpoint (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_multixact/members/0000 (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_multixact/offsets/0000 (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000B.history (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000B0000000000000029 (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000B000000000000002A (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000B000000000000002B.partial (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000C.history (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000C000000000000002B (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000C000000000000002C (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000C000000000000002D.partial (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000D.history (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000D000000000000002D (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000D000000000000002E (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000E.history (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000E000000000000002E (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000E000000000000002F.partial (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000F.history (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000F000000000000002F (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000F0000000000000030 (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000F0000000000000031 (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000F0000000000000032 (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/0000000F0000000000000033 (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/00000010.history (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/000000100000000000000033 (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/000000100000000000000034.partial (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/00000011.history (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/000000110000000000000034 (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/000000110000000000000035 (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/000000110000000000000036 (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/000000110000000000000037 (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/000000110000000000000038 (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/000000110000000000000039 (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/00000011000000000000003A (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/00000011000000000000003B (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/00000011000000000000003C (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/00000011000000000000003C.00000028.backup (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/00000011000000000000003D (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/00000011000000000000003E (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/00000012.history (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/00000012000000000000003E (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/00000012000000000000003F (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/00000013.history (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/000000130000000000000040 (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000B.history.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000B000000000000002A.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000B000000000000002B.partial.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000C.history.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000C000000000000002B.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000C000000000000002C.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000C000000000000002D.partial.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000D.history.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000D000000000000002D.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000D000000000000002E.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000E.history.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000E000000000000002E.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000E000000000000002F.partial.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000F.history.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000F000000000000002F.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000F0000000000000030.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000F0000000000000031.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000F0000000000000032.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/0000000F0000000000000033.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/00000010.history.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/000000100000000000000033.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/000000100000000000000034.partial.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/00000011.history.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/000000110000000000000034.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/000000110000000000000035.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/000000110000000000000036.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/000000110000000000000037.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/000000110000000000000038.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/000000110000000000000039.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/00000011000000000000003A.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/00000011000000000000003B.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/00000011000000000000003C.00000028.backup.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/00000011000000000000003C.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/00000011000000000000003D.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/00000011000000000000003E.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/00000012.history.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/00000012000000000000003E.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/00000012000000000000003F.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/00000013.history.done (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_xact/0000 (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: postgresql.auto.conf (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: postgresql.conf (COPY)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: postmaster.opts (REMOVE)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/000000120000000000000040.ready (REMOVE)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/archive_status/00000011000000000000003E.partial.done (REMOVE)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/000000120000000000000041 (REMOVE)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/000000120000000000000040 (REMOVE)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_wal/00000011000000000000003E.partial (REMOVE)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_subtrans/0000 (REMOVE)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: pg_stat/pgstat.stat (REMOVE)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: global/pg_control.old (REMOVE)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: cnpg_initialized-cluster-example-7 (REMOVE)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: backup_manifest (REMOVE)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: need to copy 502 MB (total source directory size is 548 MB)","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: getting 950 file chunks","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \".check-empty-wal-archive\", offset 0, size 0","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"     0/514143 kB (0%) copied","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"backup_label.old\", offset 0, size 177","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/1247_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/1247_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/1249_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/1249_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/1255_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/1255_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/1259_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/1259_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/13370_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/13370_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/13375_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/13375_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/13380_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/13380_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/13385_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/13385_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2600_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2600_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2601_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2601_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2602_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2602_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2603_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2603_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2605_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2605_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2606_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2606_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2607_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2607_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2608_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2608_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2609_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2609_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2610_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2610_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2612_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2612_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2615_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2615_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2616_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2616_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2617_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2617_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2618_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2618_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2619_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2619_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2753_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2753_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2836_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2836_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2838_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2838_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2840_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/2840_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3079_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3079_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3394_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3394_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3456_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3456_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3541_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3541_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3600_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3600_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3601_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3601_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3602_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3602_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3603_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3603_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3764_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/3764_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/1/pg_filenode.map\", offset 0, size 512","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/1247_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/1247_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/1249_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/1249_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/1255_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/1255_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/1259_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/1259_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/13370_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/13370_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/13375_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/13375_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/13380_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/13380_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/13385_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/13385_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2600_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2600_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2601_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2601_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2602_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2602_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2603_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2603_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2605_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2605_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2606_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2606_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2607_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2607_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2608_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2608_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2609_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2609_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2610_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2610_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2612_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2612_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2615_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2615_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2616_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2616_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2617_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2617_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2618_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2618_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2619_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2619_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2753_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2753_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2836_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2836_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2838_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2838_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2840_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/2840_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3079_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3079_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3394_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3394_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3456_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3456_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3541_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3541_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3600_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3600_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3601_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3601_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3602_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3602_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3603_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3603_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3764_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/3764_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16385/pg_filenode.map\", offset 0, size 512","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/1247_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/1247_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/1249_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/1249_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/1255_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/1255_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/1259_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/1259_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/13370_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/13370_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/13375_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/13375_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/13380_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/13380_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/13385_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/13385_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/16409_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/16409_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/16410_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/16410_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/16412_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/16412_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2600_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2600_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2601_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2601_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2602_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2602_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2603_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2603_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2605_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2605_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2606_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2606_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2607_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2607_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2608_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2608_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2609_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2609_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2610_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2610_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2612_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2612_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2615_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2615_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2616_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2616_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2617_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2617_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2618_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2618_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2619_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2619_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2753_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2753_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2836_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2836_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2838_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2838_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2840_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/2840_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3079_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3079_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3394_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3394_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3456_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3456_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3541_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3541_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3600_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3600_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3601_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3601_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3602_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3602_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3603_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3603_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3764_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/3764_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/16396/pg_filenode.map\", offset 0, size 512","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/1247_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/1247_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/1249_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/1249_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/1255_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/1255_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/1259_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/1259_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/13370_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/13370_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/13375_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/13375_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/13380_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/13380_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/13385_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/13385_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2600_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2600_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2601_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2601_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2602_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2602_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2603_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2603_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2605_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2605_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2606_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2606_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2607_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2607_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2608_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2608_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2609_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2609_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2610_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2610_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2612_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2612_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2615_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2615_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2616_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2616_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2617_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2617_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2618_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2618_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2619_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2619_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2753_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2753_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2836_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2836_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2838_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2838_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2840_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/2840_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3079_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3079_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3394_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3394_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3456_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3456_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3541_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3541_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3600_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3600_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3601_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3601_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3602_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3602_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3603_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3603_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3764_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/3764_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/4/pg_filenode.map\", offset 0, size 512","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/1247_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/1247_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/1249_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/1249_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/1255_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/1255_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/1259_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/1259_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/13370_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/13370_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/13375_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/13375_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/13380_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/13380_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/13385_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/13385_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2600_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2600_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2601_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2601_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2602_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2602_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2603_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2603_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2605_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2605_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2606_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2606_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2607_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2607_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2608_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2608_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2609_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2609_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2610_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2610_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2612_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2612_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2615_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2615_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2616_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2616_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2617_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2617_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2618_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2618_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2619_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2619_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2753_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2753_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2836_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2836_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2838_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2838_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2840_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/2840_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3079_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3079_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3394_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3394_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3456_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3456_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3541_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3541_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3600_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3600_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3601_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3601_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3602_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3602_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3603_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3603_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3764_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/3764_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"base/5/pg_filenode.map\", offset 0, size 512","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"cnpg_initialized-cluster-example-5\", offset 0, size 0","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"current_logfiles\", offset 0, size 36","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"custom.conf\", offset 0, size 1092","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"global/1213_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"global/1213_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"global/1260_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"global/1260_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"global/1261_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"global/1261_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"global/1262_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"global/1262_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"global/2396_fsm\", offset 0, size 24576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"global/2396_vm\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"global/pg_filenode.map\", offset 0, size 512","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_hba.conf\", offset 0, size 346","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_ident.conf\", offset 0, size 24","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_logical/replorigin_checkpoint\", offset 0, size 8","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_multixact/members/0000\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_multixact/offsets/0000\", offset 0, size 8192","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B.history\", offset 0, size 428","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B0000000000000029\", offset 0, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B0000000000000029\", offset 1048576, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B0000000000000029\", offset 2097152, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B0000000000000029\", offset 3145728, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B0000000000000029\", offset 4194304, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B0000000000000029\", offset 5242880, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:01Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B0000000000000029\", offset 6291456, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:02Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B0000000000000029\", offset 7340032, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:02Z","logger":"pg_rewind","msg":" 14389/514143 kB (2%) copied","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:02Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B0000000000000029\", offset 8388608, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:02Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B0000000000000029\", offset 9437184, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:02Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B0000000000000029\", offset 10485760, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:02Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B0000000000000029\", offset 11534336, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:02Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B0000000000000029\", offset 12582912, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:02Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B0000000000000029\", offset 13631488, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:02Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B0000000000000029\", offset 14680064, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:02Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B0000000000000029\", offset 15728640, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:02Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002A\", offset 0, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:02Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002A\", offset 1048576, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:02Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002A\", offset 2097152, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:02Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002A\", offset 3145728, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:02Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002A\", offset 4194304, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:02Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002A\", offset 5242880, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:03Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002A\", offset 6291456, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:03Z","logger":"pg_rewind","msg":" 29749/514143 kB (5%) copied","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:03Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002A\", offset 7340032, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:03Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002A\", offset 8388608, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:03Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002A\", offset 9437184, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:03Z","msg":"Readiness probe failing","logging_pod":"cluster-example-7","err":"instance is not ready yet"}
+{"level":"info","ts":"2023-03-27T19:03:03Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002A\", offset 10485760, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:03Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002A\", offset 11534336, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:03Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002A\", offset 12582912, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:03Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002A\", offset 13631488, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:03Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002A\", offset 14680064, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:03Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002A\", offset 15728640, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:03Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002B.partial\", offset 0, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:03Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002B.partial\", offset 1048576, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:04Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002B.partial\", offset 2097152, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:04Z","logger":"pg_rewind","msg":" 42037/514143 kB (8%) copied","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:04Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002B.partial\", offset 3145728, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:04Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002B.partial\", offset 4194304, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:04Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002B.partial\", offset 5242880, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:04Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002B.partial\", offset 6291456, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:04Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002B.partial\", offset 7340032, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:04Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002B.partial\", offset 8388608, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:04Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002B.partial\", offset 9437184, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:04Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002B.partial\", offset 10485760, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:04Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002B.partial\", offset 11534336, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:04Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002B.partial\", offset 12582912, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:04Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002B.partial\", offset 13631488, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:04Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002B.partial\", offset 14680064, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:04Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000B000000000000002B.partial\", offset 15728640, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:04Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000C.history\", offset 0, size 472","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:05Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000C000000000000002B\", offset 0, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:05Z","logger":"pg_rewind","msg":"pg_rewind: received chunk for file \"pg_wal/0000000C000000000000002B\", offset 1048576, size 1048576","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:05Z","logger":"pg_rewind","msg":" 57397/514143 kB (11%) copied","pipe":"stderr","logging_pod":"cluster-example-7"}
+{"level":"info","ts":"2023-03-27T19:03:13Z","msg":"Readiness probe failing","logging_pod":"cluster-example-7","err":"instance is not ready yet"}
+{"level":"info","ts":"2023-03-27T19:03:23Z","msg":"Readiness probe failing","logging_pod":"cluster-example-7","err":"instance is not ready yet"}
+{"level":"info","ts":"2023-03-27T19:03:33Z","msg":"Readiness probe failing","logging_pod":"cluster-example-7","err":"instance is not ready yet"}
+{"level":"info","ts":"2023-03-27T19:03:43Z","msg":"Readiness probe failing","logging_pod":"cluster-example-7","err":"instance is not ready yet"}
+{"level":"info","ts":"2023-03-27T19:03:53Z","msg":"Readiness probe failing","logging_pod":"cluster-example-7","err":"instance is not ready yet"}
+{"level":"info","ts":"2023-03-27T19:04:03Z","msg":"Readiness probe failing","logging_pod":"cluster-example-7","err":"instance is not ready yet"}
+{"level":"info","ts":"2023-03-27T19:04:13Z","msg":"Readiness probe failing","logging_pod":"cluster-example-7","err":"instance is not ready yet"}
+{"level":"info","ts":"2023-03-27T19:04:23Z","msg":"Readiness probe failing","logging_pod":"cluster-example-7","err":"instance is not ready yet"}
+{"level":"info","ts":"2023-03-27T19:04:29Z","msg":"Readiness probe failing","logging_pod":"cluster-example-7","err":"instance is not ready yet"}
+{"level":"info","ts":"2023-03-27T19:04:33Z","msg":"Readiness probe failing","logging_pod":"cluster-example-7","err":"instance is not ready yet"}
+{"level":"info","ts":"2023-03-27T19:04:43Z","msg":"Readiness probe failing","logging_pod":"cluster-example-7","err":"instance is not ready yet"}
+{"level":"info","ts":"2023-03-27T19:04:53Z","msg":"Readiness probe failing","logging_pod":"cluster-example-7","err":"instance is not ready yet"}
+{"level":"info","ts":"2023-03-27T19:05:03Z","msg":"Readiness probe failing","logging_pod":"cluster-example-7","err":"instance is not ready yet"}

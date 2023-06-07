@@ -10,6 +10,15 @@ spec:
     parameters:
       wal_sender_timeout: "10s"
       wal_receiver_timeout: "10s"
+      wal_keep_size: "256MB"
+
+  resources:
+    requests:
+      memory: "1Gi"
+      cpu: "1"
+    limits:
+      memory: "1Gi"
+      cpu: "1"
 
   storage:
     size: 1Gi
@@ -21,3 +30,5 @@ spec:
           storage: 1Gi
       storageClassName: cloud-native-store
       volumeMode: Filesystem
+  monitoring:
+    enablePodMonitor: true

@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres
+  namespace: postgres-test
+spec:
+  selector:
+   matchLabels:
+    app: postgres-test
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: postgres-test
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:15.3
+          imagePullPolicy: "IfNotPresent"
+          env:
+           - name: POSTGRES_USER
+             valueFrom:
+               secretKeyRef:
+                 name: postgres-secret
+                 key: postgres-root-username
+           - name: POSTGRES_PASSWORD
+             valueFrom:
+               secretKeyRef:
+                 name: postgres-secret
+                 key: postgres-root-password
+           - name: POSTGRES_DB
+             valueFrom:
+               configMapKeyRef:
+                 name: postgres-configmap
+                 key: postgres-dbname
+          volumeMounts:
+            - mountPath: /var/lib/postgresql/data
+              name: postgredb
+          resources:
+            requests:
+              memory: "1Gi"
+              cpu: "2"
+            limits:
+              memory: "1Gi"
+              cpu: "2"
+      volumes:
+        - name: postgredb
+          persistentVolumeClaim:
+            claimName: pg-test-pvc
+
+      tolerations:
+      - key: postest
+        operator: "Equal"
+
+
+

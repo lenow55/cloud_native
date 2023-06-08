@@ -2,8 +2,9 @@ kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
   name: pg-test-pvc
+  namespace: postgres-test
 spec:
-  storageClassName: "storage-big-postgresql"
+  storageClassName: storage-big-postgresql
   accessModes:
   - ReadWriteOnce
   resources:

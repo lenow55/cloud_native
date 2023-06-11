@@ -1249,3 +1249,482 @@ initial connection time = 2134.904 ms
 tps = 241.151437 (without initial connection time)
 postgres@dev-pg-postgresql-client:/$ 
 
+kubectl run dev-pg-postgresql-client -it --rm --restart='Never' --namespace default --image docker.io/bitnami/postgresql:15-debian-11 --env="PGPASSWORD=$PSQL_PASS" -- bash
+If you don't see a command prompt, try pressing enter.
+postgres@dev-pg-postgresql-client:/$ date +%H-%M-%S && pgbench --host 10.40.2.21 -U root -c 800 -j 6 -T 600 -P 10 benchmark
+09-05-47
+pgbench (15.3)
+starting vacuum...end.
+progress: 10.0 s, 98.2 tps, lat 2876.939 ms stddev 1581.960, 0 failed
+progress: 20.0 s, 153.1 tps, lat 4596.606 ms stddev 3730.973, 0 failed
+progress: 30.0 s, 141.9 tps, lat 4859.997 ms stddev 4702.010, 0 failed
+progress: 40.0 s, 119.2 tps, lat 5878.564 ms stddev 5786.917, 0 failed
+progress: 50.0 s, 101.0 tps, lat 7283.700 ms stddev 6991.017, 0 failed
+progress: 60.0 s, 96.5 tps, lat 7462.449 ms stddev 7336.671, 0 failed
+progress: 70.0 s, 89.1 tps, lat 8362.394 ms stddev 8947.032, 0 failed
+progress: 80.0 s, 82.6 tps, lat 8357.031 ms stddev 9011.030, 0 failed
+progress: 90.0 s, 80.6 tps, lat 8596.275 ms stddev 9418.765, 0 failed
+progress: 100.0 s, 90.8 tps, lat 9776.105 ms stddev 12164.910, 0 failed
+progress: 110.0 s, 91.2 tps, lat 9142.455 ms stddev 10807.677, 0 failed
+progress: 120.0 s, 92.2 tps, lat 8746.424 ms stddev 11280.574, 0 failed
+progress: 130.0 s, 75.5 tps, lat 9916.326 ms stddev 11202.172, 0 failed
+progress: 140.0 s, 83.7 tps, lat 9798.612 ms stddev 11215.588, 0 failed
+progress: 150.0 s, 78.6 tps, lat 10393.014 ms stddev 11421.299, 0 failed
+progress: 160.0 s, 96.7 tps, lat 9370.716 ms stddev 11281.267, 0 failed
+progress: 170.0 s, 98.3 tps, lat 8608.529 ms stddev 9764.210, 0 failed
+progress: 180.0 s, 98.1 tps, lat 8064.935 ms stddev 9182.501, 0 failed
+progress: 190.0 s, 76.8 tps, lat 8694.930 ms stddev 9484.123, 0 failed
+progress: 200.0 s, 65.7 tps, lat 10796.018 ms stddev 11270.809, 0 failed
+progress: 210.0 s, 80.8 tps, lat 10295.303 ms stddev 10995.291, 0 failed
+progress: 220.0 s, 73.9 tps, lat 10264.425 ms stddev 11199.172, 0 failed
+progress: 230.0 s, 64.6 tps, lat 10958.162 ms stddev 11562.450, 0 failed
+progress: 240.0 s, 71.3 tps, lat 11082.363 ms stddev 11619.467, 0 failed
+progress: 250.0 s, 76.3 tps, lat 12047.610 ms stddev 14789.227, 0 failed
+progress: 260.0 s, 82.6 tps, lat 9968.399 ms stddev 12258.912, 0 failed
+progress: 270.0 s, 80.7 tps, lat 10047.599 ms stddev 11765.727, 0 failed
+progress: 280.0 s, 77.6 tps, lat 10024.756 ms stddev 11267.827, 0 failed
+progress: 290.0 s, 72.5 tps, lat 10349.151 ms stddev 12103.861, 0 failed
+progress: 300.0 s, 68.6 tps, lat 10055.944 ms stddev 11665.257, 0 failed
+progress: 310.0 s, 70.5 tps, lat 11863.283 ms stddev 14154.647, 0 failed
+progress: 320.0 s, 94.4 tps, lat 9865.842 ms stddev 11971.196, 0 failed
+progress: 330.0 s, 87.9 tps, lat 8851.877 ms stddev 11499.016, 0 failed
+progress: 340.0 s, 92.5 tps, lat 8792.066 ms stddev 12299.286, 0 failed
+progress: 350.0 s, 88.9 tps, lat 9346.296 ms stddev 11183.135, 0 failed
+progress: 360.0 s, 91.9 tps, lat 9342.967 ms stddev 12322.307, 0 failed
+progress: 370.0 s, 74.8 tps, lat 10536.010 ms stddev 11773.411, 0 failed
+progress: 380.0 s, 62.6 tps, lat 10619.842 ms stddev 10487.212, 0 failed
+progress: 390.0 s, 63.6 tps, lat 12007.506 ms stddev 11548.586, 0 failed
+progress: 400.0 s, 62.3 tps, lat 12201.339 ms stddev 12885.075, 0 failed
+progress: 410.0 s, 76.9 tps, lat 11619.381 ms stddev 12832.064, 0 failed
+progress: 420.0 s, 82.1 tps, lat 10299.340 ms stddev 12528.822, 0 failed
+progress: 430.0 s, 64.1 tps, lat 10598.292 ms stddev 11726.165, 0 failed
+progress: 440.0 s, 51.4 tps, lat 12708.160 ms stddev 12806.524, 0 failed
+progress: 450.0 s, 76.6 tps, lat 12613.002 ms stddev 13988.380, 0 failed
+progress: 460.0 s, 85.7 tps, lat 10385.569 ms stddev 12862.212, 0 failed
+progress: 470.0 s, 81.2 tps, lat 10346.421 ms stddev 12731.191, 0 failed
+progress: 480.0 s, 92.2 tps, lat 10055.039 ms stddev 12547.384, 0 failed
+progress: 490.0 s, 79.3 tps, lat 9601.656 ms stddev 10418.960, 0 failed
+progress: 500.0 s, 89.4 tps, lat 10017.438 ms stddev 10477.479, 0 failed
+progress: 510.0 s, 112.7 tps, lat 8186.030 ms stddev 9251.870, 0 failed
+progress: 520.0 s, 99.7 tps, lat 7515.775 ms stddev 7705.274, 0 failed
+progress: 530.0 s, 97.4 tps, lat 8106.141 ms stddev 8898.674, 0 failed
+progress: 540.0 s, 102.7 tps, lat 7837.677 ms stddev 8002.911, 0 failed
+progress: 550.0 s, 81.3 tps, lat 8112.103 ms stddev 8443.159, 0 failed
+progress: 560.0 s, 72.8 tps, lat 10439.001 ms stddev 9366.803, 0 failed
+progress: 570.0 s, 78.8 tps, lat 9494.726 ms stddev 9920.621, 0 failed
+progress: 580.0 s, 74.6 tps, lat 10242.792 ms stddev 10742.260, 0 failed
+progress: 590.0 s, 69.3 tps, lat 10453.733 ms stddev 11442.583, 0 failed
+progress: 600.0 s, 72.5 tps, lat 11095.203 ms stddev 11400.158, 0 failed
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 800
+number of threads: 6
+maximum number of tries: 1
+duration: 600 s
+number of transactions actually processed: 51688
+number of failed transactions: 0 (0.000%)
+latency average = 9318.913 ms
+latency stddev = 10867.108 ms
+initial connection time = 2912.895 ms
+tps = 85.382967 (without initial connection time)
+postgres@dev-pg-postgresql-client:/$ date +%H-%M-%S && pgbench --host 10.40.2.21 -U root -c 400 -j 6 -T 600 -P 10 benchmark
+09-17-00
+pgbench (15.3)
+starting vacuum...end.
+progress: 10.0 s, 155.9 tps, lat 1688.203 ms stddev 1030.651, 0 failed
+progress: 20.0 s, 142.9 tps, lat 2558.696 ms stddev 2388.304, 0 failed
+progress: 30.0 s, 138.8 tps, lat 2587.410 ms stddev 2820.990, 0 failed
+progress: 40.0 s, 129.9 tps, lat 3172.088 ms stddev 3644.470, 0 failed
+progress: 50.0 s, 196.0 tps, lat 2162.931 ms stddev 2929.632, 0 failed
+progress: 60.0 s, 136.2 tps, lat 2938.159 ms stddev 3199.088, 0 failed
+progress: 70.0 s, 144.6 tps, lat 2684.279 ms stddev 2980.160, 0 failed
+progress: 80.0 s, 172.7 tps, lat 2268.099 ms stddev 2801.724, 0 failed
+progress: 90.0 s, 165.1 tps, lat 2499.688 ms stddev 3106.642, 0 failed
+progress: 100.0 s, 163.1 tps, lat 2505.832 ms stddev 3060.050, 0 failed
+progress: 110.0 s, 175.6 tps, lat 2369.646 ms stddev 2989.228, 0 failed
+progress: 120.0 s, 131.3 tps, lat 2670.147 ms stddev 2928.426, 0 failed
+progress: 130.0 s, 135.4 tps, lat 2998.650 ms stddev 3660.613, 0 failed
+progress: 140.0 s, 138.9 tps, lat 2914.514 ms stddev 3581.862, 0 failed
+progress: 150.0 s, 151.8 tps, lat 2583.025 ms stddev 3101.702, 0 failed
+progress: 160.0 s, 146.9 tps, lat 2628.307 ms stddev 3397.592, 0 failed
+progress: 170.0 s, 140.8 tps, lat 2837.176 ms stddev 3781.257, 0 failed
+progress: 180.0 s, 117.8 tps, lat 3642.798 ms stddev 4032.181, 0 failed
+progress: 190.0 s, 153.3 tps, lat 2702.591 ms stddev 3340.596, 0 failed
+progress: 200.0 s, 188.5 tps, lat 2187.291 ms stddev 2682.066, 0 failed
+progress: 210.0 s, 199.2 tps, lat 2001.001 ms stddev 2376.054, 0 failed
+progress: 220.0 s, 169.6 tps, lat 2371.751 ms stddev 2887.387, 0 failed
+progress: 230.0 s, 171.5 tps, lat 2318.520 ms stddev 2607.719, 0 failed
+progress: 240.0 s, 189.2 tps, lat 2088.423 ms stddev 2480.243, 0 failed
+progress: 250.0 s, 157.1 tps, lat 2419.034 ms stddev 3051.571, 0 failed
+progress: 260.0 s, 181.4 tps, lat 2224.039 ms stddev 2846.573, 0 failed
+progress: 270.0 s, 158.1 tps, lat 2519.855 ms stddev 3040.551, 0 failed
+progress: 280.0 s, 173.5 tps, lat 2378.259 ms stddev 3133.290, 0 failed
+progress: 290.0 s, 189.2 tps, lat 2149.890 ms stddev 2930.726, 0 failed
+progress: 300.0 s, 139.2 tps, lat 2748.426 ms stddev 2897.401, 0 failed
+progress: 310.0 s, 126.6 tps, lat 3221.642 ms stddev 3465.106, 0 failed
+progress: 320.0 s, 182.8 tps, lat 2226.112 ms stddev 2729.295, 0 failed
+progress: 330.0 s, 170.6 tps, lat 2273.085 ms stddev 2584.296, 0 failed
+progress: 340.0 s, 149.5 tps, lat 2572.719 ms stddev 3179.926, 0 failed
+progress: 350.0 s, 147.3 tps, lat 2756.872 ms stddev 3382.588, 0 failed
+progress: 360.0 s, 103.6 tps, lat 3531.500 ms stddev 3632.276, 0 failed
+progress: 370.0 s, 143.0 tps, lat 3114.176 ms stddev 3888.291, 0 failed
+progress: 380.0 s, 188.8 tps, lat 2103.060 ms stddev 2903.675, 0 failed
+progress: 390.0 s, 177.4 tps, lat 2268.318 ms stddev 2826.058, 0 failed
+progress: 400.0 s, 117.9 tps, lat 3345.316 ms stddev 3256.289, 0 failed
+progress: 410.0 s, 162.0 tps, lat 2749.885 ms stddev 2933.430, 0 failed
+progress: 420.0 s, 163.9 tps, lat 2242.145 ms stddev 2314.041, 0 failed
+progress: 430.0 s, 162.5 tps, lat 2443.719 ms stddev 2828.624, 0 failed
+progress: 440.0 s, 193.9 tps, lat 2061.899 ms stddev 2577.281, 0 failed
+progress: 450.0 s, 184.0 tps, lat 2124.154 ms stddev 2635.471, 0 failed
+progress: 460.0 s, 147.6 tps, lat 2639.688 ms stddev 3243.654, 0 failed
+progress: 470.0 s, 146.7 tps, lat 2648.126 ms stddev 3642.681, 0 failed
+progress: 480.0 s, 123.2 tps, lat 3073.271 ms stddev 3756.270, 0 failed
+progress: 490.0 s, 116.9 tps, lat 3759.479 ms stddev 4369.175, 0 failed
+progress: 500.0 s, 165.6 tps, lat 2635.312 ms stddev 3012.106, 0 failed
+progress: 510.0 s, 213.1 tps, lat 1882.055 ms stddev 2196.878, 0 failed
+progress: 520.0 s, 129.1 tps, lat 2665.262 ms stddev 2659.920, 0 failed
+progress: 530.0 s, 198.8 tps, lat 2219.492 ms stddev 2702.998, 0 failed
+progress: 540.0 s, 144.5 tps, lat 2518.919 ms stddev 3005.008, 0 failed
+progress: 550.0 s, 128.3 tps, lat 3120.979 ms stddev 3466.500, 0 failed
+progress: 560.0 s, 184.0 tps, lat 2350.939 ms stddev 3073.559, 0 failed
+progress: 570.0 s, 187.2 tps, lat 2144.195 ms stddev 2557.130, 0 failed
+progress: 580.0 s, 166.6 tps, lat 2385.944 ms stddev 2756.273, 0 failed
+progress: 590.0 s, 172.9 tps, lat 2352.935 ms stddev 2827.830, 0 failed
+progress: 600.0 s, 136.5 tps, lat 2783.133 ms stddev 2925.400, 0 failed
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 400
+number of threads: 6
+maximum number of tries: 1
+duration: 600 s
+number of transactions actually processed: 95283
+number of failed transactions: 0 (0.000%)
+latency average = 2520.269 ms
+latency stddev = 3044.206 ms
+initial connection time = 1621.275 ms
+tps = 158.320840 (without initial connection time)
+postgres@dev-pg-postgresql-client:/$ date +%H-%M-%S && pgbench --host 10.40.2.22 -U root -c 400 -j 6 -T 600 -P 10 benchmark
+10-53-41
+pgbench (15.3)
+starting vacuum...end.
+progress: 10.0 s, 161.8 tps, lat 1554.057 ms stddev 1205.129, 0 failed
+^C
+postgres@dev-pg-postgresql-client:/$ date +%H-%M-%S && pgbench --host 10.40.2.22 -U root -c 400 -j 6 -T 600 -P 10 benchmark
+10-54-58
+pgbench (15.3)
+starting vacuum...end.
+progress: 10.0 s, 239.2 tps, lat 1294.447 ms stddev 951.929, 0 failed
+progress: 20.0 s, 351.9 tps, lat 1121.234 ms stddev 859.058, 0 failed
+progress: 30.0 s, 259.5 tps, lat 1513.856 ms stddev 1186.149, 0 failed
+progress: 40.0 s, 218.6 tps, lat 1722.825 ms stddev 1255.890, 0 failed
+progress: 50.0 s, 255.9 tps, lat 1561.347 ms stddev 1218.304, 0 failed
+^C
+postgres@dev-pg-postgresql-client:/$ date +%H-%M-%S && pgbench --host 10.40.2.22 -U root -c 400 -j 6 -T 600 -P 10 benchmark
+11-01-47
+pgbench (15.3)
+starting vacuum...end.
+progress: 10.0 s, 239.9 tps, lat 1209.371 ms stddev 846.379, 0 failed
+progress: 20.0 s, 191.2 tps, lat 2124.210 ms stddev 1587.762, 0 failed
+progress: 30.0 s, 347.4 tps, lat 1191.981 ms stddev 883.888, 0 failed
+progress: 40.0 s, 296.8 tps, lat 1300.526 ms stddev 969.404, 0 failed
+^C
+postgres@dev-pg-postgresql-client:/$ date +%H-%M-%S && pgbench --host 10.40.2.22 -U root -c 400 -j 6 -T 600 -P 10 benchmark
+11-02-50
+pgbench (15.3)
+starting vacuum...end.
+progress: 10.0 s, 162.5 tps, lat 1670.468 ms stddev 1132.711, 0 failed
+progress: 20.0 s, 155.0 tps, lat 2246.387 ms stddev 2362.308, 0 failed
+progress: 30.0 s, 212.5 tps, lat 1999.404 ms stddev 2604.366, 0 failed
+progress: 40.0 s, 174.3 tps, lat 2110.455 ms stddev 2446.010, 0 failed
+progress: 50.0 s, 132.6 tps, lat 3192.548 ms stddev 3329.706, 0 failed
+progress: 60.0 s, 224.4 tps, lat 1886.894 ms stddev 2153.033, 0 failed
+progress: 70.0 s, 201.0 tps, lat 1835.114 ms stddev 2100.722, 0 failed
+progress: 80.0 s, 157.8 tps, lat 2447.919 ms stddev 3056.685, 0 failed
+progress: 90.0 s, 177.0 tps, lat 2248.946 ms stddev 2820.836, 0 failed
+progress: 100.0 s, 157.2 tps, lat 2397.733 ms stddev 3020.989, 0 failed
+progress: 110.0 s, 111.7 tps, lat 3459.367 ms stddev 4022.978, 0 failed
+progress: 120.0 s, 176.9 tps, lat 2573.692 ms stddev 3439.187, 0 failed
+progress: 130.0 s, 160.3 tps, lat 2412.249 ms stddev 3052.959, 0 failed
+progress: 140.0 s, 146.9 tps, lat 2706.099 ms stddev 3201.088, 0 failed
+progress: 150.0 s, 188.3 tps, lat 2228.516 ms stddev 2901.367, 0 failed
+progress: 160.0 s, 148.3 tps, lat 2362.506 ms stddev 2655.621, 0 failed
+progress: 170.0 s, 113.0 tps, lat 3535.435 ms stddev 3943.905, 0 failed
+progress: 180.0 s, 154.6 tps, lat 2725.983 ms stddev 3635.668, 0 failed
+progress: 190.0 s, 173.3 tps, lat 2377.653 ms stddev 3186.965, 0 failed
+progress: 200.0 s, 118.1 tps, lat 2806.577 ms stddev 3021.081, 0 failed
+progress: 210.0 s, 141.6 tps, lat 3111.022 ms stddev 4294.092, 0 failed
+progress: 220.0 s, 136.8 tps, lat 3017.015 ms stddev 3939.779, 0 failed
+progress: 230.0 s, 114.3 tps, lat 3436.319 ms stddev 3669.713, 0 failed
+progress: 240.0 s, 153.2 tps, lat 2793.700 ms stddev 3541.668, 0 failed
+progress: 250.0 s, 185.2 tps, lat 2118.852 ms stddev 2584.493, 0 failed
+progress: 260.0 s, 147.1 tps, lat 2810.293 ms stddev 3379.774, 0 failed
+progress: 270.0 s, 187.1 tps, lat 2200.297 ms stddev 2732.589, 0 failed
+progress: 280.0 s, 155.5 tps, lat 2209.357 ms stddev 2611.354, 0 failed
+progress: 290.0 s, 114.9 tps, lat 3788.022 ms stddev 4000.760, 0 failed
+progress: 300.0 s, 134.7 tps, lat 2787.021 ms stddev 2901.509, 0 failed
+progress: 310.0 s, 170.0 tps, lat 2532.285 ms stddev 3078.435, 0 failed
+progress: 320.0 s, 142.7 tps, lat 2560.817 ms stddev 3299.388, 0 failed
+progress: 330.0 s, 185.4 tps, lat 2316.801 ms stddev 3263.002, 0 failed
+progress: 340.0 s, 135.4 tps, lat 2684.943 ms stddev 3267.917, 0 failed
+progress: 350.0 s, 110.2 tps, lat 3782.692 ms stddev 4228.080, 0 failed
+progress: 360.0 s, 153.5 tps, lat 2631.952 ms stddev 3146.841, 0 failed
+progress: 370.0 s, 192.1 tps, lat 2225.542 ms stddev 2861.036, 0 failed
+progress: 380.0 s, 158.8 tps, lat 2536.550 ms stddev 3005.375, 0 failed
+progress: 390.0 s, 169.1 tps, lat 2283.407 ms stddev 2721.900, 0 failed
+progress: 400.0 s, 146.2 tps, lat 2463.996 ms stddev 2866.467, 0 failed
+progress: 410.0 s, 119.2 tps, lat 3517.238 ms stddev 3931.289, 0 failed
+progress: 420.0 s, 158.8 tps, lat 2550.612 ms stddev 3194.738, 0 failed
+progress: 430.0 s, 162.3 tps, lat 2633.505 ms stddev 3384.591, 0 failed
+progress: 440.0 s, 152.7 tps, lat 2548.551 ms stddev 3016.710, 0 failed
+progress: 450.0 s, 177.2 tps, lat 2265.511 ms stddev 2759.806, 0 failed
+progress: 460.0 s, 143.4 tps, lat 2547.129 ms stddev 2914.255, 0 failed
+progress: 470.0 s, 98.8 tps, lat 3984.682 ms stddev 3539.960, 0 failed
+progress: 480.0 s, 93.3 tps, lat 4376.028 ms stddev 3993.728, 0 failed
+progress: 490.0 s, 174.8 tps, lat 2579.718 ms stddev 3237.818, 0 failed
+progress: 500.0 s, 157.6 tps, lat 2553.071 ms stddev 2844.180, 0 failed
+progress: 510.0 s, 218.0 tps, lat 1775.770 ms stddev 2236.254, 0 failed
+progress: 520.0 s, 166.2 tps, lat 2334.315 ms stddev 2653.266, 0 failed
+progress: 530.0 s, 133.9 tps, lat 3053.355 ms stddev 3098.074, 0 failed
+progress: 540.0 s, 210.4 tps, lat 1972.609 ms stddev 2306.976, 0 failed
+progress: 550.0 s, 178.4 tps, lat 2146.570 ms stddev 2467.861, 0 failed
+progress: 560.0 s, 144.3 tps, lat 2581.503 ms stddev 3099.999, 0 failed
+progress: 570.0 s, 179.9 tps, lat 2408.067 ms stddev 3026.044, 0 failed
+progress: 580.0 s, 150.6 tps, lat 2616.024 ms stddev 3112.796, 0 failed
+progress: 590.0 s, 140.3 tps, lat 2896.575 ms stddev 2831.330, 0 failed
+progress: 600.0 s, 198.8 tps, lat 1944.920 ms stddev 2301.534, 0 failed
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 400
+number of threads: 6
+maximum number of tries: 1
+duration: 600 s
+number of transactions actually processed: 94784
+number of failed transactions: 0 (0.000%)
+latency average = 2531.573 ms
+latency stddev = 3082.099 ms
+initial connection time = 1546.298 ms
+tps = 157.651293 (without initial connection time)
+postgres@dev-pg-postgresql-client:/$ date +%H-%M-%S && pgbench --host 10.40.2.22 -U root -c 400 -j 6 -T 600 -P 10 benchmark
+11-34-32
+pgbench (15.3)
+starting vacuum...end.
+progress: 10.0 s, 272.2 tps, lat 1123.874 ms stddev 826.372, 0 failed
+progress: 20.0 s, 324.4 tps, lat 1219.133 ms stddev 882.689, 0 failed
+progress: 30.0 s, 295.3 tps, lat 1267.576 ms stddev 965.364, 0 failed
+progress: 40.0 s, 300.9 tps, lat 1415.208 ms stddev 1136.620, 0 failed
+progress: 50.0 s, 343.6 tps, lat 1177.208 ms stddev 875.382, 0 failed
+progress: 60.0 s, 278.7 tps, lat 1249.924 ms stddev 903.836, 0 failed
+progress: 70.0 s, 241.2 tps, lat 1791.219 ms stddev 1433.318, 0 failed
+progress: 80.0 s, 281.5 tps, lat 1446.745 ms stddev 1127.968, 0 failed
+progress: 90.0 s, 303.9 tps, lat 1238.246 ms stddev 917.127, 0 failed
+progress: 100.0 s, 306.4 tps, lat 1432.844 ms stddev 1162.859, 0 failed
+progress: 110.0 s, 314.3 tps, lat 1271.747 ms stddev 982.019, 0 failed
+progress: 120.0 s, 299.2 tps, lat 1181.329 ms stddev 869.456, 0 failed
+progress: 130.0 s, 274.0 tps, lat 1641.095 ms stddev 1526.445, 0 failed
+progress: 140.0 s, 362.7 tps, lat 1067.965 ms stddev 751.337, 0 failed
+progress: 150.0 s, 259.4 tps, lat 1426.313 ms stddev 1118.223, 0 failed
+progress: 160.0 s, 286.9 tps, lat 1527.680 ms stddev 1255.286, 0 failed
+progress: 170.0 s, 348.5 tps, lat 1126.911 ms stddev 815.416, 0 failed
+progress: 180.0 s, 297.9 tps, lat 1214.848 ms stddev 871.444, 0 failed
+progress: 190.0 s, 348.0 tps, lat 1303.095 ms stddev 1104.466, 0 failed
+progress: 200.0 s, 326.6 tps, lat 1158.837 ms stddev 833.130, 0 failed
+progress: 210.0 s, 288.6 tps, lat 1301.038 ms stddev 1030.176, 0 failed
+progress: 220.0 s, 306.5 tps, lat 1421.553 ms stddev 1170.447, 0 failed
+progress: 230.0 s, 244.9 tps, lat 1601.147 ms stddev 1209.599, 0 failed
+progress: 240.0 s, 296.2 tps, lat 1251.782 ms stddev 935.931, 0 failed
+progress: 250.0 s, 240.6 tps, lat 1823.669 ms stddev 1490.894, 0 failed
+progress: 260.0 s, 353.6 tps, lat 1114.724 ms stddev 834.042, 0 failed
+progress: 270.0 s, 302.9 tps, lat 1204.687 ms stddev 872.385, 0 failed
+progress: 280.0 s, 346.6 tps, lat 1295.447 ms stddev 1046.548, 0 failed
+progress: 290.0 s, 346.5 tps, lat 1110.282 ms stddev 852.473, 0 failed
+progress: 300.0 s, 303.4 tps, lat 1159.855 ms stddev 901.226, 0 failed
+progress: 310.0 s, 258.4 tps, lat 1753.577 ms stddev 1690.975, 0 failed
+progress: 320.0 s, 186.4 tps, lat 2049.453 ms stddev 1484.418, 0 failed
+progress: 330.0 s, 254.5 tps, lat 1518.741 ms stddev 1231.125, 0 failed
+progress: 340.0 s, 272.2 tps, lat 1605.050 ms stddev 1322.325, 0 failed
+progress: 350.0 s, 344.6 tps, lat 1137.594 ms stddev 832.088, 0 failed
+progress: 360.0 s, 288.6 tps, lat 1262.494 ms stddev 916.264, 0 failed
+progress: 370.0 s, 280.2 tps, lat 1566.533 ms stddev 1283.832, 0 failed
+progress: 380.0 s, 343.0 tps, lat 1157.171 ms stddev 824.297, 0 failed
+progress: 390.0 s, 310.6 tps, lat 1170.301 ms stddev 838.802, 0 failed
+progress: 400.0 s, 376.3 tps, lat 1185.755 ms stddev 1020.287, 0 failed
+progress: 410.0 s, 270.3 tps, lat 1479.307 ms stddev 1106.235, 0 failed
+progress: 420.0 s, 277.6 tps, lat 1250.451 ms stddev 883.992, 0 failed
+progress: 430.0 s, 329.1 tps, lat 1350.118 ms stddev 1146.784, 0 failed
+progress: 440.0 s, 300.5 tps, lat 1316.144 ms stddev 1020.856, 0 failed
+progress: 450.0 s, 262.6 tps, lat 1419.292 ms stddev 1066.866, 0 failed
+progress: 460.0 s, 201.9 tps, lat 2129.275 ms stddev 1490.375, 0 failed
+progress: 470.0 s, 190.1 tps, lat 1882.882 ms stddev 1522.202, 0 failed
+progress: 480.0 s, 183.3 tps, lat 2124.634 ms stddev 1599.908, 0 failed
+progress: 490.0 s, 248.3 tps, lat 1856.179 ms stddev 1677.454, 0 failed
+progress: 500.0 s, 307.1 tps, lat 1269.228 ms stddev 978.297, 0 failed
+progress: 510.0 s, 266.5 tps, lat 1389.633 ms stddev 1009.183, 0 failed
+progress: 520.0 s, 273.8 tps, lat 1603.137 ms stddev 1238.539, 0 failed
+progress: 530.0 s, 385.7 tps, lat 1039.852 ms stddev 741.385, 0 failed
+progress: 540.0 s, 307.9 tps, lat 1140.030 ms stddev 805.790, 0 failed
+progress: 550.0 s, 324.7 tps, lat 1358.534 ms stddev 1194.137, 0 failed
+progress: 560.0 s, 328.7 tps, lat 1182.770 ms stddev 949.821, 0 failed
+progress: 570.0 s, 296.6 tps, lat 1264.719 ms stddev 993.978, 0 failed
+progress: 580.0 s, 246.9 tps, lat 1742.981 ms stddev 1427.586, 0 failed
+progress: 590.0 s, 356.3 tps, lat 1161.909 ms stddev 870.512, 0 failed
+progress: 600.0 s, 292.0 tps, lat 1159.611 ms stddev 820.444, 0 failed
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 400
+number of threads: 6
+maximum number of tries: 1
+duration: 600 s
+number of transactions actually processed: 177001
+number of failed transactions: 0 (0.000%)
+latency average = 1355.093 ms
+latency stddev = 1109.026 ms
+initial connection time = 1457.112 ms
+tps = 294.804010 (without initial connection time)
+postgres@dev-pg-postgresql-client:/$ date +%H-%M-%S && pgbench --host 10.40.2.22 -U root -c 100 -j 6 -T 600 -P 10 benchmark
+12-53-29
+pgbench (15.3)
+starting vacuum...end.
+progress: 10.0 s, 318.5 tps, lat 296.131 ms stddev 307.311, 0 failed
+progress: 20.0 s, 202.0 tps, lat 492.346 ms stddev 509.162, 0 failed
+progress: 30.0 s, 217.5 tps, lat 456.084 ms stddev 386.679, 0 failed
+progress: 40.0 s, 254.1 tps, lat 392.134 ms stddev 403.740, 0 failed
+progress: 50.0 s, 318.2 tps, lat 318.189 ms stddev 277.385, 0 failed
+progress: 60.0 s, 343.0 tps, lat 292.231 ms stddev 276.754, 0 failed
+progress: 70.0 s, 333.5 tps, lat 301.390 ms stddev 298.412, 0 failed
+progress: 80.0 s, 367.9 tps, lat 272.515 ms stddev 295.824, 0 failed
+progress: 90.0 s, 319.5 tps, lat 312.220 ms stddev 284.006, 0 failed
+progress: 100.0 s, 336.1 tps, lat 293.383 ms stddev 287.384, 0 failed
+progress: 110.0 s, 436.8 tps, lat 232.178 ms stddev 199.619, 0 failed
+progress: 120.0 s, 449.5 tps, lat 223.014 ms stddev 189.525, 0 failed
+progress: 130.0 s, 347.9 tps, lat 287.076 ms stddev 293.907, 0 failed
+progress: 140.0 s, 386.7 tps, lat 257.211 ms stddev 229.078, 0 failed
+progress: 150.0 s, 457.1 tps, lat 219.331 ms stddev 194.147, 0 failed
+progress: 160.0 s, 301.1 tps, lat 331.566 ms stddev 356.768, 0 failed
+progress: 170.0 s, 236.9 tps, lat 419.871 ms stddev 382.563, 0 failed
+progress: 180.0 s, 390.3 tps, lat 258.226 ms stddev 259.609, 0 failed
+progress: 190.0 s, 204.8 tps, lat 476.960 ms stddev 435.006, 0 failed
+progress: 200.0 s, 289.3 tps, lat 350.766 ms stddev 283.033, 0 failed
+progress: 210.0 s, 354.2 tps, lat 283.335 ms stddev 242.064, 0 failed
+progress: 220.0 s, 318.8 tps, lat 315.333 ms stddev 318.252, 0 failed
+progress: 230.0 s, 476.8 tps, lat 209.997 ms stddev 175.830, 0 failed
+progress: 240.0 s, 379.8 tps, lat 262.726 ms stddev 225.270, 0 failed
+progress: 250.0 s, 336.0 tps, lat 294.833 ms stddev 296.527, 0 failed
+progress: 260.0 s, 366.9 tps, lat 273.794 ms stddev 283.407, 0 failed
+progress: 270.0 s, 407.2 tps, lat 246.915 ms stddev 230.414, 0 failed
+progress: 280.0 s, 362.5 tps, lat 275.460 ms stddev 279.368, 0 failed
+progress: 290.0 s, 373.6 tps, lat 265.243 ms stddev 231.110, 0 failed
+progress: 300.0 s, 471.6 tps, lat 214.038 ms stddev 181.391, 0 failed
+progress: 310.0 s, 363.9 tps, lat 274.795 ms stddev 275.842, 0 failed
+progress: 320.0 s, 454.6 tps, lat 218.781 ms stddev 190.732, 0 failed
+progress: 330.0 s, 325.8 tps, lat 304.180 ms stddev 286.236, 0 failed
+progress: 340.0 s, 353.1 tps, lat 286.002 ms stddev 287.295, 0 failed
+progress: 350.0 s, 406.9 tps, lat 245.709 ms stddev 198.816, 0 failed
+progress: 360.0 s, 367.0 tps, lat 274.852 ms stddev 258.727, 0 failed
+progress: 370.0 s, 302.0 tps, lat 330.256 ms stddev 337.729, 0 failed
+progress: 380.0 s, 406.1 tps, lat 245.835 ms stddev 229.216, 0 failed
+progress: 390.0 s, 322.0 tps, lat 308.987 ms stddev 295.727, 0 failed
+progress: 400.0 s, 245.3 tps, lat 404.363 ms stddev 398.550, 0 failed
+progress: 410.0 s, 188.6 tps, lat 534.687 ms stddev 441.371, 0 failed
+progress: 420.0 s, 388.2 tps, lat 257.849 ms stddev 217.455, 0 failed
+progress: 430.0 s, 283.2 tps, lat 347.105 ms stddev 329.338, 0 failed
+progress: 440.0 s, 380.9 tps, lat 266.909 ms stddev 251.330, 0 failed
+progress: 450.0 s, 320.6 tps, lat 303.277 ms stddev 250.222, 0 failed
+progress: 460.0 s, 288.5 tps, lat 358.917 ms stddev 360.488, 0 failed
+progress: 470.0 s, 369.4 tps, lat 270.269 ms stddev 246.910, 0 failed
+progress: 480.0 s, 452.7 tps, lat 220.220 ms stddev 189.231, 0 failed
+progress: 490.0 s, 201.5 tps, lat 496.657 ms stddev 484.243, 0 failed
+progress: 500.0 s, 371.5 tps, lat 268.616 ms stddev 239.629, 0 failed
+progress: 510.0 s, 349.0 tps, lat 284.903 ms stddev 248.552, 0 failed
+progress: 520.0 s, 230.6 tps, lat 435.148 ms stddev 373.286, 0 failed
+progress: 530.0 s, 394.4 tps, lat 254.297 ms stddev 218.519, 0 failed
+progress: 540.0 s, 392.9 tps, lat 254.707 ms stddev 222.044, 0 failed
+progress: 550.0 s, 329.2 tps, lat 303.734 ms stddev 330.223, 0 failed
+progress: 560.0 s, 388.5 tps, lat 256.899 ms stddev 218.027, 0 failed
+progress: 570.0 s, 391.0 tps, lat 256.546 ms stddev 238.564, 0 failed
+progress: 580.0 s, 282.8 tps, lat 339.780 ms stddev 351.952, 0 failed
+progress: 590.0 s, 243.8 tps, lat 422.926 ms stddev 445.733, 0 failed
+progress: 600.0 s, 252.7 tps, lat 394.081 ms stddev 322.314, 0 failed
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 100
+number of threads: 6
+maximum number of tries: 1
+duration: 600 s
+number of transactions actually processed: 204148
+number of failed transactions: 0 (0.000%)
+latency average = 293.808 ms
+latency stddev = 290.811 ms
+initial connection time = 373.333 ms
+tps = 340.242259 (without initial connection time)
+postgres@dev-pg-postgresql-client:/$ date +%H-%M-%S && pgbench --host 10.40.2.22 -U root -c 100 -j 6 -T 60 -P 10 benchmark
+13-09-21
+pgbench (15.3)
+starting vacuum...end.
+progress: 10.0 s, 394.5 tps, lat 231.755 ms stddev 203.055, 0 failed
+progress: 20.0 s, 248.3 tps, lat 410.765 ms stddev 389.040, 0 failed
+progress: 30.0 s, 393.7 tps, lat 253.089 ms stddev 217.414, 0 failed
+progress: 40.0 s, 302.7 tps, lat 329.115 ms stddev 300.451, 0 failed
+progress: 50.0 s, 341.5 tps, lat 297.426 ms stddev 315.710, 0 failed
+progress: 60.0 s, 315.5 tps, lat 313.423 ms stddev 279.166, 0 failed
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 100
+number of threads: 6
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 20062
+number of failed transactions: 0 (0.000%)
+latency average = 297.864 ms
+latency stddev = 287.155 ms
+initial connection time = 375.221 ms
+tps = 335.060264 (without initial connection time)
+postgres@dev-pg-postgresql-client:/$ date +%H-%M-%S && pgbench --host 10.40.2.22 -U root -c 100 -j 6 -T 60 -P 10 benchmark
+13-15-27
+pgbench (15.3)
+starting vacuum...end.
+progress: 10.0 s, 308.2 tps, lat 300.651 ms stddev 327.793, 0 failed
+progress: 20.0 s, 344.1 tps, lat 296.604 ms stddev 293.112, 0 failed
+^C
+postgres@dev-pg-postgresql-client:/$ date +%H-%M-%S && pgbench --host 10.40.2.22 -U root -c 100 -j 6 -T 60 -P 10 benchmark
+13-35-15
+pgbench (15.3)
+starting vacuum...end.
+progress: 10.0 s, 309.2 tps, lat 297.882 ms stddev 246.264, 0 failed
+progress: 20.0 s, 305.6 tps, lat 330.855 ms stddev 319.730, 0 failed
+^C
+postgres@dev-pg-postgresql-client:/$ date +%H-%M-%S && pgbench --host 10.40.2.22 -U root -c 100 -j 6 -T 60 -P 10 benchmark
+13-35-49
+pgbench (15.3)
+starting vacuum...end.
+progress: 10.0 s, 340.1 tps, lat 279.008 ms stddev 236.144, 0 failed
+^C
+postgres@dev-pg-postgresql-client:/$ date +%H-%M-%S && pgbench --host 10.40.2.22 -U root -c 100 -j 6 -T 60 -P 10 benchmark
+13-44-26
+pgbench (15.3)
+starting vacuum...end.
+progress: 10.0 s, 216.4 tps, lat 428.840 ms stddev 377.389, 0 failed
+progress: 20.0 s, 337.2 tps, lat 299.473 ms stddev 287.032, 0 failed
+progress: 30.0 s, 265.7 tps, lat 377.214 ms stddev 318.327, 0 failed
+progress: 40.0 s, 297.8 tps, lat 324.796 ms stddev 346.858, 0 failed
+progress: 50.0 s, 302.3 tps, lat 343.268 ms stddev 318.265, 0 failed
+progress: 60.0 s, 475.2 tps, lat 210.210 ms stddev 181.610, 0 failed
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 1
+query mode: simple
+number of clients: 100
+number of threads: 6
+maximum number of tries: 1
+duration: 60 s
+number of transactions actually processed: 19046
+number of failed transactions: 0 (0.000%)
+latency average = 313.775 ms
+latency stddev = 305.146 ms
+initial connection time = 368.652 ms
+tps = 317.960124 (without initial connection time)
+

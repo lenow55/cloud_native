@@ -1,0 +1,415 @@
+# started on Fri Jun  9 15:18:07 2023
+
+
+ Performance counter stats for process id '72950':
+
+              0.07 msec task-clock                #    0.000 CPUs utilized
+                 1      context-switches          #   14.675 K/sec
+                 0      cpu-migrations            #    0.000 /sec
+                 0      page-faults               #    0.000 /sec
+                 0      hyperv:hyperv_mmu_flush_tlb_multi #    0.000 /sec
+                 0      tlb:tlb_flush             #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      dummy                     #    0.000 /sec
+
+      60.046527854 seconds time elapsed
+
+# started on Fri Jun  9 15:50:13 2023
+
+
+ Performance counter stats for process id '162792':
+
+         23,027.35 msec task-clock                #    0.651 CPUs utilized
+           476,789      context-switches          #   20.705 K/sec
+           198,001      cpu-migrations            #    8.599 K/sec
+           465,584      page-faults               #   20.219 K/sec
+                 0      hyperv:hyperv_mmu_flush_tlb_multi #    0.000 /sec
+           216,405      tlb:tlb_flush             #    9.398 K/sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      dummy                     #    0.000 /sec
+
+      35.375701884 seconds time elapsed
+
+# started on Fri Jun  9 16:16:05 2023
+
+# started on Fri Jun  9 16:16:37 2023
+
+
+ Performance counter stats for process id '164173':
+
+         23,052.54 msec task-clock                #    0.751 CPUs utilized
+           475,241      context-switches          #   20.616 K/sec
+           201,043      cpu-migrations            #    8.721 K/sec
+           478,520      page-faults               #   20.758 K/sec
+                 0      hyperv:hyperv_mmu_flush_tlb_multi #    0.000 /sec
+           217,892      tlb:tlb_flush             #    9.452 K/sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      dummy                     #    0.000 /sec
+
+      30.689975353 seconds time elapsed
+
+# started on Fri Jun  9 16:26:29 2023
+
+# started on Fri Jun  9 16:30:03 2023
+
+# started on Fri Jun  9 16:30:23 2023
+
+
+ Performance counter stats for process id '171992':
+
+     <not counted> msec task-clock
+     <not counted>      context-switches
+     <not counted>      cpu-migrations
+     <not counted>      page-faults
+     <not counted>      oom:oom_score_adj_update
+     <not counted>      oom:reclaim_retry_zone
+     <not counted>      oom:mark_victim
+     <not counted>      oom:wake_reaper
+     <not counted>      oom:start_task_reaping
+     <not counted>      oom:finish_task_reaping
+     <not counted>      oom:skip_task_reaping
+     <not counted>      oom:compact_retry
+
+       1.837256133 seconds time elapsed
+
+# started on Fri Jun  9 16:30:30 2023
+
+
+ Performance counter stats for process id '171992':
+
+     <not counted> msec task-clock
+     <not counted>      context-switches
+     <not counted>      cpu-migrations
+     <not counted>      page-faults
+     <not counted>      oom:oom_score_adj_update
+     <not counted>      oom:reclaim_retry_zone
+     <not counted>      oom:mark_victim
+     <not counted>      oom:wake_reaper
+     <not counted>      oom:start_task_reaping
+     <not counted>      oom:finish_task_reaping
+     <not counted>      oom:skip_task_reaping
+     <not counted>      oom:compact_retry
+
+       6.006181783 seconds time elapsed
+
+# started on Fri Jun  9 16:32:36 2023
+
+
+ Performance counter stats for process id '171992':
+
+         34,782.18 msec task-clock                #    0.834 CPUs utilized
+           640,007      context-switches          #   18.400 K/sec
+           256,303      cpu-migrations            #    7.369 K/sec
+           482,781      page-faults               #   13.880 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 1      oom:mark_victim           #    0.029 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+           304,298      tlb:tlb_flush             #    8.749 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+
+      41.700128529 seconds time elapsed
+
+# started on Fri Jun  9 16:36:42 2023
+
+
+ Performance counter stats for process id '177619':
+
+         82,480.77 msec task-clock                #    1.372 CPUs utilized
+         1,326,651      context-switches          #   16.084 K/sec
+           517,302      cpu-migrations            #    6.272 K/sec
+           499,612      page-faults               #    6.057 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+           633,565      tlb:tlb_flush             #    7.681 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+
+      60.101243165 seconds time elapsed
+
+# started on Fri Jun  9 16:39:43 2023
+
+
+ Performance counter stats for process id '177619':
+
+         34,688.98 msec task-clock                #    0.853 CPUs utilized
+           617,694      context-switches          #   17.807 K/sec
+           254,357      cpu-migrations            #    7.333 K/sec
+           524,870      page-faults               #   15.131 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+           294,870      tlb:tlb_flush             #    8.500 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+
+      40.665986281 seconds time elapsed
+
+# started on Fri Jun  9 16:41:59 2023
+
+
+ Performance counter stats for process id '177619':
+
+      1,074,577.06 msec task-clock                #    1.791 CPUs utilized
+        10,035,120      context-switches          #    9.339 K/sec
+         3,514,081      cpu-migrations            #    3.270 K/sec
+         1,036,554      page-faults               #  964.616 /sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+         6,089,351      tlb:tlb_flush             #    5.667 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 1      percpu:percpu_free_percpu #    0.001 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+
+     600.123221693 seconds time elapsed
+
+# started on Fri Jun  9 17:01:38 2023
+
+
+ Performance counter stats for process id '177619':
+
+              4.46 msec task-clock                #    0.000 CPUs utilized
+                 3      context-switches          #  672.819 /sec
+                 2      cpu-migrations            #  448.546 /sec
+               677      page-faults               #  151.833 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+               156      tlb:tlb_flush             #   34.987 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 0      percpu:percpu_free_percpu #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+
+      26.373420604 seconds time elapsed
+
+# started on Fri Jun  9 17:04:15 2023
+
+
+ Performance counter stats for process id '177619':
+
+        984,028.47 msec task-clock                #    1.613 CPUs utilized
+        10,159,644      context-switches          #   10.325 K/sec
+         2,808,561      cpu-migrations            #    2.854 K/sec
+         1,040,684      page-faults               #    1.058 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+         7,680,011      tlb:tlb_flush             #    7.805 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 9      percpu:percpu_free_percpu #    0.009 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+
+     610.140502553 seconds time elapsed
+
+# started on Fri Jun  9 17:16:46 2023
+
+
+ Performance counter stats for process id '177619':
+
+        900,970.52 msec task-clock                #    1.477 CPUs utilized
+         9,403,031      context-switches          #   10.437 K/sec
+         2,467,833      cpu-migrations            #    2.739 K/sec
+         1,044,300      page-faults               #    1.159 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+         7,817,263      tlb:tlb_flush             #    8.676 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                10      percpu:percpu_free_percpu #    0.011 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+
+     610.127932293 seconds time elapsed
+

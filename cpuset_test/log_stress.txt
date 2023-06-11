@@ -1,0 +1,28 @@
+## Date 17-03-54
+
+michelin@kube-node3:~$ stress-ng --cpu 1 -l 100 --cpu-method cfloat --timeout 610
+stress-ng: info:  [190469] setting to a 610 second (10 mins, 10.00 secs) run per stressor
+stress-ng: info:  [190469] dispatching hogs: 1 cpu
+^Cstress-ng: info:  [190469] passed: 1: cpu (1)
+stress-ng: info:  [190469] failed: 0
+stress-ng: info:  [190469] skipped: 0
+stress-ng: info:  [190469] successful run completed in 17.68s
+
+michelin@kube-node3:~$ stress-ng --cpu 1 -l 100 --cpu-method cfloat --timeout 610
+## Date 17-04-21
+stress-ng: info:  [192075] setting to a 610 second (10 mins, 10.00 secs) run per stressor
+stress-ng: info:  [192075] dispatching hogs: 1 cpu
+stress-ng: info:  [192075] passed: 1: cpu (1)
+stress-ng: info:  [192075] failed: 0
+stress-ng: info:  [192075] skipped: 0
+stress-ng: info:  [192075] successful run completed in 610.00s (10 mins, 10.00 secs)
+
+michelin@kube-node3:~$ stress-ng --cpu 2 -l 80 --cpu-method cfloat --timeout 610
+## Date 17-16-51
+stress-ng: info:  [198495] setting to a 610 second (10 mins, 10.00 secs) run per stressor
+stress-ng: info:  [198495] dispatching hogs: 2 cpu
+stress-ng: info:  [198495] passed: 2: cpu (2)
+stress-ng: info:  [198495] failed: 0
+stress-ng: info:  [198495] skipped: 0
+stress-ng: info:  [198495] successful run completed in 610.01s (10 mins, 10.01 secs)
+

@@ -1,0 +1,2022 @@
+# started on Fri Jun  9 15:18:07 2023
+
+
+ Performance counter stats for process id '72950':
+
+              0.07 msec task-clock                #    0.000 CPUs utilized
+                 1      context-switches          #   14.675 K/sec
+                 0      cpu-migrations            #    0.000 /sec
+                 0      page-faults               #    0.000 /sec
+                 0      hyperv:hyperv_mmu_flush_tlb_multi #    0.000 /sec
+                 0      tlb:tlb_flush             #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      dummy                     #    0.000 /sec
+
+      60.046527854 seconds time elapsed
+
+# started on Fri Jun  9 15:50:13 2023
+
+
+ Performance counter stats for process id '162792':
+
+         23,027.35 msec task-clock                #    0.651 CPUs utilized
+           476,789      context-switches          #   20.705 K/sec
+           198,001      cpu-migrations            #    8.599 K/sec
+           465,584      page-faults               #   20.219 K/sec
+                 0      hyperv:hyperv_mmu_flush_tlb_multi #    0.000 /sec
+           216,405      tlb:tlb_flush             #    9.398 K/sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      dummy                     #    0.000 /sec
+
+      35.375701884 seconds time elapsed
+
+# started on Fri Jun  9 16:16:05 2023
+
+# started on Fri Jun  9 16:16:37 2023
+
+
+ Performance counter stats for process id '164173':
+
+         23,052.54 msec task-clock                #    0.751 CPUs utilized
+           475,241      context-switches          #   20.616 K/sec
+           201,043      cpu-migrations            #    8.721 K/sec
+           478,520      page-faults               #   20.758 K/sec
+                 0      hyperv:hyperv_mmu_flush_tlb_multi #    0.000 /sec
+           217,892      tlb:tlb_flush             #    9.452 K/sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      dummy                     #    0.000 /sec
+
+      30.689975353 seconds time elapsed
+
+# started on Fri Jun  9 16:26:29 2023
+
+# started on Fri Jun  9 16:30:03 2023
+
+# started on Fri Jun  9 16:30:23 2023
+
+
+ Performance counter stats for process id '171992':
+
+     <not counted> msec task-clock
+     <not counted>      context-switches
+     <not counted>      cpu-migrations
+     <not counted>      page-faults
+     <not counted>      oom:oom_score_adj_update
+     <not counted>      oom:reclaim_retry_zone
+     <not counted>      oom:mark_victim
+     <not counted>      oom:wake_reaper
+     <not counted>      oom:start_task_reaping
+     <not counted>      oom:finish_task_reaping
+     <not counted>      oom:skip_task_reaping
+     <not counted>      oom:compact_retry
+
+       1.837256133 seconds time elapsed
+
+# started on Fri Jun  9 16:30:30 2023
+
+
+ Performance counter stats for process id '171992':
+
+     <not counted> msec task-clock
+     <not counted>      context-switches
+     <not counted>      cpu-migrations
+     <not counted>      page-faults
+     <not counted>      oom:oom_score_adj_update
+     <not counted>      oom:reclaim_retry_zone
+     <not counted>      oom:mark_victim
+     <not counted>      oom:wake_reaper
+     <not counted>      oom:start_task_reaping
+     <not counted>      oom:finish_task_reaping
+     <not counted>      oom:skip_task_reaping
+     <not counted>      oom:compact_retry
+
+       6.006181783 seconds time elapsed
+
+# started on Fri Jun  9 16:32:36 2023
+
+
+ Performance counter stats for process id '171992':
+
+         34,782.18 msec task-clock                #    0.834 CPUs utilized
+           640,007      context-switches          #   18.400 K/sec
+           256,303      cpu-migrations            #    7.369 K/sec
+           482,781      page-faults               #   13.880 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 1      oom:mark_victim           #    0.029 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+           304,298      tlb:tlb_flush             #    8.749 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+
+      41.700128529 seconds time elapsed
+
+# started on Fri Jun  9 16:36:42 2023
+
+
+ Performance counter stats for process id '177619':
+
+         82,480.77 msec task-clock                #    1.372 CPUs utilized
+         1,326,651      context-switches          #   16.084 K/sec
+           517,302      cpu-migrations            #    6.272 K/sec
+           499,612      page-faults               #    6.057 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+           633,565      tlb:tlb_flush             #    7.681 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+
+      60.101243165 seconds time elapsed
+
+# started on Fri Jun  9 16:39:43 2023
+
+
+ Performance counter stats for process id '177619':
+
+         34,688.98 msec task-clock                #    0.853 CPUs utilized
+           617,694      context-switches          #   17.807 K/sec
+           254,357      cpu-migrations            #    7.333 K/sec
+           524,870      page-faults               #   15.131 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+           294,870      tlb:tlb_flush             #    8.500 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+
+      40.665986281 seconds time elapsed
+
+# started on Fri Jun  9 16:41:59 2023
+
+
+ Performance counter stats for process id '177619':
+
+      1,074,577.06 msec task-clock                #    1.791 CPUs utilized
+        10,035,120      context-switches          #    9.339 K/sec
+         3,514,081      cpu-migrations            #    3.270 K/sec
+         1,036,554      page-faults               #  964.616 /sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+         6,089,351      tlb:tlb_flush             #    5.667 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 1      percpu:percpu_free_percpu #    0.001 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+
+     600.123221693 seconds time elapsed
+
+# started on Fri Jun  9 17:01:38 2023
+
+
+ Performance counter stats for process id '177619':
+
+              4.46 msec task-clock                #    0.000 CPUs utilized
+                 3      context-switches          #  672.819 /sec
+                 2      cpu-migrations            #  448.546 /sec
+               677      page-faults               #  151.833 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+               156      tlb:tlb_flush             #   34.987 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 0      percpu:percpu_free_percpu #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+
+      26.373420604 seconds time elapsed
+
+# started on Fri Jun  9 17:04:15 2023
+
+
+ Performance counter stats for process id '177619':
+
+        984,028.47 msec task-clock                #    1.613 CPUs utilized
+        10,159,644      context-switches          #   10.325 K/sec
+         2,808,561      cpu-migrations            #    2.854 K/sec
+         1,040,684      page-faults               #    1.058 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+         7,680,011      tlb:tlb_flush             #    7.805 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 9      percpu:percpu_free_percpu #    0.009 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+
+     610.140502553 seconds time elapsed
+
+# started on Fri Jun  9 17:16:46 2023
+
+
+ Performance counter stats for process id '177619':
+
+        900,970.52 msec task-clock                #    1.477 CPUs utilized
+         9,403,031      context-switches          #   10.437 K/sec
+         2,467,833      cpu-migrations            #    2.739 K/sec
+         1,044,300      page-faults               #    1.159 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+         7,817,263      tlb:tlb_flush             #    8.676 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                10      percpu:percpu_free_percpu #    0.011 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+
+     610.127932293 seconds time elapsed
+# не тот пид поставил
+# это брак
+# started on Sat Jun 10 08:25:05 2023
+
+
+ Performance counter stats for process id '27992':
+
+             17.06 msec task-clock                #    0.000 CPUs utilized
+               373      context-switches          #   21.861 K/sec
+                 0      cpu-migrations            #    0.000 /sec
+                68      page-faults               #    3.985 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+                 0      tlb:tlb_flush             #    0.000 /sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 0      percpu:percpu_free_percpu #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+
+     610.052160557 seconds time elapsed
+
+# started on Sat Jun 10 08:38:11 2023
+
+
+ Performance counter stats for process id '27958':
+
+        460,779.09 msec task-clock                #    0.755 CPUs utilized
+        12,956,680      context-switches          #   28.119 K/sec
+                 0      cpu-migrations            #    0.000 /sec
+         1,193,043      page-faults               #    2.589 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+        12,860,342      tlb:tlb_flush             #   27.910 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 0      percpu:percpu_free_percpu #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+
+     610.008872800 seconds time elapsed
+
+# started on Sat Jun 10 08:52:20 2023
+
+
+ Performance counter stats for process id '27958':
+
+        584,862.12 msec task-clock                #    0.959 CPUs utilized
+         7,261,667      context-switches          #   12.416 K/sec
+                 0      cpu-migrations            #    0.000 /sec
+         1,154,371      page-faults               #    1.974 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+         7,314,788      tlb:tlb_flush             #   12.507 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 0      percpu:percpu_free_percpu #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+
+     610.175598800 seconds time elapsed
+
+# started on Sat Jun 10 10:13:28 2023
+
+
+ Performance counter stats for process id '1793':
+
+     <not counted> msec task-clock
+     <not counted>      context-switches
+     <not counted>      cpu-migrations
+     <not counted>      page-faults
+     <not counted>      oom:oom_score_adj_update
+     <not counted>      oom:reclaim_retry_zone
+     <not counted>      oom:mark_victim
+     <not counted>      oom:wake_reaper
+     <not counted>      oom:start_task_reaping
+     <not counted>      oom:finish_task_reaping
+     <not counted>      oom:skip_task_reaping
+     <not counted>      oom:compact_retry
+     <not counted>      tlb:tlb_flush
+     <not counted>      power:cpu_idle
+     <not counted>      power:powernv_throttle
+     <not counted>      power:pstate_sample
+     <not counted>      power:cpu_frequency
+     <not counted>      power:cpu_frequency_limits
+     <not counted>      power:device_pm_callback_start
+     <not counted>      power:device_pm_callback_end
+     <not counted>      power:suspend_resume
+     <not counted>      power:wakeup_source_activate
+     <not counted>      power:wakeup_source_deactivate
+     <not counted>      power:clock_enable
+     <not counted>      power:clock_disable
+     <not counted>      power:clock_set_rate
+     <not counted>      power:power_domain_target
+     <not counted>      power:pm_qos_add_request
+     <not counted>      power:pm_qos_update_request
+     <not counted>      power:pm_qos_remove_request
+     <not counted>      power:pm_qos_update_target
+     <not counted>      power:pm_qos_update_flags
+     <not counted>      power:dev_pm_qos_add_request
+     <not counted>      power:dev_pm_qos_update_request
+     <not counted>      power:dev_pm_qos_remove_request
+     <not counted>      percpu:percpu_alloc_percpu
+     <not counted>      percpu:percpu_free_percpu
+     <not counted>      percpu:percpu_alloc_percpu_fail
+     <not counted>      percpu:percpu_create_chunk
+     <not counted>      percpu:percpu_destroy_chunk
+
+      29.664668183 seconds time elapsed
+
+# started on Sat Jun 10 10:14:00 2023
+
+
+ Performance counter stats for process id '1793':
+
+        989,635.72 msec task-clock                #    1.622 CPUs utilized
+         9,791,950      context-switches          #    9.894 K/sec
+         1,483,210      cpu-migrations            #    1.499 K/sec
+         1,140,492      page-faults               #    1.152 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+         9,349,870      tlb:tlb_flush             #    9.448 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 1      percpu:percpu_free_percpu #    0.001 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+
+     610.112225904 seconds time elapsed
+
+# started on Sat Jun 10 16:48:00 2023
+
+
+ Performance counter stats for process id '1821':
+
+      1,039,034.97 msec task-clock                #    1.703 CPUs utilized
+         8,684,636      context-switches          #    8.358 K/sec
+         1,355,344      cpu-migrations            #    1.304 K/sec
+         1,132,244      page-faults               #    1.090 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+         8,369,181      tlb:tlb_flush             #    8.055 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 0      percpu:percpu_free_percpu #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+
+     610.100256886 seconds time elapsed
+
+# started on Sat Jun 10 18:12:59 2023
+
+
+ Performance counter stats for process id '1821':
+
+      1,040,125.12 msec task-clock                #    1.705 CPUs utilized
+        10,693,043      context-switches          #   10.281 K/sec
+         1,599,025      cpu-migrations            #    1.537 K/sec
+         1,093,076      page-faults               #    1.051 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+         9,824,253      tlb:tlb_flush             #    9.445 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 0      percpu:percpu_free_percpu #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+                 0      sched:sched_kthread_stop  #    0.000 /sec
+                 0      sched:sched_kthread_stop_ret #    0.000 /sec
+                 0      sched:sched_kthread_work_queue_work #    0.000 /sec
+                 0      sched:sched_kthread_work_execute_start #    0.000 /sec
+                 0      sched:sched_kthread_work_execute_end #    0.000 /sec
+         8,005,560      sched:sched_waking        #    7.697 K/sec
+         7,175,823      sched:sched_wakeup        #    6.899 K/sec
+               811      sched:sched_wakeup_new    #    0.780 /sec
+        10,693,578      sched:sched_switch        #   10.281 K/sec
+         1,565,322      sched:sched_migrate_task  #    1.505 K/sec
+               134      sched:sched_process_free  #    0.129 /sec
+               570      sched:sched_process_exit  #    0.548 /sec
+                 0      sched:sched_wait_task     #    0.000 /sec
+             1,140      sched:sched_process_wait  #    1.096 /sec
+               811      sched:sched_process_fork  #    0.780 /sec
+                 0      sched:sched_process_exec  #    0.000 /sec
+                 0      sched:sched_stat_wait     #    0.000 /sec
+                 0      sched:sched_stat_sleep    #    0.000 /sec
+                 0      sched:sched_stat_iowait   #    0.000 /sec
+                 0      sched:sched_stat_blocked  #    0.000 /sec
+ 1,031,399,985,221      sched:sched_stat_runtime  #  991.611 M/sec
+                 0      sched:sched_pi_setprio    #    0.000 /sec
+                 0      sched:sched_process_hang  #    0.000 /sec
+                 0      sched:sched_move_numa     #    0.000 /sec
+                 0      sched:sched_stick_numa    #    0.000 /sec
+                 0      sched:sched_swap_numa     #    0.000 /sec
+            10,518      sched:sched_wake_idle_without_ipi #   10.112 /sec
+                 0      regulator:regulator_enable #    0.000 /sec
+                 0      regulator:regulator_enable_delay #    0.000 /sec
+                 0      regulator:regulator_enable_complete #    0.000 /sec
+                 0      regulator:regulator_disable #    0.000 /sec
+                 0      regulator:regulator_disable_complete #    0.000 /sec
+                 0      regulator:regulator_bypass_enable #    0.000 /sec
+                 0      regulator:regulator_bypass_enable_complete #    0.000 /sec
+                 0      regulator:regulator_bypass_disable #    0.000 /sec
+                 0      regulator:regulator_bypass_disable_complete #    0.000 /sec
+                 0      regulator:regulator_set_voltage #    0.000 /sec
+                 0      regulator:regulator_set_voltage_complete #    0.000 /sec
+                 0      regmap:regmap_reg_write   #    0.000 /sec
+                 0      regmap:regmap_reg_read    #    0.000 /sec
+                 0      regmap:regmap_reg_read_cache #    0.000 /sec
+                 0      regmap:regmap_hw_read_start #    0.000 /sec
+                 0      regmap:regmap_hw_read_done #    0.000 /sec
+                 0      regmap:regmap_hw_write_start #    0.000 /sec
+                 0      regmap:regmap_hw_write_done #    0.000 /sec
+                 0      regmap:regcache_sync      #    0.000 /sec
+                 0      regmap:regmap_cache_only  #    0.000 /sec
+                 0      regmap:regmap_cache_bypass #    0.000 /sec
+                 0      regmap:regmap_async_write_start #    0.000 /sec
+                 0      regmap:regmap_async_io_complete #    0.000 /sec
+                 0      regmap:regmap_async_complete_start #    0.000 /sec
+                 0      regmap:regmap_async_complete_done #    0.000 /sec
+                 0      regmap:regcache_drop_region #    0.000 /sec
+                 0      migrate:mm_migrate_pages  #    0.000 /sec
+                 0      migrate:mm_migrate_pages_start #    0.000 /sec
+           390,923      kmem:kmalloc              #  375.842 /sec
+         6,283,415      kmem:kmem_cache_alloc     #    6.041 K/sec
+           804,589      kmem:kmalloc_node         #  773.550 /sec
+           555,973      kmem:kmem_cache_alloc_node #  534.525 /sec
+           572,927      kmem:kfree                #  550.825 /sec
+         6,485,366      kmem:kmem_cache_free      #    6.235 K/sec
+           340,136      kmem:mm_page_free         #  327.015 /sec
+           311,497      kmem:mm_page_free_batched #  299.480 /sec
+           460,868      kmem:mm_page_alloc        #  443.089 /sec
+           420,584      kmem:mm_page_alloc_zone_locked #  404.359 /sec
+           267,553      kmem:mm_page_pcpu_drain   #  257.232 /sec
+                17      kmem:mm_page_alloc_extfrag #    0.016 /sec
+           269,977      kmem:rss_stat             #  259.562 /sec
+           730,356      irq_vectors:local_timer_entry #  702.181 /sec
+           730,356      irq_vectors:local_timer_exit #  702.181 /sec
+                 0      irq_vectors:spurious_apic_entry #    0.000 /sec
+                 0      irq_vectors:spurious_apic_exit #    0.000 /sec
+                 0      irq_vectors:error_apic_entry #    0.000 /sec
+                 0      irq_vectors:error_apic_exit #    0.000 /sec
+                 0      irq_vectors:x86_platform_ipi_entry #    0.000 /sec
+                 0      irq_vectors:x86_platform_ipi_exit #    0.000 /sec
+                 0      irq_vectors:irq_work_entry #    0.000 /sec
+                 0      irq_vectors:irq_work_exit #    0.000 /sec
+           873,951      irq_vectors:reschedule_entry #  840.236 /sec
+           873,951      irq_vectors:reschedule_exit #  840.236 /sec
+                 8      irq_vectors:call_function_entry #    0.008 /sec
+                 8      irq_vectors:call_function_exit #    0.008 /sec
+            23,681      irq_vectors:call_function_single_entry #   22.767 /sec
+            23,837      irq_vectors:call_function_single_exit #   22.917 /sec
+                 0      irq_vectors:threshold_apic_entry #    0.000 /sec
+                 0      irq_vectors:threshold_apic_exit #    0.000 /sec
+                 0      irq_vectors:deferred_error_apic_entry #    0.000 /sec
+                 0      irq_vectors:deferred_error_apic_exit #    0.000 /sec
+                 0      irq_vectors:thermal_apic_entry #    0.000 /sec
+                 0      irq_vectors:thermal_apic_exit #    0.000 /sec
+                 0      irq_vectors:vector_config #    0.000 /sec
+                 0      irq_vectors:vector_update #    0.000 /sec
+                 0      irq_vectors:vector_clear  #    0.000 /sec
+                 0      irq_vectors:vector_reserve_managed #    0.000 /sec
+                 0      irq_vectors:vector_reserve #    0.000 /sec
+                 0      irq_vectors:vector_alloc  #    0.000 /sec
+                 0      irq_vectors:vector_alloc_managed #    0.000 /sec
+                 0      irq_vectors:vector_activate #    0.000 /sec
+                 0      irq_vectors:vector_deactivate #    0.000 /sec
+                 0      irq_vectors:vector_teardown #    0.000 /sec
+                 0      irq_vectors:vector_setup  #    0.000 /sec
+                 0      irq_vectors:vector_free_moved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_online #    0.000 /sec
+                 0      irq_matrix:irq_matrix_offline #    0.000 /sec
+                 0      irq_matrix:irq_matrix_reserve #    0.000 /sec
+                 0      irq_matrix:irq_matrix_remove_reserved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_assign_system #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc_reserved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_reserve_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_remove_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_assign #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc #    0.000 /sec
+                 0      irq_matrix:irq_matrix_free #    0.000 /sec
+           334,151      irq:irq_handler_entry     #  321.260 /sec
+           334,151      irq:irq_handler_exit      #  321.260 /sec
+         1,184,004      irq:softirq_entry         #    1.138 K/sec
+         1,184,005      irq:softirq_exit          #    1.138 K/sec
+         1,203,714      irq:softirq_raise         #    1.157 K/sec
+         1,060,039      exceptions:page_fault_user #    1.019 K/sec
+            34,826      exceptions:page_fault_kernel #   33.483 /sec
+                 0      clk:clk_enable            #    0.000 /sec
+                 0      clk:clk_enable_complete   #    0.000 /sec
+                 0      clk:clk_disable           #    0.000 /sec
+                 0      clk:clk_disable_complete  #    0.000 /sec
+                 0      clk:clk_prepare           #    0.000 /sec
+                 0      clk:clk_prepare_complete  #    0.000 /sec
+                 0      clk:clk_unprepare         #    0.000 /sec
+                 0      clk:clk_unprepare_complete #    0.000 /sec
+                 0      clk:clk_set_rate          #    0.000 /sec
+                 0      clk:clk_set_rate_complete #    0.000 /sec
+                 0      clk:clk_set_min_rate      #    0.000 /sec
+                 0      clk:clk_set_max_rate      #    0.000 /sec
+                 0      clk:clk_set_rate_range    #    0.000 /sec
+                 0      clk:clk_set_parent        #    0.000 /sec
+                 0      clk:clk_set_parent_complete #    0.000 /sec
+                 0      clk:clk_set_phase         #    0.000 /sec
+                 0      clk:clk_set_phase_complete #    0.000 /sec
+                 0      clk:clk_set_duty_cycle    #    0.000 /sec
+                 0      clk:clk_set_duty_cycle_complete #    0.000 /sec
+
+     610.133876353 seconds time elapsed
+
+# started on Sat Jun 10 18:35:25 2023
+
+
+ Performance counter stats for process id '1821':
+
+      1,014,739.74 msec task-clock                #    1.663 CPUs utilized
+         9,876,575      context-switches          #    9.733 K/sec
+         1,580,712      cpu-migrations            #    1.558 K/sec
+         1,059,197      page-faults               #    1.044 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+         8,977,434      tlb:tlb_flush             #    8.847 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 0      percpu:percpu_free_percpu #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+                 0      sched:sched_kthread_stop  #    0.000 /sec
+                 0      sched:sched_kthread_stop_ret #    0.000 /sec
+                 0      sched:sched_kthread_work_queue_work #    0.000 /sec
+                 0      sched:sched_kthread_work_execute_start #    0.000 /sec
+                 0      sched:sched_kthread_work_execute_end #    0.000 /sec
+         7,503,032      sched:sched_waking        #    7.394 K/sec
+         6,640,865      sched:sched_wakeup        #    6.544 K/sec
+               811      sched:sched_wakeup_new    #    0.799 /sec
+         9,877,044      sched:sched_switch        #    9.734 K/sec
+         1,551,824      sched:sched_migrate_task  #    1.529 K/sec
+               187      sched:sched_process_free  #    0.184 /sec
+               559      sched:sched_process_exit  #    0.551 /sec
+                 0      sched:sched_wait_task     #    0.000 /sec
+             1,116      sched:sched_process_wait  #    1.100 /sec
+               811      sched:sched_process_fork  #    0.799 /sec
+                 0      sched:sched_process_exec  #    0.000 /sec
+                 0      sched:sched_stat_wait     #    0.000 /sec
+                 0      sched:sched_stat_sleep    #    0.000 /sec
+                 0      sched:sched_stat_iowait   #    0.000 /sec
+                 0      sched:sched_stat_blocked  #    0.000 /sec
+ 1,007,432,319,246      sched:sched_stat_runtime  #  992.799 M/sec
+                 0      sched:sched_pi_setprio    #    0.000 /sec
+                 0      sched:sched_process_hang  #    0.000 /sec
+                 0      sched:sched_move_numa     #    0.000 /sec
+                 0      sched:sched_stick_numa    #    0.000 /sec
+                 0      sched:sched_swap_numa     #    0.000 /sec
+            11,535      sched:sched_wake_idle_without_ipi #   11.367 /sec
+                 0      regulator:regulator_enable #    0.000 /sec
+                 0      regulator:regulator_enable_delay #    0.000 /sec
+                 0      regulator:regulator_enable_complete #    0.000 /sec
+                 0      regulator:regulator_disable #    0.000 /sec
+                 0      regulator:regulator_disable_complete #    0.000 /sec
+                 0      regulator:regulator_bypass_enable #    0.000 /sec
+                 0      regulator:regulator_bypass_enable_complete #    0.000 /sec
+                 0      regulator:regulator_bypass_disable #    0.000 /sec
+                 0      regulator:regulator_bypass_disable_complete #    0.000 /sec
+                 0      regulator:regulator_set_voltage #    0.000 /sec
+                 0      regulator:regulator_set_voltage_complete #    0.000 /sec
+                 0      regmap:regmap_reg_write   #    0.000 /sec
+                 0      regmap:regmap_reg_read    #    0.000 /sec
+                 0      regmap:regmap_reg_read_cache #    0.000 /sec
+                 0      regmap:regmap_hw_read_start #    0.000 /sec
+                 0      regmap:regmap_hw_read_done #    0.000 /sec
+                 0      regmap:regmap_hw_write_start #    0.000 /sec
+                 0      regmap:regmap_hw_write_done #    0.000 /sec
+                 0      regmap:regcache_sync      #    0.000 /sec
+                 0      regmap:regmap_cache_only  #    0.000 /sec
+                 0      regmap:regmap_cache_bypass #    0.000 /sec
+                 0      regmap:regmap_async_write_start #    0.000 /sec
+                 0      regmap:regmap_async_io_complete #    0.000 /sec
+                 0      regmap:regmap_async_complete_start #    0.000 /sec
+                 0      regmap:regmap_async_complete_done #    0.000 /sec
+                 0      regmap:regcache_drop_region #    0.000 /sec
+                 0      migrate:mm_migrate_pages  #    0.000 /sec
+                 0      migrate:mm_migrate_pages_start #    0.000 /sec
+           364,229      kmem:kmalloc              #  358.938 /sec
+         5,952,980      kmem:kmem_cache_alloc     #    5.867 K/sec
+           745,104      kmem:kmalloc_node         #  734.281 /sec
+           524,870      kmem:kmem_cache_alloc_node #  517.246 /sec
+           529,503      kmem:kfree                #  521.812 /sec
+         6,129,123      kmem:kmem_cache_free      #    6.040 K/sec
+           335,226      kmem:mm_page_free         #  330.357 /sec
+           307,792      kmem:mm_page_free_batched #  303.321 /sec
+           457,289      kmem:mm_page_alloc        #  450.647 /sec
+           416,251      kmem:mm_page_alloc_zone_locked #  410.205 /sec
+           264,708      kmem:mm_page_pcpu_drain   #  260.863 /sec
+                 1      kmem:mm_page_alloc_extfrag #    0.001 /sec
+           266,030      kmem:rss_stat             #  262.166 /sec
+           725,226      irq_vectors:local_timer_entry #  714.692 /sec
+           725,226      irq_vectors:local_timer_exit #  714.692 /sec
+                 0      irq_vectors:spurious_apic_entry #    0.000 /sec
+                 0      irq_vectors:spurious_apic_exit #    0.000 /sec
+                 0      irq_vectors:error_apic_entry #    0.000 /sec
+                 0      irq_vectors:error_apic_exit #    0.000 /sec
+                 0      irq_vectors:x86_platform_ipi_entry #    0.000 /sec
+                 0      irq_vectors:x86_platform_ipi_exit #    0.000 /sec
+                 0      irq_vectors:irq_work_entry #    0.000 /sec
+                 0      irq_vectors:irq_work_exit #    0.000 /sec
+           751,558      irq_vectors:reschedule_entry #  740.641 /sec
+           751,558      irq_vectors:reschedule_exit #  740.641 /sec
+               274      irq_vectors:call_function_entry #    0.270 /sec
+               274      irq_vectors:call_function_exit #    0.270 /sec
+            21,607      irq_vectors:call_function_single_entry #   21.293 /sec
+            21,854      irq_vectors:call_function_single_exit #   21.537 /sec
+                 0      irq_vectors:threshold_apic_entry #    0.000 /sec
+                 0      irq_vectors:threshold_apic_exit #    0.000 /sec
+                 0      irq_vectors:deferred_error_apic_entry #    0.000 /sec
+                 0      irq_vectors:deferred_error_apic_exit #    0.000 /sec
+                 0      irq_vectors:thermal_apic_entry #    0.000 /sec
+                 0      irq_vectors:thermal_apic_exit #    0.000 /sec
+                 0      irq_vectors:vector_config #    0.000 /sec
+                 0      irq_vectors:vector_update #    0.000 /sec
+                 0      irq_vectors:vector_clear  #    0.000 /sec
+                 0      irq_vectors:vector_reserve_managed #    0.000 /sec
+                 0      irq_vectors:vector_reserve #    0.000 /sec
+                 0      irq_vectors:vector_alloc  #    0.000 /sec
+                 0      irq_vectors:vector_alloc_managed #    0.000 /sec
+                 0      irq_vectors:vector_activate #    0.000 /sec
+                 0      irq_vectors:vector_deactivate #    0.000 /sec
+                 0      irq_vectors:vector_teardown #    0.000 /sec
+                 0      irq_vectors:vector_setup  #    0.000 /sec
+                 0      irq_vectors:vector_free_moved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_online #    0.000 /sec
+                 0      irq_matrix:irq_matrix_offline #    0.000 /sec
+                 0      irq_matrix:irq_matrix_reserve #    0.000 /sec
+                 0      irq_matrix:irq_matrix_remove_reserved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_assign_system #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc_reserved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_reserve_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_remove_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_assign #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc #    0.000 /sec
+                 0      irq_matrix:irq_matrix_free #    0.000 /sec
+           305,422      irq:irq_handler_entry     #  300.986 /sec
+           305,422      irq:irq_handler_exit      #  300.986 /sec
+         1,099,171      irq:softirq_entry         #    1.083 K/sec
+         1,099,176      irq:softirq_exit          #    1.083 K/sec
+         1,117,237      irq:softirq_raise         #    1.101 K/sec
+         1,030,183      exceptions:page_fault_user #    1.015 K/sec
+            30,509      exceptions:page_fault_kernel #   30.066 /sec
+                 0      clk:clk_enable            #    0.000 /sec
+                 0      clk:clk_enable_complete   #    0.000 /sec
+                 0      clk:clk_disable           #    0.000 /sec
+                 0      clk:clk_disable_complete  #    0.000 /sec
+                 0      clk:clk_prepare           #    0.000 /sec
+                 0      clk:clk_prepare_complete  #    0.000 /sec
+                 0      clk:clk_unprepare         #    0.000 /sec
+                 0      clk:clk_unprepare_complete #    0.000 /sec
+                 0      clk:clk_set_rate          #    0.000 /sec
+                 0      clk:clk_set_rate_complete #    0.000 /sec
+                 0      clk:clk_set_min_rate      #    0.000 /sec
+                 0      clk:clk_set_max_rate      #    0.000 /sec
+                 0      clk:clk_set_rate_range    #    0.000 /sec
+                 0      clk:clk_set_parent        #    0.000 /sec
+                 0      clk:clk_set_parent_complete #    0.000 /sec
+                 0      clk:clk_set_phase         #    0.000 /sec
+                 0      clk:clk_set_phase_complete #    0.000 /sec
+                 0      clk:clk_set_duty_cycle    #    0.000 /sec
+                 0      clk:clk_set_duty_cycle_complete #    0.000 /sec
+
+     610.239669661 seconds time elapsed
+
+# started on Sat Jun 10 18:59:59 2023
+
+
+ Performance counter stats for process id '1786':
+
+         41,907.18 msec task-clock                #    1.439 CPUs utilized
+           629,871      context-switches          #   15.030 K/sec
+           111,990      cpu-migrations            #    2.672 K/sec
+           861,057      page-faults               #   20.547 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+           655,183      tlb:tlb_flush             #   15.634 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 0      percpu:percpu_free_percpu #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+                 0      sched:sched_kthread_stop  #    0.000 /sec
+                 0      sched:sched_kthread_stop_ret #    0.000 /sec
+                 0      sched:sched_kthread_work_queue_work #    0.000 /sec
+                 0      sched:sched_kthread_work_execute_start #    0.000 /sec
+                 0      sched:sched_kthread_work_execute_end #    0.000 /sec
+           498,640      sched:sched_waking        #   11.899 K/sec
+           410,953      sched:sched_wakeup        #    9.806 K/sec
+               802      sched:sched_wakeup_new    #   19.138 /sec
+           629,871      sched:sched_switch        #   15.030 K/sec
+           108,789      sched:sched_migrate_task  #    2.596 K/sec
+               355      sched:sched_process_free  #    8.471 /sec
+               802      sched:sched_process_exit  #   19.138 /sec
+                 0      sched:sched_wait_task     #    0.000 /sec
+               841      sched:sched_process_wait  #   20.068 /sec
+               802      sched:sched_process_fork  #   19.138 /sec
+                 0      sched:sched_process_exec  #    0.000 /sec
+                 0      sched:sched_stat_wait     #    0.000 /sec
+                 0      sched:sched_stat_sleep    #    0.000 /sec
+                 0      sched:sched_stat_iowait   #    0.000 /sec
+                 0      sched:sched_stat_blocked  #    0.000 /sec
+    40,605,288,409      sched:sched_stat_runtime  #  968.934 M/sec
+                 0      sched:sched_pi_setprio    #    0.000 /sec
+                 0      sched:sched_process_hang  #    0.000 /sec
+                 0      sched:sched_move_numa     #    0.000 /sec
+                 0      sched:sched_stick_numa    #    0.000 /sec
+                 0      sched:sched_swap_numa     #    0.000 /sec
+             1,032      sched:sched_wake_idle_without_ipi #   24.626 /sec
+                 0      regulator:regulator_enable #    0.000 /sec
+                 0      regulator:regulator_enable_delay #    0.000 /sec
+                 0      regulator:regulator_enable_complete #    0.000 /sec
+                 0      regulator:regulator_disable #    0.000 /sec
+                 0      regulator:regulator_disable_complete #    0.000 /sec
+                 0      regulator:regulator_bypass_enable #    0.000 /sec
+                 0      regulator:regulator_bypass_enable_complete #    0.000 /sec
+                 0      regulator:regulator_bypass_disable #    0.000 /sec
+                 0      regulator:regulator_bypass_disable_complete #    0.000 /sec
+                 0      regulator:regulator_set_voltage #    0.000 /sec
+                 0      regulator:regulator_set_voltage_complete #    0.000 /sec
+                 0      regmap:regmap_reg_write   #    0.000 /sec
+                 0      regmap:regmap_reg_read    #    0.000 /sec
+                 0      regmap:regmap_reg_read_cache #    0.000 /sec
+                 0      regmap:regmap_hw_read_start #    0.000 /sec
+                 0      regmap:regmap_hw_read_done #    0.000 /sec
+                 0      regmap:regmap_hw_write_start #    0.000 /sec
+                 0      regmap:regmap_hw_write_done #    0.000 /sec
+                 0      regmap:regcache_sync      #    0.000 /sec
+                 0      regmap:regmap_cache_only  #    0.000 /sec
+                 0      regmap:regmap_cache_bypass #    0.000 /sec
+                 0      regmap:regmap_async_write_start #    0.000 /sec
+                 0      regmap:regmap_async_io_complete #    0.000 /sec
+                 0      regmap:regmap_async_complete_start #    0.000 /sec
+                 0      regmap:regmap_async_complete_done #    0.000 /sec
+                 0      regmap:regcache_drop_region #    0.000 /sec
+                 0      migrate:mm_migrate_pages  #    0.000 /sec
+                 0      migrate:mm_migrate_pages_start #    0.000 /sec
+            42,909      kmem:kmalloc              #    1.024 K/sec
+           909,713      kmem:kmem_cache_alloc     #   21.708 K/sec
+            93,295      kmem:kmalloc_node         #    2.226 K/sec
+           181,724      kmem:kmem_cache_alloc_node #    4.336 K/sec
+            87,592      kmem:kfree                #    2.090 K/sec
+         1,045,544      kmem:kmem_cache_free      #   24.949 K/sec
+           427,177      kmem:mm_page_free         #   10.193 K/sec
+           399,712      kmem:mm_page_free_batched #    9.538 K/sec
+           450,124      kmem:mm_page_alloc        #   10.741 K/sec
+           420,095      kmem:mm_page_alloc_zone_locked #   10.024 K/sec
+           376,987      kmem:mm_page_pcpu_drain   #    8.996 K/sec
+                65      kmem:mm_page_alloc_extfrag #    1.551 /sec
+           314,392      kmem:rss_stat             #    7.502 K/sec
+            26,335      irq_vectors:local_timer_entry #  628.413 /sec
+            26,335      irq_vectors:local_timer_exit #  628.413 /sec
+                 0      irq_vectors:spurious_apic_entry #    0.000 /sec
+                 0      irq_vectors:spurious_apic_exit #    0.000 /sec
+                 0      irq_vectors:error_apic_entry #    0.000 /sec
+                 0      irq_vectors:error_apic_exit #    0.000 /sec
+                 0      irq_vectors:x86_platform_ipi_entry #    0.000 /sec
+                 0      irq_vectors:x86_platform_ipi_exit #    0.000 /sec
+                 0      irq_vectors:irq_work_entry #    0.000 /sec
+                 0      irq_vectors:irq_work_exit #    0.000 /sec
+            25,786      irq_vectors:reschedule_entry #  615.312 /sec
+            25,786      irq_vectors:reschedule_exit #  615.312 /sec
+                61      irq_vectors:call_function_entry #    1.456 /sec
+                61      irq_vectors:call_function_exit #    1.456 /sec
+                71      irq_vectors:call_function_single_entry #    1.694 /sec
+                71      irq_vectors:call_function_single_exit #    1.694 /sec
+                 0      irq_vectors:threshold_apic_entry #    0.000 /sec
+                 0      irq_vectors:threshold_apic_exit #    0.000 /sec
+                 0      irq_vectors:deferred_error_apic_entry #    0.000 /sec
+                 0      irq_vectors:deferred_error_apic_exit #    0.000 /sec
+                 0      irq_vectors:thermal_apic_entry #    0.000 /sec
+                 0      irq_vectors:thermal_apic_exit #    0.000 /sec
+                 0      irq_vectors:vector_config #    0.000 /sec
+                 0      irq_vectors:vector_update #    0.000 /sec
+                 0      irq_vectors:vector_clear  #    0.000 /sec
+                 0      irq_vectors:vector_reserve_managed #    0.000 /sec
+                 0      irq_vectors:vector_reserve #    0.000 /sec
+                 0      irq_vectors:vector_alloc  #    0.000 /sec
+                 0      irq_vectors:vector_alloc_managed #    0.000 /sec
+                 0      irq_vectors:vector_activate #    0.000 /sec
+                 0      irq_vectors:vector_deactivate #    0.000 /sec
+                 0      irq_vectors:vector_teardown #    0.000 /sec
+                 0      irq_vectors:vector_setup  #    0.000 /sec
+                 0      irq_vectors:vector_free_moved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_online #    0.000 /sec
+                 0      irq_matrix:irq_matrix_offline #    0.000 /sec
+                 0      irq_matrix:irq_matrix_reserve #    0.000 /sec
+                 0      irq_matrix:irq_matrix_remove_reserved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_assign_system #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc_reserved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_reserve_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_remove_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_assign #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc #    0.000 /sec
+                 0      irq_matrix:irq_matrix_free #    0.000 /sec
+            27,858      irq:irq_handler_entry     #  664.755 /sec
+            27,858      irq:irq_handler_exit      #  664.755 /sec
+            93,854      irq:softirq_entry         #    2.240 K/sec
+            93,854      irq:softirq_exit          #    2.240 K/sec
+            95,418      irq:softirq_raise         #    2.277 K/sec
+           850,433      exceptions:page_fault_user #   20.293 K/sec
+            10,624      exceptions:page_fault_kernel #  253.513 /sec
+                 0      clk:clk_enable            #    0.000 /sec
+                 0      clk:clk_enable_complete   #    0.000 /sec
+                 0      clk:clk_disable           #    0.000 /sec
+                 0      clk:clk_disable_complete  #    0.000 /sec
+                 0      clk:clk_prepare           #    0.000 /sec
+                 0      clk:clk_prepare_complete  #    0.000 /sec
+                 0      clk:clk_unprepare         #    0.000 /sec
+                 0      clk:clk_unprepare_complete #    0.000 /sec
+                 0      clk:clk_set_rate          #    0.000 /sec
+                 0      clk:clk_set_rate_complete #    0.000 /sec
+                 0      clk:clk_set_min_rate      #    0.000 /sec
+                 0      clk:clk_set_max_rate      #    0.000 /sec
+                 0      clk:clk_set_rate_range    #    0.000 /sec
+                 0      clk:clk_set_parent        #    0.000 /sec
+                 0      clk:clk_set_parent_complete #    0.000 /sec
+                 0      clk:clk_set_phase         #    0.000 /sec
+                 0      clk:clk_set_phase_complete #    0.000 /sec
+                 0      clk:clk_set_duty_cycle    #    0.000 /sec
+                 0      clk:clk_set_duty_cycle_complete #    0.000 /sec
+
+      29.112591677 seconds time elapsed
+
+# started on Sat Jun 10 19:05:11 2023
+
+# started on Sat Jun 10 19:05:42 2023
+
+
+ Performance counter stats for process id '1947':
+
+        591,588.04 msec task-clock                #    0.969 CPUs utilized
+         5,826,471      context-switches          #    9.849 K/sec
+                 0      cpu-migrations            #    0.000 /sec
+           951,075      page-faults               #    1.608 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+         5,859,898      tlb:tlb_flush             #    9.905 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 0      percpu:percpu_free_percpu #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+                 0      sched:sched_kthread_stop  #    0.000 /sec
+                 0      sched:sched_kthread_stop_ret #    0.000 /sec
+                 0      sched:sched_kthread_work_queue_work #    0.000 /sec
+                 0      sched:sched_kthread_work_execute_start #    0.000 /sec
+                 0      sched:sched_kthread_work_execute_end #    0.000 /sec
+         3,872,229      sched:sched_waking        #    6.545 K/sec
+         4,043,740      sched:sched_wakeup        #    6.835 K/sec
+               811      sched:sched_wakeup_new    #    1.371 /sec
+         5,827,101      sched:sched_switch        #    9.850 K/sec
+                32      sched:sched_migrate_task  #    0.054 /sec
+                 2      sched:sched_process_free  #    0.003 /sec
+               112      sched:sched_process_exit  #    0.189 /sec
+                 0      sched:sched_wait_task     #    0.000 /sec
+               224      sched:sched_process_wait  #    0.379 /sec
+               811      sched:sched_process_fork  #    1.371 /sec
+                 0      sched:sched_process_exec  #    0.000 /sec
+                 0      sched:sched_stat_wait     #    0.000 /sec
+                 0      sched:sched_stat_sleep    #    0.000 /sec
+                 0      sched:sched_stat_iowait   #    0.000 /sec
+                 0      sched:sched_stat_blocked  #    0.000 /sec
+   591,711,178,478      sched:sched_stat_runtime  #    1.000 G/sec
+                 0      sched:sched_pi_setprio    #    0.000 /sec
+                 0      sched:sched_process_hang  #    0.000 /sec
+                 0      sched:sched_move_numa     #    0.000 /sec
+                 0      sched:sched_stick_numa    #    0.000 /sec
+                 0      sched:sched_swap_numa     #    0.000 /sec
+                 6      sched:sched_wake_idle_without_ipi #    0.010 /sec
+                 0      regulator:regulator_enable #    0.000 /sec
+                 0      regulator:regulator_enable_delay #    0.000 /sec
+                 0      regulator:regulator_enable_complete #    0.000 /sec
+                 0      regulator:regulator_disable #    0.000 /sec
+                 0      regulator:regulator_disable_complete #    0.000 /sec
+                 0      regulator:regulator_bypass_enable #    0.000 /sec
+                 0      regulator:regulator_bypass_enable_complete #    0.000 /sec
+                 0      regulator:regulator_bypass_disable #    0.000 /sec
+                 0      regulator:regulator_bypass_disable_complete #    0.000 /sec
+                 0      regulator:regulator_set_voltage #    0.000 /sec
+                 0      regulator:regulator_set_voltage_complete #    0.000 /sec
+                 0      regmap:regmap_reg_write   #    0.000 /sec
+                 0      regmap:regmap_reg_read    #    0.000 /sec
+                 0      regmap:regmap_reg_read_cache #    0.000 /sec
+                 0      regmap:regmap_hw_read_start #    0.000 /sec
+                 0      regmap:regmap_hw_read_done #    0.000 /sec
+                 0      regmap:regmap_hw_write_start #    0.000 /sec
+                 0      regmap:regmap_hw_write_done #    0.000 /sec
+                 0      regmap:regcache_sync      #    0.000 /sec
+                 0      regmap:regmap_cache_only  #    0.000 /sec
+                 0      regmap:regmap_cache_bypass #    0.000 /sec
+                 0      regmap:regmap_async_write_start #    0.000 /sec
+                 0      regmap:regmap_async_io_complete #    0.000 /sec
+                 0      regmap:regmap_async_complete_start #    0.000 /sec
+                 0      regmap:regmap_async_complete_done #    0.000 /sec
+                 0      regmap:regcache_drop_region #    0.000 /sec
+                 0      migrate:mm_migrate_pages  #    0.000 /sec
+                 0      migrate:mm_migrate_pages_start #    0.000 /sec
+           227,186      kmem:kmalloc              #  384.027 /sec
+         3,635,482      kmem:kmem_cache_alloc     #    6.145 K/sec
+           406,534      kmem:kmalloc_node         #  687.191 /sec
+           340,414      kmem:kmem_cache_alloc_node #  575.424 /sec
+            96,314      kmem:kfree                #  162.806 /sec
+         3,344,642      kmem:kmem_cache_free      #    5.654 K/sec
+            77,456      kmem:mm_page_free         #  130.929 /sec
+            67,400      kmem:mm_page_free_batched #  113.931 /sec
+           437,274      kmem:mm_page_alloc        #  739.153 /sec
+           429,090      kmem:mm_page_alloc_zone_locked #  725.319 /sec
+            56,670      kmem:mm_page_pcpu_drain   #   95.793 /sec
+                62      kmem:mm_page_alloc_extfrag #    0.105 /sec
+           148,973      kmem:rss_stat             #  251.819 /sec
+           626,879      irq_vectors:local_timer_entry #    1.060 K/sec
+           626,879      irq_vectors:local_timer_exit #    1.060 K/sec
+                 0      irq_vectors:spurious_apic_entry #    0.000 /sec
+                 0      irq_vectors:spurious_apic_exit #    0.000 /sec
+                 0      irq_vectors:error_apic_entry #    0.000 /sec
+                 0      irq_vectors:error_apic_exit #    0.000 /sec
+                 0      irq_vectors:x86_platform_ipi_entry #    0.000 /sec
+                 0      irq_vectors:x86_platform_ipi_exit #    0.000 /sec
+                 0      irq_vectors:irq_work_entry #    0.000 /sec
+                 0      irq_vectors:irq_work_exit #    0.000 /sec
+                 0      irq_vectors:reschedule_entry #    0.000 /sec
+                 0      irq_vectors:reschedule_exit #    0.000 /sec
+               107      irq_vectors:call_function_entry #    0.181 /sec
+               107      irq_vectors:call_function_exit #    0.181 /sec
+           256,520      irq_vectors:call_function_single_entry #  433.613 /sec
+           257,218      irq_vectors:call_function_single_exit #  434.792 /sec
+                 0      irq_vectors:threshold_apic_entry #    0.000 /sec
+                 0      irq_vectors:threshold_apic_exit #    0.000 /sec
+                 0      irq_vectors:deferred_error_apic_entry #    0.000 /sec
+                 0      irq_vectors:deferred_error_apic_exit #    0.000 /sec
+                 0      irq_vectors:thermal_apic_entry #    0.000 /sec
+                 0      irq_vectors:thermal_apic_exit #    0.000 /sec
+                 0      irq_vectors:vector_config #    0.000 /sec
+                 0      irq_vectors:vector_update #    0.000 /sec
+                 0      irq_vectors:vector_clear  #    0.000 /sec
+                 0      irq_vectors:vector_reserve_managed #    0.000 /sec
+                 0      irq_vectors:vector_reserve #    0.000 /sec
+                 0      irq_vectors:vector_alloc  #    0.000 /sec
+                 0      irq_vectors:vector_alloc_managed #    0.000 /sec
+                 0      irq_vectors:vector_activate #    0.000 /sec
+                 0      irq_vectors:vector_deactivate #    0.000 /sec
+                 0      irq_vectors:vector_teardown #    0.000 /sec
+                 0      irq_vectors:vector_setup  #    0.000 /sec
+                 0      irq_vectors:vector_free_moved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_online #    0.000 /sec
+                 0      irq_matrix:irq_matrix_offline #    0.000 /sec
+                 0      irq_matrix:irq_matrix_reserve #    0.000 /sec
+                 0      irq_matrix:irq_matrix_remove_reserved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_assign_system #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc_reserved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_reserve_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_remove_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_assign #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc #    0.000 /sec
+                 0      irq_matrix:irq_matrix_free #    0.000 /sec
+            23,335      irq:irq_handler_entry     #   39.445 /sec
+            23,335      irq:irq_handler_exit      #   39.445 /sec
+           248,904      irq:softirq_entry         #  420.739 /sec
+           248,904      irq:softirq_exit          #  420.739 /sec
+           249,340      irq:softirq_raise         #  421.476 /sec
+           926,036      exceptions:page_fault_user #    1.565 K/sec
+            25,345      exceptions:page_fault_kernel #   42.842 /sec
+                 0      clk:clk_enable            #    0.000 /sec
+                 0      clk:clk_enable_complete   #    0.000 /sec
+                 0      clk:clk_disable           #    0.000 /sec
+                 0      clk:clk_disable_complete  #    0.000 /sec
+                 0      clk:clk_prepare           #    0.000 /sec
+                 0      clk:clk_prepare_complete  #    0.000 /sec
+                 0      clk:clk_unprepare         #    0.000 /sec
+                 0      clk:clk_unprepare_complete #    0.000 /sec
+                 0      clk:clk_set_rate          #    0.000 /sec
+                 0      clk:clk_set_rate_complete #    0.000 /sec
+                 0      clk:clk_set_min_rate      #    0.000 /sec
+                 0      clk:clk_set_max_rate      #    0.000 /sec
+                 0      clk:clk_set_rate_range    #    0.000 /sec
+                 0      clk:clk_set_parent        #    0.000 /sec
+                 0      clk:clk_set_parent_complete #    0.000 /sec
+                 0      clk:clk_set_phase         #    0.000 /sec
+                 0      clk:clk_set_phase_complete #    0.000 /sec
+                 0      clk:clk_set_duty_cycle    #    0.000 /sec
+                 0      clk:clk_set_duty_cycle_complete #    0.000 /sec
+
+     610.412083940 seconds time elapsed
+
+# started on Sat Jun 10 19:27:53 2023
+
+
+ Performance counter stats for process id '1947':
+
+         91,256.19 msec task-clock                #    0.864 CPUs utilized
+         1,462,473      context-switches          #   16.026 K/sec
+                 0      cpu-migrations            #    0.000 /sec
+           847,669      page-faults               #    9.289 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+         1,541,799      tlb:tlb_flush             #   16.895 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 0      percpu:percpu_free_percpu #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+                 0      sched:sched_kthread_stop  #    0.000 /sec
+                 0      sched:sched_kthread_stop_ret #    0.000 /sec
+                 0      sched:sched_kthread_work_queue_work #    0.000 /sec
+                 0      sched:sched_kthread_work_execute_start #    0.000 /sec
+                 0      sched:sched_kthread_work_execute_end #    0.000 /sec
+         1,060,835      sched:sched_waking        #   11.625 K/sec
+         1,116,196      sched:sched_wakeup        #   12.231 K/sec
+               802      sched:sched_wakeup_new    #    8.788 /sec
+         1,462,613      sched:sched_switch        #   16.028 K/sec
+                 4      sched:sched_migrate_task  #    0.044 /sec
+                 2      sched:sched_process_free  #    0.022 /sec
+               365      sched:sched_process_exit  #    4.000 /sec
+                 0      sched:sched_wait_task     #    0.000 /sec
+                58      sched:sched_process_wait  #    0.636 /sec
+               802      sched:sched_process_fork  #    8.788 /sec
+                 0      sched:sched_process_exec  #    0.000 /sec
+                 0      sched:sched_stat_wait     #    0.000 /sec
+                 0      sched:sched_stat_sleep    #    0.000 /sec
+                 0      sched:sched_stat_iowait   #    0.000 /sec
+                 0      sched:sched_stat_blocked  #    0.000 /sec
+    91,022,067,115      sched:sched_stat_runtime  #  997.434 M/sec
+                 0      sched:sched_pi_setprio    #    0.000 /sec
+                 0      sched:sched_process_hang  #    0.000 /sec
+                 0      sched:sched_move_numa     #    0.000 /sec
+                 0      sched:sched_stick_numa    #    0.000 /sec
+                 0      sched:sched_swap_numa     #    0.000 /sec
+                 2      sched:sched_wake_idle_without_ipi #    0.022 /sec
+                 0      regulator:regulator_enable #    0.000 /sec
+                 0      regulator:regulator_enable_delay #    0.000 /sec
+                 0      regulator:regulator_enable_complete #    0.000 /sec
+                 0      regulator:regulator_disable #    0.000 /sec
+                 0      regulator:regulator_disable_complete #    0.000 /sec
+                 0      regulator:regulator_bypass_enable #    0.000 /sec
+                 0      regulator:regulator_bypass_enable_complete #    0.000 /sec
+                 0      regulator:regulator_bypass_disable #    0.000 /sec
+                 0      regulator:regulator_bypass_disable_complete #    0.000 /sec
+                 0      regulator:regulator_set_voltage #    0.000 /sec
+                 0      regulator:regulator_set_voltage_complete #    0.000 /sec
+                 0      regmap:regmap_reg_write   #    0.000 /sec
+                 0      regmap:regmap_reg_read    #    0.000 /sec
+                 0      regmap:regmap_reg_read_cache #    0.000 /sec
+                 0      regmap:regmap_hw_read_start #    0.000 /sec
+                 0      regmap:regmap_hw_read_done #    0.000 /sec
+                 0      regmap:regmap_hw_write_start #    0.000 /sec
+                 0      regmap:regmap_hw_write_done #    0.000 /sec
+                 0      regmap:regcache_sync      #    0.000 /sec
+                 0      regmap:regmap_cache_only  #    0.000 /sec
+                 0      regmap:regmap_cache_bypass #    0.000 /sec
+                 0      regmap:regmap_async_write_start #    0.000 /sec
+                 0      regmap:regmap_async_io_complete #    0.000 /sec
+                 0      regmap:regmap_async_complete_start #    0.000 /sec
+                 0      regmap:regmap_async_complete_done #    0.000 /sec
+                 0      regmap:regcache_drop_region #    0.000 /sec
+                 0      migrate:mm_migrate_pages  #    0.000 /sec
+                 0      migrate:mm_migrate_pages_start #    0.000 /sec
+            89,437      kmem:kmalloc              #  980.065 /sec
+         1,462,067      kmem:kmem_cache_alloc     #   16.022 K/sec
+           169,222      kmem:kmalloc_node         #    1.854 K/sec
+           219,413      kmem:kmem_cache_alloc_node #    2.404 K/sec
+            42,134      kmem:kfree                #  461.711 /sec
+         1,251,606      kmem:kmem_cache_free      #   13.715 K/sec
+           223,717      kmem:mm_page_free         #    2.452 K/sec
+           212,208      kmem:mm_page_free_batched #    2.325 K/sec
+           415,089      kmem:mm_page_alloc        #    4.549 K/sec
+           393,660      kmem:mm_page_alloc_zone_locked #    4.314 K/sec
+           199,357      kmem:mm_page_pcpu_drain   #    2.185 K/sec
+                 2      kmem:mm_page_alloc_extfrag #    0.022 /sec
+           213,473      kmem:rss_stat             #    2.339 K/sec
+            81,377      irq_vectors:local_timer_entry #  891.742 /sec
+            81,378      irq_vectors:local_timer_exit #  891.753 /sec
+                 0      irq_vectors:spurious_apic_entry #    0.000 /sec
+                 0      irq_vectors:spurious_apic_exit #    0.000 /sec
+                 0      irq_vectors:error_apic_entry #    0.000 /sec
+                 0      irq_vectors:error_apic_exit #    0.000 /sec
+                 0      irq_vectors:x86_platform_ipi_entry #    0.000 /sec
+                 0      irq_vectors:x86_platform_ipi_exit #    0.000 /sec
+                 0      irq_vectors:irq_work_entry #    0.000 /sec
+                 0      irq_vectors:irq_work_exit #    0.000 /sec
+                 0      irq_vectors:reschedule_entry #    0.000 /sec
+                 0      irq_vectors:reschedule_exit #    0.000 /sec
+                 0      irq_vectors:call_function_entry #    0.000 /sec
+                 0      irq_vectors:call_function_exit #    0.000 /sec
+           101,856      irq_vectors:call_function_single_entry #    1.116 K/sec
+           102,278      irq_vectors:call_function_single_exit #    1.121 K/sec
+                 0      irq_vectors:threshold_apic_entry #    0.000 /sec
+                 0      irq_vectors:threshold_apic_exit #    0.000 /sec
+                 0      irq_vectors:deferred_error_apic_entry #    0.000 /sec
+                 0      irq_vectors:deferred_error_apic_exit #    0.000 /sec
+                 0      irq_vectors:thermal_apic_entry #    0.000 /sec
+                 0      irq_vectors:thermal_apic_exit #    0.000 /sec
+                 0      irq_vectors:vector_config #    0.000 /sec
+                 0      irq_vectors:vector_update #    0.000 /sec
+                 0      irq_vectors:vector_clear  #    0.000 /sec
+                 0      irq_vectors:vector_reserve_managed #    0.000 /sec
+                 0      irq_vectors:vector_reserve #    0.000 /sec
+                 0      irq_vectors:vector_alloc  #    0.000 /sec
+                 0      irq_vectors:vector_alloc_managed #    0.000 /sec
+                 0      irq_vectors:vector_activate #    0.000 /sec
+                 0      irq_vectors:vector_deactivate #    0.000 /sec
+                 0      irq_vectors:vector_teardown #    0.000 /sec
+                 0      irq_vectors:vector_setup  #    0.000 /sec
+                 0      irq_vectors:vector_free_moved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_online #    0.000 /sec
+                 0      irq_matrix:irq_matrix_offline #    0.000 /sec
+                 0      irq_matrix:irq_matrix_reserve #    0.000 /sec
+                 0      irq_matrix:irq_matrix_remove_reserved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_assign_system #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc_reserved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_reserve_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_remove_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_assign #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc #    0.000 /sec
+                 0      irq_matrix:irq_matrix_free #    0.000 /sec
+             5,027      irq:irq_handler_entry     #   55.087 /sec
+             5,027      irq:irq_handler_exit      #   55.087 /sec
+            86,652      irq:softirq_entry         #  949.547 /sec
+            86,653      irq:softirq_exit          #  949.557 /sec
+            86,944      irq:softirq_raise         #  952.746 /sec
+           845,554      exceptions:page_fault_user #    9.266 K/sec
+             9,759      exceptions:page_fault_kernel #  106.941 /sec
+                 0      clk:clk_enable            #    0.000 /sec
+                 0      clk:clk_enable_complete   #    0.000 /sec
+                 0      clk:clk_disable           #    0.000 /sec
+                 0      clk:clk_disable_complete  #    0.000 /sec
+                 0      clk:clk_prepare           #    0.000 /sec
+                 0      clk:clk_prepare_complete  #    0.000 /sec
+                 0      clk:clk_unprepare         #    0.000 /sec
+                 0      clk:clk_unprepare_complete #    0.000 /sec
+                 0      clk:clk_set_rate          #    0.000 /sec
+                 0      clk:clk_set_rate_complete #    0.000 /sec
+                 0      clk:clk_set_min_rate      #    0.000 /sec
+                 0      clk:clk_set_max_rate      #    0.000 /sec
+                 0      clk:clk_set_rate_range    #    0.000 /sec
+                 0      clk:clk_set_parent        #    0.000 /sec
+                 0      clk:clk_set_parent_complete #    0.000 /sec
+                 0      clk:clk_set_phase         #    0.000 /sec
+                 0      clk:clk_set_phase_complete #    0.000 /sec
+                 0      clk:clk_set_duty_cycle    #    0.000 /sec
+                 0      clk:clk_set_duty_cycle_complete #    0.000 /sec
+
+     105.597354957 seconds time elapsed
+
+# started on Sat Jun 10 19:30:42 2023
+
+
+ Performance counter stats for process id '1947':
+
+        391,488.48 msec task-clock                #    0.642 CPUs utilized
+         8,873,174      context-switches          #   22.665 K/sec
+                 0      cpu-migrations            #    0.000 /sec
+           762,113      page-faults               #    1.947 K/sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+         8,547,591      tlb:tlb_flush             #   21.834 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 0      percpu:percpu_free_percpu #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+                 0      sched:sched_kthread_stop  #    0.000 /sec
+                 0      sched:sched_kthread_stop_ret #    0.000 /sec
+                 0      sched:sched_kthread_work_queue_work #    0.000 /sec
+                 0      sched:sched_kthread_work_execute_start #    0.000 /sec
+                 0      sched:sched_kthread_work_execute_end #    0.000 /sec
+         7,492,755      sched:sched_waking        #   19.139 K/sec
+         8,285,574      sched:sched_wakeup        #   21.164 K/sec
+               411      sched:sched_wakeup_new    #    1.050 /sec
+         8,873,174      sched:sched_switch        #   22.665 K/sec
+                19      sched:sched_migrate_task  #    0.049 /sec
+                 9      sched:sched_process_free  #    0.023 /sec
+               411      sched:sched_process_exit  #    1.050 /sec
+                 0      sched:sched_wait_task     #    0.000 /sec
+               809      sched:sched_process_wait  #    2.066 /sec
+               411      sched:sched_process_fork  #    1.050 /sec
+                 0      sched:sched_process_exec  #    0.000 /sec
+                 0      sched:sched_stat_wait     #    0.000 /sec
+                 0      sched:sched_stat_sleep    #    0.000 /sec
+                 0      sched:sched_stat_iowait   #    0.000 /sec
+                 0      sched:sched_stat_blocked  #    0.000 /sec
+   393,499,251,818      sched:sched_stat_runtime  #    1.005 G/sec
+                 0      sched:sched_pi_setprio    #    0.000 /sec
+                 0      sched:sched_process_hang  #    0.000 /sec
+                 0      sched:sched_move_numa     #    0.000 /sec
+                 0      sched:sched_stick_numa    #    0.000 /sec
+                 0      sched:sched_swap_numa     #    0.000 /sec
+                12      sched:sched_wake_idle_without_ipi #    0.031 /sec
+                 0      regulator:regulator_enable #    0.000 /sec
+                 0      regulator:regulator_enable_delay #    0.000 /sec
+                 0      regulator:regulator_enable_complete #    0.000 /sec
+                 0      regulator:regulator_disable #    0.000 /sec
+                 0      regulator:regulator_disable_complete #    0.000 /sec
+                 0      regulator:regulator_bypass_enable #    0.000 /sec
+                 0      regulator:regulator_bypass_enable_complete #    0.000 /sec
+                 0      regulator:regulator_bypass_disable #    0.000 /sec
+                 0      regulator:regulator_bypass_disable_complete #    0.000 /sec
+                 0      regulator:regulator_set_voltage #    0.000 /sec
+                 0      regulator:regulator_set_voltage_complete #    0.000 /sec
+                 0      regmap:regmap_reg_write   #    0.000 /sec
+                 0      regmap:regmap_reg_read    #    0.000 /sec
+                 0      regmap:regmap_reg_read_cache #    0.000 /sec
+                 0      regmap:regmap_hw_read_start #    0.000 /sec
+                 0      regmap:regmap_hw_read_done #    0.000 /sec
+                 0      regmap:regmap_hw_write_start #    0.000 /sec
+                 0      regmap:regmap_hw_write_done #    0.000 /sec
+                 0      regmap:regcache_sync      #    0.000 /sec
+                 0      regmap:regmap_cache_only  #    0.000 /sec
+                 0      regmap:regmap_cache_bypass #    0.000 /sec
+                 0      regmap:regmap_async_write_start #    0.000 /sec
+                 0      regmap:regmap_async_io_complete #    0.000 /sec
+                 0      regmap:regmap_async_complete_start #    0.000 /sec
+                 0      regmap:regmap_async_complete_done #    0.000 /sec
+                 0      regmap:regcache_drop_region #    0.000 /sec
+                 0      migrate:mm_migrate_pages  #    0.000 /sec
+                 0      migrate:mm_migrate_pages_start #    0.000 /sec
+         1,165,621      kmem:kmalloc              #    2.977 K/sec
+         9,254,373      kmem:kmem_cache_alloc     #   23.639 K/sec
+         2,050,545      kmem:kmalloc_node         #    5.238 K/sec
+         1,096,384      kmem:kmem_cache_alloc_node #    2.801 K/sec
+           343,788      kmem:kfree                #  878.156 /sec
+         9,938,658      kmem:kmem_cache_free      #   25.387 K/sec
+           296,936      kmem:mm_page_free         #  758.480 /sec
+           249,157      kmem:mm_page_free_batched #  636.435 /sec
+           273,594      kmem:mm_page_alloc        #  698.856 /sec
+           263,566      kmem:mm_page_alloc_zone_locked #  673.241 /sec
+           271,215      kmem:mm_page_pcpu_drain   #  692.779 /sec
+                 0      kmem:mm_page_alloc_extfrag #    0.000 /sec
+           168,126      kmem:rss_stat             #  429.453 /sec
+           235,702      irq_vectors:local_timer_entry #  602.066 /sec
+           235,702      irq_vectors:local_timer_exit #  602.066 /sec
+                 0      irq_vectors:spurious_apic_entry #    0.000 /sec
+                 0      irq_vectors:spurious_apic_exit #    0.000 /sec
+                 0      irq_vectors:error_apic_entry #    0.000 /sec
+                 0      irq_vectors:error_apic_exit #    0.000 /sec
+                 0      irq_vectors:x86_platform_ipi_entry #    0.000 /sec
+                 0      irq_vectors:x86_platform_ipi_exit #    0.000 /sec
+                 0      irq_vectors:irq_work_entry #    0.000 /sec
+                 0      irq_vectors:irq_work_exit #    0.000 /sec
+                 0      irq_vectors:reschedule_entry #    0.000 /sec
+                 0      irq_vectors:reschedule_exit #    0.000 /sec
+                 0      irq_vectors:call_function_entry #    0.000 /sec
+                 0      irq_vectors:call_function_exit #    0.000 /sec
+           794,012      irq_vectors:call_function_single_entry #    2.028 K/sec
+           794,012      irq_vectors:call_function_single_exit #    2.028 K/sec
+                 0      irq_vectors:threshold_apic_entry #    0.000 /sec
+                 0      irq_vectors:threshold_apic_exit #    0.000 /sec
+                 0      irq_vectors:deferred_error_apic_entry #    0.000 /sec
+                 0      irq_vectors:deferred_error_apic_exit #    0.000 /sec
+                 0      irq_vectors:thermal_apic_entry #    0.000 /sec
+                 0      irq_vectors:thermal_apic_exit #    0.000 /sec
+                 0      irq_vectors:vector_config #    0.000 /sec
+                 0      irq_vectors:vector_update #    0.000 /sec
+                 0      irq_vectors:vector_clear  #    0.000 /sec
+                 0      irq_vectors:vector_reserve_managed #    0.000 /sec
+                 0      irq_vectors:vector_reserve #    0.000 /sec
+                 0      irq_vectors:vector_alloc  #    0.000 /sec
+                 0      irq_vectors:vector_alloc_managed #    0.000 /sec
+                 0      irq_vectors:vector_activate #    0.000 /sec
+                 0      irq_vectors:vector_deactivate #    0.000 /sec
+                 0      irq_vectors:vector_teardown #    0.000 /sec
+                 0      irq_vectors:vector_setup  #    0.000 /sec
+                 0      irq_vectors:vector_free_moved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_online #    0.000 /sec
+                 0      irq_matrix:irq_matrix_offline #    0.000 /sec
+                 0      irq_matrix:irq_matrix_reserve #    0.000 /sec
+                 0      irq_matrix:irq_matrix_remove_reserved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_assign_system #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc_reserved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_reserve_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_remove_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_assign #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc #    0.000 /sec
+                 0      irq_matrix:irq_matrix_free #    0.000 /sec
+            24,406      irq:irq_handler_entry     #   62.342 /sec
+            24,406      irq:irq_handler_exit      #   62.342 /sec
+         1,094,842      irq:softirq_entry         #    2.797 K/sec
+         1,094,842      irq:softirq_exit          #    2.797 K/sec
+         1,098,357      irq:softirq_raise         #    2.806 K/sec
+           688,824      exceptions:page_fault_user #    1.760 K/sec
+            73,289      exceptions:page_fault_kernel #  187.206 /sec
+                 0      clk:clk_enable            #    0.000 /sec
+                 0      clk:clk_enable_complete   #    0.000 /sec
+                 0      clk:clk_disable           #    0.000 /sec
+                 0      clk:clk_disable_complete  #    0.000 /sec
+                 0      clk:clk_prepare           #    0.000 /sec
+                 0      clk:clk_prepare_complete  #    0.000 /sec
+                 0      clk:clk_unprepare         #    0.000 /sec
+                 0      clk:clk_unprepare_complete #    0.000 /sec
+                 0      clk:clk_set_rate          #    0.000 /sec
+                 0      clk:clk_set_rate_complete #    0.000 /sec
+                 0      clk:clk_set_min_rate      #    0.000 /sec
+                 0      clk:clk_set_max_rate      #    0.000 /sec
+                 0      clk:clk_set_rate_range    #    0.000 /sec
+                 0      clk:clk_set_parent        #    0.000 /sec
+                 0      clk:clk_set_parent_complete #    0.000 /sec
+                 0      clk:clk_set_phase         #    0.000 /sec
+                 0      clk:clk_set_phase_complete #    0.000 /sec
+                 0      clk:clk_set_duty_cycle    #    0.000 /sec
+                 0      clk:clk_set_duty_cycle_complete #    0.000 /sec
+
+     610.100590795 seconds time elapsed
+
+# started on Sun Jun 11 09:16:58 2023
+
+
+ Performance counter stats for process id '1827':
+
+        811,108.49 msec task-clock                #    1.330 CPUs utilized
+        10,800,309      context-switches          #   13.315 K/sec
+         2,281,879      cpu-migrations            #    2.813 K/sec
+           714,475      page-faults               #  880.862 /sec
+                 0      oom:oom_score_adj_update  #    0.000 /sec
+                 0      oom:reclaim_retry_zone    #    0.000 /sec
+                 0      oom:mark_victim           #    0.000 /sec
+                 0      oom:wake_reaper           #    0.000 /sec
+                 0      oom:start_task_reaping    #    0.000 /sec
+                 0      oom:finish_task_reaping   #    0.000 /sec
+                 0      oom:skip_task_reaping     #    0.000 /sec
+                 0      oom:compact_retry         #    0.000 /sec
+         8,791,781      tlb:tlb_flush             #   10.839 K/sec
+                 0      power:cpu_idle            #    0.000 /sec
+                 0      power:powernv_throttle    #    0.000 /sec
+                 0      power:pstate_sample       #    0.000 /sec
+                 0      power:cpu_frequency       #    0.000 /sec
+                 0      power:cpu_frequency_limits #    0.000 /sec
+                 0      power:device_pm_callback_start #    0.000 /sec
+                 0      power:device_pm_callback_end #    0.000 /sec
+                 0      power:suspend_resume      #    0.000 /sec
+                 0      power:wakeup_source_activate #    0.000 /sec
+                 0      power:wakeup_source_deactivate #    0.000 /sec
+                 0      power:clock_enable        #    0.000 /sec
+                 0      power:clock_disable       #    0.000 /sec
+                 0      power:clock_set_rate      #    0.000 /sec
+                 0      power:power_domain_target #    0.000 /sec
+                 0      power:pm_qos_add_request  #    0.000 /sec
+                 0      power:pm_qos_update_request #    0.000 /sec
+                 0      power:pm_qos_remove_request #    0.000 /sec
+                 0      power:pm_qos_update_target #    0.000 /sec
+                 0      power:pm_qos_update_flags #    0.000 /sec
+                 0      power:dev_pm_qos_add_request #    0.000 /sec
+                 0      power:dev_pm_qos_update_request #    0.000 /sec
+                 0      power:dev_pm_qos_remove_request #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu #    0.000 /sec
+                 0      percpu:percpu_free_percpu #    0.000 /sec
+                 0      percpu:percpu_alloc_percpu_fail #    0.000 /sec
+                 0      percpu:percpu_create_chunk #    0.000 /sec
+                 0      percpu:percpu_destroy_chunk #    0.000 /sec
+                 0      sched:sched_kthread_stop  #    0.000 /sec
+                 0      sched:sched_kthread_stop_ret #    0.000 /sec
+                 0      sched:sched_kthread_work_queue_work #    0.000 /sec
+                 0      sched:sched_kthread_work_execute_start #    0.000 /sec
+                 0      sched:sched_kthread_work_execute_end #    0.000 /sec
+         8,318,831      sched:sched_waking        #   10.256 K/sec
+         6,618,152      sched:sched_wakeup        #    8.159 K/sec
+               411      sched:sched_wakeup_new    #    0.507 /sec
+        10,800,309      sched:sched_switch        #   13.315 K/sec
+         2,217,031      sched:sched_migrate_task  #    2.733 K/sec
+                94      sched:sched_process_free  #    0.116 /sec
+               411      sched:sched_process_exit  #    0.507 /sec
+                 0      sched:sched_wait_task     #    0.000 /sec
+               809      sched:sched_process_wait  #    0.997 /sec
+               411      sched:sched_process_fork  #    0.507 /sec
+                 0      sched:sched_process_exec  #    0.000 /sec
+                 0      sched:sched_stat_wait     #    0.000 /sec
+                 0      sched:sched_stat_sleep    #    0.000 /sec
+                 0      sched:sched_stat_iowait   #    0.000 /sec
+                 0      sched:sched_stat_blocked  #    0.000 /sec
+   809,691,521,420      sched:sched_stat_runtime  #  998.253 M/sec
+                 0      sched:sched_pi_setprio    #    0.000 /sec
+                 0      sched:sched_process_hang  #    0.000 /sec
+                 0      sched:sched_move_numa     #    0.000 /sec
+                 0      sched:sched_stick_numa    #    0.000 /sec
+                 0      sched:sched_swap_numa     #    0.000 /sec
+            24,787      sched:sched_wake_idle_without_ipi #   30.559 /sec
+                 0      regulator:regulator_enable #    0.000 /sec
+                 0      regulator:regulator_enable_delay #    0.000 /sec
+                 0      regulator:regulator_enable_complete #    0.000 /sec
+                 0      regulator:regulator_disable #    0.000 /sec
+                 0      regulator:regulator_disable_complete #    0.000 /sec
+                 0      regulator:regulator_bypass_enable #    0.000 /sec
+                 0      regulator:regulator_bypass_enable_complete #    0.000 /sec
+                 0      regulator:regulator_bypass_disable #    0.000 /sec
+                 0      regulator:regulator_bypass_disable_complete #    0.000 /sec
+                 0      regulator:regulator_set_voltage #    0.000 /sec
+                 0      regulator:regulator_set_voltage_complete #    0.000 /sec
+                 0      regmap:regmap_reg_write   #    0.000 /sec
+                 0      regmap:regmap_reg_read    #    0.000 /sec
+                 0      regmap:regmap_reg_read_cache #    0.000 /sec
+                 0      regmap:regmap_hw_read_start #    0.000 /sec
+                 0      regmap:regmap_hw_read_done #    0.000 /sec
+                 0      regmap:regmap_hw_write_start #    0.000 /sec
+                 0      regmap:regmap_hw_write_done #    0.000 /sec
+                 0      regmap:regcache_sync      #    0.000 /sec
+                 0      regmap:regmap_cache_only  #    0.000 /sec
+                 0      regmap:regmap_cache_bypass #    0.000 /sec
+                 0      regmap:regmap_async_write_start #    0.000 /sec
+                 0      regmap:regmap_async_io_complete #    0.000 /sec
+                 0      regmap:regmap_async_complete_start #    0.000 /sec
+                 0      regmap:regmap_async_complete_done #    0.000 /sec
+                 0      regmap:regcache_drop_region #    0.000 /sec
+                 0      migrate:mm_migrate_pages  #    0.000 /sec
+                 0      migrate:mm_migrate_pages_start #    0.000 /sec
+           768,851      kmem:kmalloc              #  947.902 /sec
+         6,380,987      kmem:kmem_cache_alloc     #    7.867 K/sec
+         1,537,145      kmem:kmalloc_node         #    1.895 K/sec
+           858,358      kmem:kmem_cache_alloc_node #    1.058 K/sec
+           991,954      kmem:kfree                #    1.223 K/sec
+         6,992,229      kmem:kmem_cache_free      #    8.621 K/sec
+           275,769      kmem:mm_page_free         #  339.990 /sec
+           237,920      kmem:mm_page_free_batched #  293.327 /sec
+           266,442      kmem:mm_page_alloc        #  328.491 /sec
+           231,462      kmem:mm_page_alloc_zone_locked #  285.365 /sec
+           220,171      kmem:mm_page_pcpu_drain   #  271.445 /sec
+                 3      kmem:mm_page_alloc_extfrag #    0.004 /sec
+           169,003      kmem:rss_stat             #  208.361 /sec
+           390,242      irq_vectors:local_timer_entry #  481.122 /sec
+           390,242      irq_vectors:local_timer_exit #  481.122 /sec
+                 0      irq_vectors:spurious_apic_entry #    0.000 /sec
+                 0      irq_vectors:spurious_apic_exit #    0.000 /sec
+                 0      irq_vectors:error_apic_entry #    0.000 /sec
+                 0      irq_vectors:error_apic_exit #    0.000 /sec
+                 0      irq_vectors:x86_platform_ipi_entry #    0.000 /sec
+                 0      irq_vectors:x86_platform_ipi_exit #    0.000 /sec
+                 0      irq_vectors:irq_work_entry #    0.000 /sec
+                 0      irq_vectors:irq_work_exit #    0.000 /sec
+           396,228      irq_vectors:reschedule_entry #  488.502 /sec
+           396,228      irq_vectors:reschedule_exit #  488.502 /sec
+                14      irq_vectors:call_function_entry #    0.017 /sec
+                14      irq_vectors:call_function_exit #    0.017 /sec
+             4,061      irq_vectors:call_function_single_entry #    5.007 /sec
+             4,061      irq_vectors:call_function_single_exit #    5.007 /sec
+                 0      irq_vectors:threshold_apic_entry #    0.000 /sec
+                 0      irq_vectors:threshold_apic_exit #    0.000 /sec
+                 0      irq_vectors:deferred_error_apic_entry #    0.000 /sec
+                 0      irq_vectors:deferred_error_apic_exit #    0.000 /sec
+                 0      irq_vectors:thermal_apic_entry #    0.000 /sec
+                 0      irq_vectors:thermal_apic_exit #    0.000 /sec
+                 0      irq_vectors:vector_config #    0.000 /sec
+                 0      irq_vectors:vector_update #    0.000 /sec
+                 0      irq_vectors:vector_clear  #    0.000 /sec
+                 0      irq_vectors:vector_reserve_managed #    0.000 /sec
+                 0      irq_vectors:vector_reserve #    0.000 /sec
+                 0      irq_vectors:vector_alloc  #    0.000 /sec
+                 0      irq_vectors:vector_alloc_managed #    0.000 /sec
+                 0      irq_vectors:vector_activate #    0.000 /sec
+                 0      irq_vectors:vector_deactivate #    0.000 /sec
+                 0      irq_vectors:vector_teardown #    0.000 /sec
+                 0      irq_vectors:vector_setup  #    0.000 /sec
+                 0      irq_vectors:vector_free_moved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_online #    0.000 /sec
+                 0      irq_matrix:irq_matrix_offline #    0.000 /sec
+                 0      irq_matrix:irq_matrix_reserve #    0.000 /sec
+                 0      irq_matrix:irq_matrix_remove_reserved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_assign_system #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc_reserved #    0.000 /sec
+                 0      irq_matrix:irq_matrix_reserve_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_remove_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc_managed #    0.000 /sec
+                 0      irq_matrix:irq_matrix_assign #    0.000 /sec
+                 0      irq_matrix:irq_matrix_alloc #    0.000 /sec
+                 0      irq_matrix:irq_matrix_free #    0.000 /sec
+           573,604      irq:irq_handler_entry     #  707.185 /sec
+           573,604      irq:irq_handler_exit      #  707.185 /sec
+         1,994,802      irq:softirq_entry         #    2.459 K/sec
+         1,994,802      irq:softirq_exit          #    2.459 K/sec
+         2,025,770      irq:softirq_raise         #    2.498 K/sec
+           659,708      exceptions:page_fault_user #  813.341 /sec
+            54,767      exceptions:page_fault_kernel #   67.521 /sec
+                 0      clk:clk_enable            #    0.000 /sec
+                 0      clk:clk_enable_complete   #    0.000 /sec
+                 0      clk:clk_disable           #    0.000 /sec
+                 0      clk:clk_disable_complete  #    0.000 /sec
+                 0      clk:clk_prepare           #    0.000 /sec
+                 0      clk:clk_prepare_complete  #    0.000 /sec
+                 0      clk:clk_unprepare         #    0.000 /sec
+                 0      clk:clk_unprepare_complete #    0.000 /sec
+                 0      clk:clk_set_rate          #    0.000 /sec
+                 0      clk:clk_set_rate_complete #    0.000 /sec
+                 0      clk:clk_set_min_rate      #    0.000 /sec
+                 0      clk:clk_set_max_rate      #    0.000 /sec
+                 0      clk:clk_set_rate_range    #    0.000 /sec
+                 0      clk:clk_set_parent        #    0.000 /sec
+                 0      clk:clk_set_parent_complete #    0.000 /sec
+                 0      clk:clk_set_phase         #    0.000 /sec
+                 0      clk:clk_set_phase_complete #    0.000 /sec
+                 0      clk:clk_set_duty_cycle    #    0.000 /sec
+                 0      clk:clk_set_duty_cycle_complete #    0.000 /sec
+
+     610.050233104 seconds time elapsed
+

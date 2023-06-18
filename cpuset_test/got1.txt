@@ -1,0 +1,7 @@
+postgres@dev-pg-postgresql-client:/$ 
+ export PSQL_PASS=$(kubectl get secret -n postgres-test postgres-secret -o jsonpath="{.data.postgres-root-password}" | base64 --decode)
+Git | Bash v5.1 | cpuset_test
+ [21:21]  lenow@ArchGame  ~/actual_project/cloud_native_pg/cpuset_test  (master =)
+$ kubectl run dev-pg-postgresql-client -it --rm --restart='Never' --namespace default --image docker.io/bitnami/postgresql:15-debian-11 --env="PGPASSWORD=$PSQL_PASS" -- bash
+If you don't see a command prompt, try pressing enter.
+postgres@dev-pg-postgresql-client:/$ date +%H-%M-%S && pgbench --host 10.40.2.22 -U root -c 800 -j 6 -T 600 -P 10 benchmark

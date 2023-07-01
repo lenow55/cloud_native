@@ -1,0 +1,105 @@
+node2
+Arrival Time: Mar 27, 2023 11:04:11.985827000 MSK
+Acknowledgment Number: 32217
+Sequence Number: 52023580
+node1
+Arrival Time: Mar 27, 2023 11:04:11.984317000 MSK
+Acknowledgment Number: 32217
+Sequence Number: 52023580
+
+С этого момента все пакеты пропадают
+node2
+Arrival Time: Mar 27, 2023 11:04:11.985838000 MSK
+Acknowledgment Number: 32217
+Sequence Number: 52024978
+node1
+А здесь этого пакета просто нет
+
+
+node2
+Arrival Time: Mar 27, 2023 11:04:17.109470000 MSK
+Sequence Number: 52026376    (relative sequence number)
+Acknowledgment Number: 32217
+node1
+Arrival Time: Mar 27, 2023 11:04:11.984833000 MSK
+Sequence Number: 52026376    (relative sequence number)
+Acknowledgment Number: 32217    (relative ack number)
+
+node2
+Arrival Time: Mar 27, 2023 11:04:17.111678000 MSK
+[This frame is a (suspected) out-of-order segment]
+Acknowledgment Number: 32217    (relative ack number)
+Sequence Number: 52087888    (relative sequence number)
+node1
+Arrival Time: Mar 27, 2023 11:04:11.984864000 MSK
+Acknowledgment Number: 32217    (relative ack number)
+Sequence Number: 52087888    (relative sequence number)
+
+node2
+Arrival Time: Mar 27, 2023 11:04:17.112270000 MSK
+[This frame is a (suspected) out-of-order segment]
+Sequence Number: 52152196    (relative sequence number)
+Acknowledgment Number: 32217    (relative ack number)
+node1
+Arrival Time: Mar 27, 2023 11:04:11.984889000 MSK
+Sequence Number: 52152196    (relative sequence number)
+Acknowledgment Number: 32217    (relative ack number)
+
+node2
+Arrival Time: Mar 27, 2023 11:04:17.112328000 MSK
+[This frame is a (suspected) out-of-order segment]
+Sequence Number: 52216504    (relative sequence number)
+Acknowledgment Number: 32217    (relative ack number)
+node1
+Arrival Time: Mar 27, 2023 11:04:11.984906000 MSK
+Sequence Number: 52216504    (relative sequence number)
+Acknowledgment Number: 32217    (relative ack number)
+
+node2
+Arrival Time: Mar 27, 2023 11:04:17.112635000 MSK
+[This frame is a (suspected) out-of-order segment]
+Sequence Number: 52280812    (relative sequence number)
+Acknowledgment Number: 32217    (relative ack number)
+node1
+Arrival Time: Mar 27, 2023 11:04:11.984923000 MSK
+Sequence Number: 52280812    (relative sequence number)
+Acknowledgment Number: 32217    (relative ack number)
+
+node2
+Arrival Time: Mar 27, 2023 11:04:17.112637000 MSK
+[This frame is a (suspected) out-of-order segment]
+Sequence Number: 52282210    (relative sequence number)
+Acknowledgment Number: 32217    (relative ack number)
+node1
+Arrival Time: Mar 27, 2023 11:04:11.999323000 MSK
+Sequence Number: 52282210    (relative sequence number)
+Acknowledgment Number: 32217    (relative ack number)
+
+Пошли ретрансмиссии старых пакетов
+node2
+Arrival Time: Mar 27, 2023 11:04:17.109612000 MSK
+Arrival Time: Mar 27, 2023 11:04:17.109617000 MSK
+Arrival Time: Mar 27, 2023 11:04:17.109619000 MSK
+Arrival Time: Mar 27, 2023 11:04:17.111510000 MSK
+Sequence Number: 52026376    (relative sequence number)
+Acknowledgment Number: 32217    (relative ack number)
+node1
+Arrival Time: Mar 27, 2023 11:04:12.207334000 MSK
+Arrival Time: Mar 27, 2023 11:04:12.647358000 MSK
+Arrival Time: Mar 27, 2023 11:04:13.479373000 MSK
+Arrival Time: Mar 27, 2023 11:04:15.143327000 MSK
+Sequence Number: 52026376    (relative sequence number)
+Acknowledgment Number: 32217    (relative ack number)
+
+
+
+node2
+Arrival Time: Mar 27, 2023 11:04:17.110968000 MSK
+Sequence Number: 52026376    (relative sequence number)
+Acknowledgment Number: 32217    (relative ack number)
+node1
+Arrival Time: Mar 27, 2023 11:04:17.108833000 MSK
+
+Sequence Number: 52283608    (relative sequence number)
+
+Acknowledgment Number: 32217    (relative ack number)

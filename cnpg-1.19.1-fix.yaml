@@ -12398,8 +12398,8 @@ spec:
         - /manager
         env:
         - name: OPERATOR_IMAGE_NAME
-          value: ghcr.io/cloudnative-pg/cloudnative-pg:1.19.1
-          # value: lenow/cloudnative-pg:lenow-any
+          # value: ghcr.io/cloudnative-pg/cloudnative-pg:1.19.1
+          value: lenow/cloudnative-pg:lenow-any
         - name: OPERATOR_NAMESPACE
           valueFrom:
             fieldRef:

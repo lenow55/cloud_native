@@ -7,7 +7,7 @@ metadata:
   name: cloud-native-pv
 spec:
   capacity:
-   storage: 1Gi
+   storage: 2Gi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
@@ -22,7 +22,8 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - kube-node1
+          - kube-node3
+          - kube-master
 ---
 kind: PersistentVolume
 apiVersion: v1
@@ -31,10 +32,9 @@ metadata:
     type: local
     app.kubernetes.io/name: cloud-native-pv2
   name: cloud-native-pv2
-  namespace: apexfastapi
 spec:
   capacity:
-   storage: 1Gi
+   storage: 2Gi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce

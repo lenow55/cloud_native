@@ -1,6 +1,13 @@
 {
     "yaml.schemas": {
-        "kubernetes": "cpuset_test/*.yaml"
+        "kubernetes": [
+            "*yaml"
+        ],
+        "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.20.5-standalone-strict/all.json": [
+          "file:///home/lenow/actual_project/cloud_native_pg/big_postgres_pgpool/cluster-example.yaml",
+          "file:///home/lenow/actual_project/cloud_native_pg/big_postgres_pgpool/cloud_n_pv.yaml",
+          "cpuset_test/*yaml"
+        ]
     }
 
 }

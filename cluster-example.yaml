@@ -10,7 +10,10 @@ spec:
     parameters:
       wal_sender_timeout: "10s"
       wal_receiver_timeout: "10s"
-      wal_keep_size: "256MB"
+      wal_keep_size: "1.5GB"
+      max_wal_size: "1.5GB"
+      max_connections: "1000"
+      shared_buffers: "512MB"
 
   resources:
     requests:
@@ -21,14 +24,12 @@ spec:
       cpu: "1"
 
   storage:
-    size: 1Gi
+    size: 4Gi
     pvcTemplate:
       accessModes:
         - ReadWriteOnce
       resources:
         requests:
-          storage: 1Gi
+          storage: 4Gi
       storageClassName: cloud-native-store
       volumeMode: Filesystem
-  monitoring:
-    enablePodMonitor: true

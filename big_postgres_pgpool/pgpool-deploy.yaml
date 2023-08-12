@@ -13,19 +13,9 @@ spec:
       labels:
         app: pgpool
     spec:
-      tolerations:
-        - key: "postgres-pool"
-          operator: "Equal"
       containers:
       - name: pgpool
         image: pgpool/pgpool
-        resources:
-          requests:
-            memory: "6Gi"
-            cpu: "6"
-          limits:
-            memory: "6Gi"
-            cpu: "6"
         env:
         - name: POSTGRES_USERNAME
           valueFrom:
@@ -59,17 +49,12 @@ spec:
         volumeMounts:
         - name: pgpool-config
           mountPath: /config
-        - name: pgpool-oiddir
-          mountPath: /var/log/pgpool/oiddir
         #- name: pgpool-tls
         #  mountPath: /config/tls
       volumes:
       - name: pgpool-config
         configMap:
           name: pgpool-config
-      - name: pgpool-oiddir
-        persistentVolumeClaim:
-          claimName: pgpool-pvc
       # Configure your own TLS certificate.
       # If not set, Pgpool-II will automatically generate the TLS certificate if ssl = on.
       #- name: pgpool-tls
@@ -88,52 +73,3 @@ spec:
     protocol: TCP
     port: 9999
     targetPort: 9999
-
----
-apiVersion: v1
-kind: PersistentVolume
-metadata:
-  name: pv-pgpool
-  labels:
-    type: local
-spec:
-  capacity:
-    storage: 2Gi
-  volumeMode: Filesystem
-  accessModes:
-  - ReadWriteOnce
-  persistentVolumeReclaimPolicy: Retain
-  storageClassName: storage-pgpool
-  local:
-    path: /mnt/pgpool
-  nodeAffinity:
-    required:
-      nodeSelectorTerms:
-      - matchExpressions:
-        - key: kubernetes.io/hostname
-          operator: In
-          values:
-          - kube-node4
-
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: pgpool-pvc
-  namespace: default
-spec:
-  storageClassName: storage-pgpool
-  accessModes:
-  - ReadWriteOnce
-  resources:
-    requests:
-      storage: 2Gi
-
----
-kind: StorageClass
-apiVersion: storage.k8s.io/v1
-metadata:
-  name: storage-pgpool
-provisioner: kubernetes.io/no-provisioner
-volumeBindingMode: WaitForFirstConsumer
-reclaimPolicy: Retain

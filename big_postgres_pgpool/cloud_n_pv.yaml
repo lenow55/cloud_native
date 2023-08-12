@@ -7,7 +7,7 @@ metadata:
   name: cloud-native-pv
 spec:
   capacity:
-   storage: 10Gi
+    storage: 8Gi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
@@ -33,7 +33,7 @@ metadata:
   name: cloud-native-pv2
 spec:
   capacity:
-   storage: 10Gi
+    storage: 8Gi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce

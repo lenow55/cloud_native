@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pgbench
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pgbench
+  template:
+    metadata:
+      labels:
+        app: pgbench
+    spec:
+      tolerations:
+        - key: "postgres-bench"
+          operator: "Equal"
+      containers:
+      - name: pgbench
+        image: docker.io/bitnami/postgresql:15-debian-11
+        command: [ "/bin/bash", "-c", "--" ]
+        args: [ "while true; do sleep 30; done;" ]
+        resources:
+          requests:
+            memory: "3Gi"
+            cpu: "4"
+          limits:
+            memory: "3Gi"
+            cpu: "4"
+        env:
+        - name: PGPASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: cluster-example-app
+              key: password

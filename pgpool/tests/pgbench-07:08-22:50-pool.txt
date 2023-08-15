@@ -1,0 +1,93 @@
+progress: 10.0 s, 26108.8 tps, lat 2.843 ms stddev 1.657, 0 failed
+progress: 20.0 s, 28168.2 tps, lat 2.838 ms stddev 1.410, 0 failed
+progress: 30.0 s, 26823.4 tps, lat 2.982 ms stddev 1.788, 0 failed
+progress: 40.0 s, 28159.0 tps, lat 2.840 ms stddev 1.481, 0 failed
+progress: 50.0 s, 27065.7 tps, lat 2.954 ms stddev 1.621, 0 failed
+progress: 60.0 s, 27624.5 tps, lat 2.895 ms stddev 1.596, 0 failed
+progress: 70.0 s, 27960.1 tps, lat 2.860 ms stddev 1.506, 0 failed
+progress: 80.0 s, 27636.6 tps, lat 2.894 ms stddev 1.632, 0 failed
+progress: 90.0 s, 28290.1 tps, lat 2.827 ms stddev 1.405, 0 failed
+progress: 100.0 s, 26896.8 tps, lat 2.973 ms stddev 1.811, 0 failed
+progress: 110.0 s, 27170.8 tps, lat 2.943 ms stddev 1.648, 0 failed
+progress: 120.0 s, 27803.1 tps, lat 2.876 ms stddev 1.572, 0 failed
+progress: 130.0 s, 26694.5 tps, lat 2.995 ms stddev 1.777, 0 failed
+progress: 140.0 s, 27397.5 tps, lat 2.919 ms stddev 1.702, 0 failed
+progress: 150.0 s, 26815.7 tps, lat 2.982 ms stddev 1.839, 0 failed
+progress: 160.0 s, 27643.4 tps, lat 2.893 ms stddev 1.510, 0 failed
+progress: 170.0 s, 28438.2 tps, lat 2.812 ms stddev 1.346, 0 failed
+progress: 180.0 s, 27694.1 tps, lat 2.887 ms stddev 1.532, 0 failed
+progress: 190.0 s, 27581.4 tps, lat 2.899 ms stddev 1.539, 0 failed
+progress: 200.0 s, 27320.7 tps, lat 2.927 ms stddev 1.696, 0 failed
+progress: 210.0 s, 28070.0 tps, lat 2.849 ms stddev 1.440, 0 failed
+progress: 220.0 s, 28512.5 tps, lat 2.804 ms stddev 1.279, 0 failed
+progress: 230.0 s, 26528.8 tps, lat 3.014 ms stddev 1.958, 0 failed
+progress: 240.0 s, 27507.2 tps, lat 2.907 ms stddev 1.590, 0 failed
+progress: 250.0 s, 27148.7 tps, lat 2.946 ms stddev 1.737, 0 failed
+progress: 260.0 s, 27527.5 tps, lat 2.905 ms stddev 1.455, 0 failed
+progress: 270.0 s, 27883.3 tps, lat 2.867 ms stddev 1.547, 0 failed
+progress: 280.0 s, 27422.7 tps, lat 2.917 ms stddev 1.680, 0 failed
+progress: 290.0 s, 28118.7 tps, lat 2.844 ms stddev 1.639, 0 failed
+progress: 300.0 s, 27242.4 tps, lat 2.935 ms stddev 1.777, 0 failed
+progress: 310.0 s, 28347.8 tps, lat 2.821 ms stddev 1.416, 0 failed
+progress: 320.0 s, 27435.4 tps, lat 2.914 ms stddev 1.488, 0 failed
+progress: 330.0 s, 26650.3 tps, lat 3.002 ms stddev 2.026, 0 failed
+progress: 340.0 s, 28125.5 tps, lat 2.843 ms stddev 1.469, 0 failed
+progress: 350.0 s, 27050.7 tps, lat 2.956 ms stddev 1.688, 0 failed
+progress: 360.0 s, 27588.9 tps, lat 2.898 ms stddev 1.663, 0 failed
+progress: 370.0 s, 28588.1 tps, lat 2.797 ms stddev 1.278, 0 failed
+progress: 380.0 s, 27521.8 tps, lat 2.905 ms stddev 1.562, 0 failed
+progress: 390.0 s, 27846.4 tps, lat 2.872 ms stddev 1.583, 0 failed
+progress: 400.0 s, 27765.3 tps, lat 2.880 ms stddev 1.646, 0 failed
+progress: 410.0 s, 26861.5 tps, lat 2.976 ms stddev 1.784, 0 failed
+progress: 420.0 s, 27296.7 tps, lat 2.930 ms stddev 1.751, 0 failed
+progress: 430.0 s, 27227.9 tps, lat 2.937 ms stddev 1.576, 0 failed
+progress: 440.0 s, 27847.2 tps, lat 2.871 ms stddev 1.716, 0 failed
+progress: 450.0 s, 26876.4 tps, lat 2.975 ms stddev 1.773, 0 failed
+progress: 460.0 s, 28039.6 tps, lat 2.852 ms stddev 1.440, 0 failed
+progress: 470.0 s, 27560.5 tps, lat 2.901 ms stddev 1.564, 0 failed
+progress: 480.0 s, 27785.6 tps, lat 2.878 ms stddev 1.721, 0 failed
+progress: 490.0 s, 28250.0 tps, lat 2.831 ms stddev 1.549, 0 failed
+progress: 500.0 s, 27398.7 tps, lat 2.919 ms stddev 1.680, 0 failed
+progress: 510.0 s, 27337.1 tps, lat 2.925 ms stddev 1.613, 0 failed
+progress: 520.0 s, 27620.6 tps, lat 2.895 ms stddev 1.505, 0 failed
+progress: 530.0 s, 27556.3 tps, lat 2.902 ms stddev 1.513, 0 failed
+progress: 540.0 s, 27556.8 tps, lat 2.902 ms stddev 1.562, 0 failed
+progress: 550.0 s, 27852.6 tps, lat 2.871 ms stddev 1.529, 0 failed
+progress: 560.0 s, 27716.4 tps, lat 2.885 ms stddev 1.571, 0 failed
+progress: 570.0 s, 27336.5 tps, lat 2.926 ms stddev 1.671, 0 failed
+progress: 580.0 s, 27626.1 tps, lat 2.895 ms stddev 1.599, 0 failed
+progress: 590.0 s, 26808.7 tps, lat 2.983 ms stddev 1.732, 0 failed
+progress: 600.0 s, 27407.6 tps, lat 2.917 ms stddev 1.543, 0 failed
+**transaction type:** query.sql
+
+**scaling factor:** 1
+
+**query mode:** simple
+
+**number of clients:** 80
+
+**number of threads:** 40
+
+**maximum number of tries:** 1
+
+**duration:** 600 s
+
+**number of transactions actually processed:** 16521433
+
+**number of failed transactions:** 0 (0.000%)
+
+**latency average** = 2.901 ms
+
+**latency stddev** = 1.612 ms
+
+**initial connection time** = 718.260 ms
+
+**tps** = 27568.570491 (without initial connection time)
+
+```
+statement latencies in milliseconds and failures:
+         0.000           0  \set scale 1
+         0.000           0  \set naccounts 100000 * :scale
+         0.000           0  \set aid    random(1,:naccounts)
+         2.902           0  SELECT abalance FROM pgbench_accounts WHERE aid = :aid;
+```

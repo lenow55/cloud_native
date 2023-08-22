@@ -1,0 +1,41 @@
+  apiVersion: postgresql.cnpg.io/v1
+  kind: Cluster
+  metadata:
+    name: cluster-example
+  spec:
+    instances: 2
+    logLevel: info
+    imageName: ghcr.io/cloudnative-pg/postgresql:15.2
+    postgresql:
+      parameters:
+        wal_sender_timeout: "30s"
+        wal_receiver_timeout: "30s"
+        wal_keep_size: "1GB"
+        max_wal_size: "1GB"
+        max_connections: "1000"
+        shared_buffers: "1GB"
+        maintenance_work_mem: "256MB"
+    replicationSlots:
+      highAvailability:
+        enabled: true
+      updateInterval: 300
+
+    resources:
+      requests:
+        memory: "7Gi"
+        cpu: "4"
+      limits:
+        memory: "7Gi"
+        cpu: "4"
+
+    storage:
+      size: 8Gi
+      storageClass: cloud-native-store
+
+    affinity:
+      tolerations:
+        - key: "postgres-cluster"
+          operator: "Equal"
+
+    monitoring:
+      enablePodMonitor: true

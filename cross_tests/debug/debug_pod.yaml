@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pgbench
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pgbench
+  template:
+    metadata:
+      labels:
+        app: pgbench
+    spec:
+      tolerations:
+        - key: "postgres-bench"
+          operator: "Equal"
+      containers:
+      - name: pgbench
+        image: ubuntu:22.04
+        command: [ "/bin/bash", "-c", "--" ]
+        args: [ "while true; do sleep 30; done;" ]
+        resources:
+          requests:
+            memory: "3Gi"
+            cpu: "4"
+          limits:
+            memory: "3Gi"
+            cpu: "4"
+        env:
+        - name: PGPASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: cluster-example-app
+              key: password
+        - name: ROOT_GPPASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: cluster-example-superuser
+              key: password
+        volumeMounts:
+         - name: pgbench-save
+           mountPath: /var/tmp/
+      volumes:
+      - name: pgbench-save
+        persistentVolumeClaim:
+          claimName: pgbench-save

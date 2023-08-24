@@ -149,6 +149,10 @@ do
                     echo "Pgbench: Error"
                     exit 1
                 fi
+                if echo "$benchmark_result" | grep -q "WARNING:  memcache: updating free space"; then
+                    echo "Pgpool: Error mem"
+                    exit 1
+                fi
                 cat $SUB_SCRIPT >> $filename
                 check_repl=$( PGPASSWORD=$ROOT_GPPASSWORD psql --host cluster-example-rw -U postgres -x -c "
                 select

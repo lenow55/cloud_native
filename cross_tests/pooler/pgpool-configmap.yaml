@@ -40,7 +40,7 @@ data:
     memory_cache_enabled = on
     memqcache_method = shmem
     memqcache_expire = 0
-    emqcache_total_size = 512MB
+    memqcache_total_size = 2GB
   # If pool_hba.conf isn't configured, Pgpool-II will automatically generate it.
   # Note that to use pool_hba.conf you must set enable_pool_hba = on.
   #  pool_hba.conf: |-

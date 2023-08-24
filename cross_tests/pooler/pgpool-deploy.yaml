@@ -21,10 +21,10 @@ spec:
         image: pgpool/pgpool
         resources:
           requests:
-            memory: "6Gi"
+            memory: "8Gi"
             cpu: "6"
           limits:
-            memory: "6Gi"
+            memory: "8Gi"
             cpu: "6"
         env:
         - name: POSTGRES_USERNAME

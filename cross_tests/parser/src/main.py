@@ -1,8 +1,12 @@
 import os
 from glob import glob
-from base_logging import logger
+from base_logging import LoggerManager
 from bench_ex import PgBenchFile
 from argparse import ArgumentParser, Namespace
+import logging
+
+logger=LoggerManager().getLogger(__name__)
+logger.setLevel(level=logging.DEBUG)
 
 def process_args() -> Namespace:
     parser: ArgumentParser = ArgumentParser()

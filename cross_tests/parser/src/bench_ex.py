@@ -1,8 +1,11 @@
 import re
 from datetime import datetime
-from base_logging import logger
+from base_logging import LoggerManager
+import logging
 from typing import Callable
 
+logger=LoggerManager().getLogger(__name__)
+logger.setLevel(level=logging.INFO)
 
 class PgBenchFile:
     def __init__(self, name, id_folder):

@@ -24,11 +24,6 @@ class PgBenchFile:
         self.initial_connection_time = 0
         self.latency_avg = 0
         self.latency_std = 0
-        self.latency_avg = 0
-        self.latency_avg = 0
-        self.number_of_clients = 0
-        self.number_of_threads = 0
-        self.duration = 0
         self.progress_list_dict = []
         self.transaction_by_time_dict = []
 
@@ -45,6 +40,24 @@ class PgBenchFile:
             r"([\d.]+)\s+(BEGIN|END|SELECT|INSERT)\s*(.*)"
         )
         self.process_flag = True
+
+    def as_dict(self):
+        return {
+                'id': str(self.id_folder)+str(self.test_number),
+                'name': self.name,
+                'cost': self.cost,
+                'cost': self.cost,
+                'scale': self.scale,
+                'percent_write': self.percent_write,
+                'pool_enabled': self.pool_bit,
+                'count_connections': self.count_connections,
+                'cache_enabled': self.query_cache_bit,
+                'base_in_cache': self.base_size_bit,
+                'tps': self.tps,
+                'initial_connection_time': self.initial_connection_time,
+                'latency_avg': self.latency_avg,
+                'latency_std': self.latency_std
+                }
 
     def serialise(self, row):
         self.function = self.function(row=row)

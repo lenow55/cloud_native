@@ -4,6 +4,7 @@ from base_logging import LoggerManager
 from bench_ex import PgBenchFile
 from argparse import ArgumentParser, Namespace
 import logging
+import pandas as pd
 
 logger=LoggerManager().getLogger(__name__)
 logger.setLevel(level=logging.DEBUG)
@@ -27,6 +28,7 @@ def main():
     logger.debug(f"Базовый путь до папки: {base_path}")
     all_files_txt = []
     all_files_json = []
+    bench_list = []
 
     for folder in list_folders:
         all_files_txt.append(glob(os.path.join(base_path, folder, '*.txt')))
@@ -41,8 +43,10 @@ def main():
                 for line in f:
                     if not bench_example.serialise(line):
                         break
-            print(bench_example.transaction_by_time_dict)
-            break
+            bench_list.append(bench_example)
         break
+
+    df = pd.DataFrame([x.as_dict() for x in bench_list])
+    print(df)
 if __name__ == '__main__':
     main()

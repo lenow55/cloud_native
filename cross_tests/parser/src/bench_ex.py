@@ -117,7 +117,7 @@ class PgBenchFile:
     def read_pool_bit(self, row: str) -> Callable:
         parts = row.split()
         try:
-            self.pool_bit = bool(parts[1])
+            self.pool_bit = int(parts[1])
             logger.debug(f"PgPool включён: {self.pool_bit}")
         except Exception as ex:
             logger.error(ex)
@@ -137,7 +137,7 @@ class PgBenchFile:
     def read_query_cache_bit(self, row: str) -> Callable:
         parts = row.split()
         try:
-            self.query_cache_bit = bool(parts[1])
+            self.query_cache_bit = int(parts[1])
             logger.debug(f"Кэш включён: {self.query_cache_bit}")
         except Exception as ex:
             logger.error(ex)
@@ -147,7 +147,7 @@ class PgBenchFile:
     def read_base_size_bit(self, row: str) -> Callable:
         parts = row.split()
         try:
-            self.base_size_bit = bool(parts[1])
+            self.base_size_bit = int(parts[1])
             logger.debug(f"База помещается в кэш: {self.base_size_bit}")
         except Exception as ex:
             logger.error(ex)

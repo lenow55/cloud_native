@@ -33,11 +33,14 @@ def main():
     all_files_txt = []
     all_files_json = []
     bench_list = []
+    logger.debug(list_folders)
 
     for folder in list_folders:
         all_files_txt.append(glob(os.path.join(base_path, folder, '*.txt')))
     for folder in list_folders:
         all_files_json.append(glob(os.path.join(base_path, folder, '*.json')))
+    logger.debug(all_files_json)
+    logger.debug(all_files_txt)
 
     for id_list_files, list_files in enumerate(all_files_txt):
         for file in list_files:
